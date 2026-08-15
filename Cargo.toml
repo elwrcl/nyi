@@ -1,0 +1,24 @@
+[package]
+name = "nyi"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.74"
+description = "Animated 3D fetch with cool features"
+homepage = "https://github.com/elwrcl/nyi"
+repository = "https://github.com/elwrcl/nyi"
+license = "ISC"
+readme = "README.md"
+
+[[bin]]
+name = "nyi"
+path = "src/main.rs"
+
+[dependencies]
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
