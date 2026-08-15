@@ -1,0 +1,23 @@
+# distro: lubuntu
+[m                                          
+[1m[31m           `.:/ossyyyysso/:.[m
+[1m[31m        `.:yyyyyyyyyyyyyyyyyy:.`[m
+[1m[31m      .:yyyyyyyyyyyyyyyyyyyyyyyy:.[m
+[1m[31m    .:yyyyyyyyyyyyyyyyyyyyyyyyyyyy:.[m
+[1m[31m   -yyyyyyyyyyyyyy[32m+hNMMMNh+[31myyyyyyyyy-[m
+[1m[31m  :yy[32mmNy+[31myyyyyyyy[32m+Nmso++smMdhyysoo+[31myy:[m
+[1m[31m -yy[32m+MMMmmy[31myyyyyy[32mhh[31myyyyyyyyyyyyyyyyyyy-[m
+[1m[31m.yyyy[32mNMN[31myy[32mshhs[31myyy[32m+o[31myyyyyyyyyyyyyyyyyyyy.[m
+[1m[31m:yyyy[32moNM+[31myyyy[32m+sso[31myyyyyyy[32mss[31myyyyyyyyyyyyy:[m
+[1m[31m:yyyyy[32m+dNs[31myyyyyyy[32m++[31myyyyy[32moN+[31myyyyyyyyyyyy:[m
+[1m[31m:yyyyy[32moMMmhysso[31myyyyyyyyyy[32mmN+[31myyyyyyyyyyy:[m
+[1m[31m:yyyyyy[32mhMm[31myyyyy[32m+++[31myyyyyyy[32m+MN[31myyyyyyyyyyy:[m
+[1m[31m.yyyyyyy[32mohmy+[31myyyyyyyyyyyyy[32mNMh[31myyyyyyyyyy.[m
+[1m[31m -yyyyyyyyyy[32m++[31myyyyyyyyyyyy[32mMMh[31myyyyyyyyy-[m
+[1m[31m  :yyyyyyyyyyyyyyyyyyyyy[32m+mMN+[31myyyyyyyy:[m
+[1m[31m   -yyyyyyyyyyyyyyyyy[32m+sdMMd+[31myyyyyyyy-[m
+[1m[31m    .:yyyyyyyyy[32mhmdmmNMNdy+[31myyyyyyyy:.[m
+[1m[31m      .:yyyyyyy[32mmy[31myyyyyyyyyyyyyyy:.[m
+[1m[31m        `.:yyyy[32ms[31myyyyyyyyyyyyy:.`[m
+[1m[31m           `.:/oosyyyysso/:.`[m
+[m

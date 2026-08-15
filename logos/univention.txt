@@ -1,0 +1,23 @@
+# distro: Univention
+[m                                          
+[1m[31m         ./osssssssssssssssssssssso+-[m
+[1m[31m       `ohhhhhhhhhhhhhhhhhhhhhhhhhhhhy:[m
+[1m[31m       shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh-[m
+[1m[31m   `-//[32msssss[31m/hhhhhhhhhhhhhh+[32ms[31m.hhhhhhhhh+[m
+[1m[31m .ohhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msss[31m+hhhhhhh+[m
+[1m[31m.yhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32mssss[31m:hhhhhh+[m
+[1m[31m+hhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msssss[31myhhhhh+[m
+[1m[31m+hhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msssss[31myhhhhh+[m
+[1m[31m+hhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msssss[31myhhhhh+[m
+[1m[31m+hhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msssss[31myhhhhh+[m
+[1m[31m+hhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msssss[31myhhhhh+[m
+[1m[31m+hhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msssss[31myhhhhh+[m
+[1m[31m+hhhhhy[32msssss[31m.hhhhhhhhhhhhhh.[32msssss[31myhhhhh+[m
+[1m[31m+hhhhhy[32mssssss[31m+yhhhhhhhhhhy/[32mssssss[31myhhhhh+[m
+[1m[31m+hhhhhh:[32msssssss[31m:hhhhhhh+[32m.ssssssss[31myhhhhy.[m
+[1m[31m+hhhhhhh+`[32mssssssssssssssss[31mhh[32msssss[31myhhho`[m
+[1m[31m+hhhhhhhhhs+[32mssssssssssss[31m+hh+[32msssss[31m/:-`[m
+[1m[31m-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhho[m
+[1m[31m :yhhhhhhhhhhhhhhhhhhhhhhhhhhhh+`[m
+[1m[31m   -+ossssssssssssssssssssss+:`[m
+[m

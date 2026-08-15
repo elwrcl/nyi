@@ -1,0 +1,15 @@
+# distro: gNewSense
+[m                                                    
+[1m[31m                     ..,,,,..[m
+[1m[31m               .oocchhhhhhhhhhccoo.[m
+[1m[31m        .ochhlllllllc hhhhhh ollllllhhco.[m
+[1m[31m    ochlllllllllll hhhllllllhhh lllllllllllhco[m
+[1m[31m .cllllllllllllll hlllllo  +hllh llllllllllllllc.[m
+[1m[31mollllllllllhco''  hlllllo  +hllh  ``ochllllllllllo[m
+[1m[31mhllllllllc'       hllllllllllllh       `cllllllllh[m
+[1m[31mollllllh          +llllllllllll+          hllllllo[m
+[1m[31m `cllllh.           ohllllllho           .hllllc'[m
+[1m[31m    ochllc.            ++++            .cllhco[m
+[1m[31m       `+occooo+.                .+ooocco+'[m
+[1m[31m              `+oo++++      ++++oo+'[m
+[m

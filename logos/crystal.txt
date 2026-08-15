@@ -1,0 +1,23 @@
+# distro: Crystal
+[m                              
+[1m[31m                  mysssym[m
+[1m[31m                mysssym[m
+[1m[31m              mysssym[m
+[1m[31m            mysssym[m
+[1m[31m          mysssyd[m
+[1m[31m        mysssyd    N[m
+[1m[31m      mysssyd    mysym[m
+[1m[31m    mysssyd      dysssym[m
+[1m[31m  mysssyd          dysssym[m
+[1m[31mmysssyd              dysssym[m
+[1m[31mmysssyd              dysssym[m
+[1m[31m  mysssyd          dysssym[m
+[1m[31m    mysssyd      dysssym[m
+[1m[31m      mysym    dysssym[m
+[1m[31m        N    dysssym[m
+[1m[31m           dysssym[m
+[1m[31m         dysssym[m
+[1m[31m       dysssym[m
+[1m[31m     dysssym[m
+[1m[31m   dysssym[m
+[m

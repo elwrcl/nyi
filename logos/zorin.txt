@@ -1,0 +1,20 @@
+# distro: Zorin
+[m                                          
+[1m[31m        `osssssssssssssssssssso`[m
+[1m[31m       .osssssssssssssssssssssso.[m
+[1m[31m      .+oooooooooooooooooooooooo+.[m
+
+
+[1m[31m  `::::::::::::::::::::::.         .:`[m
+[1m[31m `+ssssssssssssssssss+:.`     `.:+ssso`[m
+[1m[31m.ossssssssssssssso/.       `-+ossssssso.[m
+[1m[31mssssssssssssso/-`      `-/osssssssssssss[m
+[1m[31m.ossssssso/-`      .-/ossssssssssssssso.[m
+[1m[31m `+sss+:.      `.:+ssssssssssssssssss+`[m
+[1m[31m  `:.         .::::::::::::::::::::::`[m
+
+
+[1m[31m      .+oooooooooooooooooooooooo+.[m
+[1m[31m       -osssssssssssssssssssssso-[m
+[1m[31m        `osssssssssssssssssssso`[m
+[m

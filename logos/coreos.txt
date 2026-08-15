@@ -1,0 +1,23 @@
+# distro: CoreOS
+[m                                        
+[1m[31m                .....[m
+[1m[31m          .';:cccccccc:;'.[m
+[1m[31m        ':ccccclc[33mlllllllll[31mcc:.[m
+[1m[31m     .;cccccccc[33mlllllllllllllll[31mc,[m
+[1m[31m    ;clllccccc[33mllllllllllllllllll[31mc,[m
+[1m[31m  .cllclccccc[33mlllll[32mlll[33mllllllllllll[31mc:[m
+[1m[31m  ccclclcccc[33mcllll[32mkWMMNKk[33mllllllllll[31mc:[m
+[1m[31m :ccclclcccc[33mllll[32moWMMMMMMWO[33mlllllllll[31mc,[m
+[1m[31m.ccllllllccc[33mclll[32mOMMMMMMMMM0[33mlllllllll[31mc[m
+[1m[31m.lllllclcccc[33mllll[32mKMMMMMMMMMMo[33mllllllll[31mc.[m
+[1m[31m.lllllllcccc[33mclll[32mKMMMMMMMMN0[33mlllllllll[31mc.[m
+[1m[31m.cclllllcccc[33mlllld[32mxkkxxdo[33mllllllllllc[31mlc[m
+[1m[31m :cccllllllcccc[33mlllccllllcclccc[31mcccccc;[m
+[1m[31m .ccclllllllcccccccc[33mlll[31mccccclccccccc[m
+[1m[31m  .cllllllllllclcccclccclccllllcllc[m
+[1m[31m    :cllllllllccclcllllllllllllcc;[m
+[1m[31m     .cccccccccccccclcccccccccc:.[m
+[1m[31m       .;cccclccccccllllllccc,.[m
+[1m[31m          .';ccccclllccc:;..[m
+[1m[31m                .....[m
+[m

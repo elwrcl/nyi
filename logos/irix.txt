@@ -1,0 +1,22 @@
+# distro: IRIX
+[m                                          
+[1m[31m           ./ohmNd/  +dNmho/-[m
+[1m[31m     `:+ydNMMMMMMMM.-MMMMMMMMMdyo:.[m
+[1m[31m   `hMMMMMMNhs/sMMM-:MMM+/shNMMMMMMh`[m
+[1m[31m   -NMMMMMmo-` /MMM-/MMM- `-omMMMMMN.[m
+[1m[31m `.`-+hNMMMMMNhyMMM-/MMMshmMMMMMmy+...`[m
+[1m[31m+mMNds:-:sdNMMMMMMMyyMMMMMMMNdo:.:sdMMm+[m
+[1m[31mdMMMMMMmy+.-/ymNMMMMMMMMNmy/-.+hmMMMMMMd[m
+[1m[31moMMMMmMMMMNds:.+MMMmmMMN/.-odNMMMMmMMMM+[m
+[1m[31m.MMMM-/ymMMMMMmNMMy..hMMNmMMMMMmy/-MMMM.[m
+[1m[31m hMMM/ `/dMMMMMMMN////NMMMMMMMd/. /MMMh[m
+[1m[31m /MMMdhmMMMmyyMMMMMMMMMMMMhymMMMmhdMMM:[m
+[1m[31m `mMMMMNho//sdMMMMM//NMMMMms//ohNMMMMd[m
+[1m[31m  `/so/:+ymMMMNMMMM` mMMMMMMMmh+::+o/`[m
+[1m[31m     `yNMMNho-yMMMM` NMMMm.+hNMMNh`[m
+[1m[31m     -MMMMd:  oMMMM. NMMMh  :hMMMM-[m
+[1m[31m      -yNMMMmooMMMM- NMMMyomMMMNy-[m
+[1m[31m        .omMMMMMMMM-`NMMMMMMMmo.[m
+[1m[31m          `:hMMMMMM. NMMMMMh/`[m
+[1m[31m             .odNm+  /dNms.[m
+[m

@@ -1,0 +1,23 @@
+# distro: OPNsense
+[m                                          
+[1m[31m    .'''''''''''''''''''''''''''''''''''[m
+[1m[31m  oocc:::::::::::::::::::::::::::::::cox[m
+[1m[31m ;00;                                o0O[m
+[1m[31m .,:'  .;;;;;;;;;;;;;;;;;;;;;;;;;;   ;:,[m
+[1m[31m  .',;;cxOOOOOOOOOOOOOOOOOOOOOOOkd:;;,..[m
+[1m[31m     .,cll:'                 ':llc,.[m
+[1m[31m    ,;;:okxdxd:           :dxdxko:;;,[m
+[1m[31m   .xxxx0XNNK0O.         .O0KNNX0xxxx.[m
+[1m[31m       ,[32mcc:[31m,.               .,[32m:cc[31m,[m
+[1m[31m ........;[32mccc:[31m;.         .;[32m:ccc[31m;........[m
+[1m[31m [32mccccccccccccccc         ccccccccccccccc[31m[m
+[1m[31m ........;[32mccc:[31m;.         .;[32m:ccc[31m;........[m
+[1m[31m       ,[32mcc:[31m,.               .,[32m:cc[31m,[m
+[1m[31m   .xxxx0XNNK0O.         .O0KNNX0xxxx.[m
+[1m[31m    ,;;:okxdxd:           :dxdxko:;;,[m
+[1m[31m     .,cll:'                 ':llc,.[m
+[1m[31m  .,,;,ckOOOOOOOOOOOOOOOOOOOOOOOOx;,;,'.[m
+[1m[31m .:l'  ...........................   ;:;[m
+[1m[31m lOk'                                cdd[m
+[1m[31m ;lccccccccccccccccccccccccccccccccccc:.[m
+[m

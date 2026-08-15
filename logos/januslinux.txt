@@ -1,0 +1,27 @@
+# distro: januslinux
+[m                                                      
+[1m[31m               'l:[m
+[1m[31m        loooooo[m
+[1m[31m          loooo coooool[m
+[1m[31m looooooooooooooooooool[m
+[1m[31m  looooooooooooooooo[m
+[1m[31m         lool   cooo[m
+[1m[31m        coooooooloooooooo[m
+[1m[31m     clooooo  ;lood  cloooo[m
+[1m[31m  :loooocooo cloo      loooo[m
+[1m[31m loooo  :ooooool       loooo[m
+[1m[31mlooo    cooooo        cooooo[m
+[1m[31mlooooooooooooo      ;loooooo [32mlooooooc[m
+[1m[32m[31mlooooooooo loo   cloooooool    [32mlooooc[m
+[1m[32m[31m cooo       cooooooooooo       [32mlooolooooool[m
+[1m[32m[31m            cooo:     [32mcoooooooooooooooooool[m
+[1m[32m                       loooooooooooolc:   loooc;[m
+[1m[32m                             cooo:    loooooooooooc[m
+[1m[32m                            ;oool         looooooo:[m
+[1m[32m                           coool          olc,[m
+[1m[32m                          looooc   ,,[m
+[1m[32m                        coooooc    loc[m
+[1m[32m                       :oooool,    coool:, looool:,[m
+[1m[32m                       looool:      ooooooooooooooo:[m
+[1m[32m                       cooolc        .ooooooooooool[m
+[m

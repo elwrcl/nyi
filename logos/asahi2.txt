@@ -1,0 +1,21 @@
+# distro: asahi2
+[m                                            
+[1m[31m                 [31m_wwM [32m_ww[m
+[1m[32m                  [31mMMM[32mMMMM[m
+[1m[32m                   [31mMM[m
+[1m[31m           [33m_ww##############yy_[m
+[1m[33m          [34mwMMMMM[33m###########[34mMMMMm[m
+[1m[34m        [34m,MMMMMMMMM[33m######[34mMMMMMMMM0_[m
+[1m[34m       [34mwMMMMMMMMMMMMM[35mMM[36m0MMMMMMMMMMm[m
+[1m[36m     [34m,MMMMMMMMMMMMMMM[35mMMMM[36m0MMMMMMMMM0,[m
+[1m[36m    [34mwMMMMMMMMMMMMMMMM[35mMMMMM0[36mMMMMMMMMMMb[m
+[1m[36m  [34m_MMMMMMMMMMMMMMMMMM[35mMMMMMMM0[36mMMMMMMMMM0,[m
+[1m[36m [34m_MMMMMMMMMMMMMMMMMMM[35mMMMM[37mM[35mMMMW[36mMMMMMMMMMM_[m
+[1m[36m[34m_MMMMMMMMMMMMMMMMMMMM[35mMMMM[37mM0[35mMMMW[36mMMMMMMMMMM_[m
+[1m[36m   [34m~MMMMMMMMMMMMMMMMM[35mMMMM[37mM[35mMMMW[36mMMMMM00~[m
+[1m[36m       [34m~MMMMMMMMMMMMM[35mMMMWMMM[36m0MM[35mMMM[36m~[m
+[1m[36m          [34m~MMMMMMMMMM[35mMMMMM[36m0MMM~~[m
+[1m[36m              [34m~MMMMMM[35mMMM[36m0MM~[m
+[1m[36m                  [34m~MM[35mM[36m@~[m
+[1m[36m                    [34mM[m
+[m

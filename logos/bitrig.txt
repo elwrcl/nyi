@@ -1,0 +1,20 @@
+# distro: Bitrig
+[m                 
+[1m[31m   `hMMMMN+[m
+[1m[31m   -MMo-dMd`[m
+[1m[31m   oMN- oMN`[m
+[1m[31m   yMd  /NM:[m
+[1m[31m  .mMmyyhMMs[m
+[1m[31m  :NMMMhsmMh[m
+[1m[31m  +MNhNNoyMm-[m
+[1m[31m  hMd.-hMNMN:[m
+[1m[31m  mMmsssmMMMo[m
+[1m[31m .MMdyyhNMMMd[m
+[1m[31m oMN.`/dMddMN`[m
+[1m[31m yMm/hNm+./MM/[m
+[1m[31m.dMMMmo.``.NMo[m
+[1m[31m:NMMMNmmmmmMMh[m
+[1m[31m/MN/-------oNN:[m
+[1m[31mhMd.       .dMh[m
+[1m[31msm/         /ms[m
+[m

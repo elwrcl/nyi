@@ -1,0 +1,15 @@
+# distro: Haiku
+[m                                       
+[1m[31m           MMMM              MMMM[m
+[1m[31m           MMMM              MMMM[m
+[1m[31m           MMMM              MMMM[m
+[1m[31m           MMMM              MMMM[m
+[1m[31m           MMMM[32m       .ciO| /YMMMMM*"[m
+[1m[32m[31m           MMMM[32m   .cOMMMMM|/MMMMM/`[m
+[1m[32m ,         ,iMM|/MMMMMMMMMMMMMMM*[m
+[1m[32m  `*.__,-cMMMMMMMMMMMMMMMMM/`[31m.MMM[m
+[1m[31m           MM[32mMMMMMMM/`:MMM/  [31mMMMM[m
+[1m[31m           MMMM              MMMM[m
+[1m[31m           MMMM              MMMM[m
+[1m[31m           """"              """"[m
+[m

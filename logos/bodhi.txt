@@ -1,0 +1,21 @@
+# distro: Bodhi
+[m                                            
+[1m[31m[31m|           [32m,,mmKKKKKKKKWm,,[m
+[1m[32m [31m'      [32m,aKKP[31mLL**********|L*[32mTKp,[m
+[1m[32m   [31mt  [32maKP[31mL**```          ```**L[32m*Kp[m
+[1m[32m    IX[31mEL[33mL,wwww,              [31m``*||[32mKp[m
+[1m[32m  ,#P[31mL|[33mKKKpPP@IPPTKmw,          [31m`*||[32mK[m
+[1m[32m ,K[31mLL*[33m{KKKKKKPPb$KPhpKKPKp        [31m`||[32mK[m
+[1m[32m #[31mPL  [33m!KKKKKKPhKPPP$KKEhKKKKp      [31m`||[32mK[m
+[1m[32m!H[31mL*   [33m1KKKKKKKphKbPKKKKKK$KKp      [31m`|I[32mW[m
+[1m[32m$$1bL     [33mKKKKKKKKBQKhKbKKKKKKKK       [31m|I[32mN[m
+[1m[32m$$1bL     [33m!KKKKKKKKKKNKKKKKKKPP`       [31m|I[32mb[m
+[1m[32mTH[31mL*     [33mTKKKKKK##KKKN@KKKK^         [31m|I[32mM[m
+[1m[32m K@[31mL      [33m*KKKKKKKKKKKEKE5          [31m||[32mK[m
+[1m[32m `NL[31mL      [33m`KKKKKKKKKK"```|L       [31m||[32m#P[m
+[1m[32m  `K@[31mLL       [33m`"**"`        [31m'.   :||[32m#P[m
+[1m[32m    Yp[31mLL                      [31m' |L[32m$M`[m
+[1m[32m     `Tp[31mpLL,                ,|||[32mp'L[m
+[1m[32m        "Kpp[31mLL++,.,    ,,|||$$2#K*   [31m'.[m
+[1m[31m           [32m`"MKWpppppppp#KM"`        [31m`h,[m
+[m

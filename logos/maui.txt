@@ -1,0 +1,23 @@
+# distro: MaUI
+[m                                          
+[1m[31m             `.-://////:--`[m
+[1m[31m         .:/oooooooooooooooo+:.[m
+[1m[31m      `:+ooooooooooooooooooooooo:`[m
+[1m[31m    `:oooooooooooooooooooooooooooo/`[m
+[1m[31m    ..```-oooooo/-`` `:oooooo+:.` `--[m
+[1m[31m  :.      +oo+-`       /ooo/`       -/[m
+[1m[31m -o.     `o+-          +o/`         -o:[m
+[1m[31m`oo`     ::`  :o/     `+.  .+o`     /oo.[m
+[1m[31m/o+      .  -+oo-     `   /oo/     `ooo/[m
+[1m[31m+o-        /ooo+`       .+ooo.     :ooo+[m
+[1m[31m++       .+oooo:       -oooo+     `oooo+[m
+[1m[31m:.      .oooooo`      :ooooo-     :oooo:[m
+[1m[31m`      .oooooo:      :ooooo+     `ooo+-`[m
+[1m[31m      .+oooooo`     -oooooo:     `o/-[m
+[1m[31m      +oooooo:     .ooooooo.[m
+[1m[31m     /ooooooo`     /ooooooo/       ..[m
+[1m[31m    `:oooooooo/:::/ooooooooo+:--:/:`[m
+[1m[31m      `:+oooooooooooooooooooooo+:`[m
+[1m[31m         .:+oooooooooooooooo+:.[m
+[1m[31m             `.-://////:-.`[m
+[m

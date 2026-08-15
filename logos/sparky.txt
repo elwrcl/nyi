@@ -1,0 +1,23 @@
+# distro: Sparky
+[m                                              
+[1m[31m           .            `-:-`[m
+[1m[31m          .o`       .-///-`[m
+[1m[31m         `oo`    .:/++:.[m
+[1m[31m         os+`  -/+++:` ``.........```[m
+[1m[31m        /ys+`./+++/-.-::::::----......``[m
+[1m[31m       `syyo`++o+--::::-::/+++/-``[m
+[1m[31m       -yyy+.+o+`:/:-:sdmmmmmmmmdy+-`[m
+[1m[31m::-`   :yyy/-oo.-+/`ymho++++++oyhdmdy/`[m
+[1m[31m`/yy+-`.syyo`+o..o--h..osyhhddhs+//osyy/`[m
+[1m[31m  -ydhs+-oyy/.+o.-: ` `  :/::+ydhy+```-os-[m
+[1m[31m   .sdddy::syo--/:.     `.:dy+-ohhho    ./:[m
+[1m[31m     :yddds/:+oo+//:-`- /+ +hy+.shhy:     ``[m
+[1m[31m      `:ydmmdysooooooo-.ss`/yss--oyyo[m
+[1m[31m        `./ossyyyyo+:-/oo:.osso- .oys[m
+[1m[31m       ``..-------::////.-oooo/   :so[m
+[1m[31m    `...----::::::::--.`/oooo:    .o:[m
+[1m[31m           ```````     ++o+:`     `:`[m
+[1m[31m                     ./+/-`        `[m
+[1m[31m                   `-:-.[m
+[1m[31m                   ``[m
+[m

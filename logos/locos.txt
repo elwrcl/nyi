@@ -1,0 +1,21 @@
+# distro: locos
+[m                                           
+[1m[31m              [33m..;:::::::;.               [m
+[1m[33m           .0X'[31m''''''''''''[33m'N:[m
+[1m[33m         :Xd[31m,.'''''''''''''''[33mlKx[m
+[1m[33m       .0o[31m'.'''''''''''''''''''[33m:K;[m
+[1m[33m      .O[31m;.'[33mokOx:[31m'''''''''[33m,dOOx:[31m''[33mO;[m
+[1m[33m      xc[31m.'[33mxXl[31m [33mkX;[31m''[32m:cc;[31m''[33mkXl[31m [33mOX;[31m''[33mk.[m
+[1m[33m     'x[31m..'[33m:0X0Xx[31m',[32mOOOOOd[31m,:[33m0X0Xx[31m'''[33mo:[m
+[1m[33m     ::[31m..'[32m,clollxOOOOOOOOdlddlc[31m''''[33md[m
+[1m[33m     l'[31m..[32m':kkkkOOOOOOOOOOOOkkkx,[31m'''[33mx[m
+[1m[33m     o[31m...''''',[32mcodxkkxxxdl[31m:''''''''[33md.[m
+[1m[33m     d[31m...''''''''''''''''''''''''''[33mo.[m
+[1m[33m     d[31m..''''[33m,loc,[31m''''''''[33m;os:,[31m'''''[33md'[m
+[1m[33m    :d[31m..'[33m,dKXXXXX0kxxxk0XXXXXX0l[31m'''[33m,O.[m
+[1m[33m   '0[31m..'[33mcKXXXXXXXXXXXXXXXXXXXXXXk[31m'''[33mck[m
+[1m[33m  '0[31m'.'[33mcXXXXXXXXXXXXXXXXXXXXXXXXXO[31m'''[33mod[m
+[1m[33m .0[31m,.''[33m0XXXXXXXXXXXXXXXXXXXXXXXXXXo[31m'''[33mk;[m
+[1m[33m cc[31m..''[33mXXXXXXXXXXXXXXXXXXXXXXXXXXXk[31m''''[33mk[m
+[1m[33m l[31m...',[33mXXXXXXXXXXXXXXXXXXXXXXXXXXXO[31m''''[33md.[m
+[m

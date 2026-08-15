@@ -1,0 +1,22 @@
+# distro: NebiOS
+[m                                  
+[1m[31m     [32m:ddl.                [33m:O0x' [m
+[1m[33m   [32m.dddddd:              [33mx00000c[m
+[1m[33m   [32m:dddddddl           [33m.O000000k[m
+[1m[33m    [32mcdddddddo         [33m.00000000c[m
+[1m[33m     [32m,dddddddd.      [33m:000000000.[m
+[1m[33m  [31m.:  [32m.dddddddd'    [33ml0000000000 [m
+[1m[33m  [31m:oo.  [32mdddddddd;  [33m.00000000000 [m
+[1m[33m  [31moooo.  [32mddddddddc  [33m.000000000k [m
+[1m[33m  [31mooooo,  [32mldddddddl   [33m00000000c [m
+[1m[33m [31m.oooooo;  [32m:dddddddo   [33mk000000. [m
+[1m[33m [31m'oooooooc  [32m'dddddddd.  [33mc00000  [m
+[1m[33m [31m:ooooooool  [32m.dddddddd'  [33m'0000  [m
+[1m[33m [31mooooooooooo   [32mdddddddd;  [33m.00k  [m
+[1m[33m [31moooooooooo.    [32mddddddddc  [33m.0:  [m
+[1m[33m [31mooooooooo.      [32mcdddddddl      [m
+[1m[32m[31m.oooooooo.        [32m,dddddddo     [m
+[1m[32m[31m:ooooooo.          [32m.dddddddd.   [m
+[1m[32m[31mloooooo.            [32m.ddddddd:   [m
+[1m[32m [31mcoooo                [32mldddd,    [m
+[m

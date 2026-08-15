@@ -1,0 +1,12 @@
+# distro: rhel_small
+[m                      
+[1m[31m      .M.:MMM[m
+[1m[31m     MMMMMMMMMM.[m
+[1m[31m    ,MMMMMMMMMMM[m
+[1m[31m .MM MMMMMMMMMMM[m
+[1m[31mMMMM   MMMMMMMMM[m
+[1m[31mMMMMMM           MM[m
+[1m[31m MMMMMMMMM     ,MMMM[m
+[1m[31m   MMMMMMMMMMMMMMMM:[m
+[1m[31m      `MMMMMMMMMMMM[m
+[m

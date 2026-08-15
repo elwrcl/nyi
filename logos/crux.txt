@@ -1,0 +1,21 @@
+# distro: CRUX
+[m                          
+[1m[31m         [31modddd[m
+[1m[31m      oddxkkkxxdoo[m
+[1m[31m     ddcoddxxxdoool[m
+[1m[31m     xdclodod  olol[m
+[1m[31m     xoc  xdd  olol[m
+[1m[31m     xdc  [32mk00[31mOkdlol[m
+[1m[31m     xxd[32mkOKKKOkd[31mldd[m
+[1m[31m     xdco[32mxOkdlo[31mdldd[m
+[1m[31m     ddc:cl[32mlll[31moooodo[m
+[1m[31m   odxxdd[33mxkO000kx[31mooxdo[m
+[1m[31m  oxddx[33m0NMMMMMMWW0o[31mdkkxo[m
+[1m[31m oooxd[33m0WMMMMMMMMMW0o[31mdxkx[m
+[1m[31mdocldkXW[33mMMMMMMMWWN[31mOdolco[m
+[1m[31mxx[32mdx[31mkxxOKN[33mWMMWN[31m0xdoxo::c[m
+[1m[31m[32mxOkkO[31m0oo[33modOW[32mWW[31mXkdodOxc:l[m
+[1m[31m[32mdkkkxkkk[33mOKX[32mNNNX0Oxx[31mxc:cd[m
+[1m[31m [32modxxdx[33mxllo[32mdddooxx[31mdc:ldo[m
+[1m[31m   [32mlodd[31mdolccc[32mccox[31mxoloo[m
+[m

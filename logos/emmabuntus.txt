@@ -1,0 +1,18 @@
+# distro: Emmabuntus
+[m                             
+[1m[31m                   _~~_[m
+[1m[31m          nmmmmmmm/[32m/**\[31m\[m
+[1m[31m        nmHhHMMMHh\[32m\__/[31m/[m
+[1m[31m      nm zot  [32m__[31m  t*~~*n[m
+[1m[31m     m  b [32m_+*´cc`*+_[31m p  m[m
+[1m[31m    m  & [32m/%cc,;;,cc%\[31m &  m[m
+[1m[31m _~~_ &  [32mc__      +cc[31m  &  n[m
+[1m[31m/[32m/**\[31m\&            [32mcc;[31m &  m[m
+[1m[31m\[32m\__/[31m/&  [32mc~~      +cc´[31m &  n[m
+[1m[31m *~~*  & [32m\cc%*--*%cc/[31m &  m[m
+[1m[31m     m  b [32m`+.cccc.+´[31m p  m[m
+[1m[31m      nm zo        o_~~_[m
+[1m[31m        nmHhHMMMHhH/[32m/**\[31m\[m
+[1m[31m          nmmmmmmmm\[32m\__/[31m/[m
+[1m[31m                    *~~*[m
+[m

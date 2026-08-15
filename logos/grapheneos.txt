@@ -1,0 +1,26 @@
+# distro: GrapheneOS
+[m                                                
+[1m[31m                        B?[m
+[1m[31m                        G~[m
+[1m[31m                        G~&[m
+[1m[31m                      G!^:^?#[m
+[1m[31m                     &^.:::.J[m
+[1m[31m    &PG&          #G5JJ7~^~?JY5B&          #PG[m
+[1m[31m     B5JJPGJ77YG5JYP#   &&   &B5JYPGJ7?YG5JYP#[m
+[1m[31m        &Y..::.:P&               &?..::.:G[m
+[1m[31m         #!::::?                  B~::::J[m
+[1m[31m           B~J#                     B!?#[m
+[1m[31m            !P                       75[m
+[1m[31m            !P                       75[m
+[1m[31m            !5                       7Y[m
+[1m[31m         &Y~:^!P                  &J~:^!P[m
+[1m[31m         P..::.:B                 Y..::.:#[m
+[1m[31m      #PYJJ~^^!JJYP#          &B5YJ?~^^!JJYG#[m
+[1m[31m    &YYG#   &&   #PYJ5G5??JGGYJ5G&   &&   #PYP[m
+[1m[31m                     B^.::..7&[m
+[1m[31m                      J::::^G[m
+[1m[31m                       #Y^G&[m
+[1m[31m                        B~[m
+[1m[31m                        G![m
+[1m[31m                        #[m
+[m

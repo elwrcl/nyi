@@ -1,0 +1,27 @@
+# distro: Parrot
+[m                                         
+[1m[31m  `:oho/-`[m
+[1m[31m`mMMMMMMMMMMMNmmdhy-[m
+[1m[31m dMMMMMMMMMMMMMMMMMMs`[m
+[1m[31m +MMsohNMMMMMMMMMMMMMm/[m
+[1m[31m .My   .+dMMMMMMMMMMMMMh.[m
+[1m[31m  +       :NMMMMMMMMMMMMNo[m
+[1m[31m           `yMMMMMMMMMMMMMm:[m
+[1m[31m             /NMMMMMMMMMMMMMy`[m
+[1m[31m              .hMMMMMMMMMMMMMN+[m
+[1m[31m                  ``-NMMMMMMMMMd-[m
+[1m[31m                     /MMMMMMMMMMMs`[m
+[1m[31m                      mMMMMMMMsyNMN/[m
+[1m[31m                      +MMMMMMMo  :sNh.[m
+[1m[31m                      `NMMMMMMm     -o/[m
+[1m[31m                       oMMMMMMM.[m
+[1m[31m                       `NMMMMMM+[m
+[1m[31m                        +MMd/NMh[m
+[1m[31m                         mMm -mN`[m
+[1m[31m                         /MM  `h:[m
+[1m[31m                          dM`   .[m
+[1m[31m                          :M-[m
+[1m[31m                           d:[m
+[1m[31m                           -+[m
+[1m[31m                            -[m
+[m

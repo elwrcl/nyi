@@ -1,0 +1,22 @@
+# distro: Amazon
+[m                                          
+[1m[31m             `-/oydNNdyo:.`[m
+[1m[31m      `.:+shmMMMMMMMMMMMMMMmhs+:.`[m
+[1m[31m    -+hNNMMMMMMMMMMMMMMMMMMMMMMNNho-[m
+[1m[31m.``      -/+shmNNMMMMMMNNmhs+/-      ``.[m
+[1m[31mdNmhs+:.       `.:/oo/:.`       .:+shmNd[m
+[1m[31mdMMMMMMMNdhs+:..        ..:+shdNMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMNds    odNMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31mdMMMMMMMMMMMMMMMMh    yMMMMMMMMMMMMMMMMd[m
+[1m[31m.:+ydNMMMMMMMMMMMh    yMMMMMMMMMMMNdy+:.[m
+[1m[31m     `.:+shNMMMMMh    yMMMMMNhs+:``[m
+[1m[31m            `-+shy    shs+:`[m
+[m

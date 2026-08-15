@@ -1,0 +1,23 @@
+# distro: NetBSD2
+[m                                                         
+[1m[31m                                  __,gnnnOCCCCCOObaau,_[m
+[1m[31m[32m   _._                    [31m__,gnnCCCCCCCCOPF"''[m
+[1m[31m[32m  (N\\[31mXCbngg,._____.,gnnndCCCCCCCCCCCCF"___,,,,___[m
+[1m[31m[32m   \N\\[31mXCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCOOOOPYvv.[m
+[1m[31m[32m    \N\\[31mXCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCPF"''[m
+[1m[31m[32m     \N\\[31mXCCCCCCCCCCCCCCCCCCCCCCCCCOF"'[m
+[1m[31m[32m      \N\\[31mXCCCCCCCCCCCCCCCCCCCCOF"'[m
+[1m[31m[32m       \N\\[31mXCCCCCCCCCCCCCCCPF"'[m
+[1m[31m[32m        \N\\[31m\"PCOCCCOCCFP""[m
+[1m[31m[32m         \N\\[m
+[1m[32m          \N\\[m
+[1m[32m           \N\\[m
+[1m[32m            \NN\[m
+[1m[32m             \NN\[m
+[1m[32m              \NNA.[m
+[1m[32m               \NNA,[m
+[1m[32m                \NNN,[m
+[1m[32m                 \NNN\[m
+[1m[32m                  \NNN\[m
+[1m[32m                   \NNNA[m
+[m

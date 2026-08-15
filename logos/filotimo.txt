@@ -1,0 +1,23 @@
+# distro: Filotimo
+[m                                            
+[1m[31mO      '[m
+[1m[31mlk:    ;xX.      .0K          '[m
+[1m[31mlodk   ;lldK'    .lld0O       :okX;[m
+[1m[31mlloo0  ;lllld0:  .lllllxKx    :clllkKk[m
+[1m[31mllllo, ;llllloox .clllllloxK  :cclllllx0N[m
+[1m[31mlllll, ;llllllll .cclllllllo' :cccclllllld[m
+[1m[31mcllll, ;cclllllc .ccccllllll' :cccccclllll[m
+[1m[31mcllll, ;cccllllc  ccccccllll' ::cccccclllc[m
+[1m[31mccccl, ;cccccllc  :cccccccll' :::ccccccclc[m
+[1m[31mccccc, ;cccccccc  ::cccccccl' :::::ccccccc[m
+[1m[31m:cccc, ;:ccccccc  ::::cccccc' :::::::ccccc[m
+[1m[31m:cccc, ;:::ccccc  ::::::cccc' :;::::::ccc:[m
+[1m[31m:::cc, ;:::::ccc  ;:::::::cc' :;;:::::::c:[m
+[1m[31m:::::, ;:::::::c  ;;:::::::c' :;;;;:::::::[m
+[1m[31m:::::, ;;::::::c  ;;;;::::::' :;;;;;::::::[m
+[1m[31m;::::, ,;;;::::c  ,;;;;;::::'  ';;;;;;::::[m
+[1m[31m';;::,   ;;;;:::    .;;;;;::'     .;;;;;::[m
+[1m[31m  ;;;,     ;;;;:       .;;;:'         ;;;:[m
+[1m[31m   ,;,       ,;:          ';'[m
+[1m[31m    .,[m
+[m

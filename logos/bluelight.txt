@@ -1,0 +1,22 @@
+# distro: BlueLight
+[m                                          
+[1m[31m              oMMNMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m              oMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m              oMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m              oMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m              -+++++++++++++++++++++++mM[32m[m
+[1m[32m             ```````````````````````..[31mdM[32m[m
+[1m[32m           ```````````````````````....[31mdM[32m[m
+[1m[32m         ```````````````````````......[31mdM[32m[m
+[1m[32m       ```````````````````````........[31mdM[32m[m
+[1m[32m     ```````````````````````..........[31mdM[32m[m
+[1m[32m   ```````````````````````............[31mdM[32m[m
+[1m[32m.::::::::::::::::::::::-..............[31mdM[32m[m
+[1m[32m `-+yyyyyyyyyyyyyyyyyyyo............[31m+mMM[32m[m
+[1m[32m     -+yyyyyyyyyyyyyyyyo..........[31m+mMMMM[32m[m
+[1m[32m        ./syyyyyyyyyyyyo........[31m+mMMMMMM[32m[m
+[1m[32m           ./oyyyyyyyyyo......[31m+mMMMMMMMM[32m[m
+[1m[32m              omdyyyyyyo....[31m+mMMMMMMMMMM[32m[m
+[1m[32m              [31moMMM[32mmdhyyo..[31m+mMMMMMMMMMMMM[m
+[1m[31m              oNNNNNNm[32mdso[31mmMMMMMMMMMMMMMM[m
+[m

@@ -1,0 +1,23 @@
+# distro: ubuntu_old
+[m                                          
+[1m[31m             --+oossssssoo+--[m
+[1m[31m         .:+ssssssssssssssssss+:.[m
+[1m[31m       -+ssssssssssssssssssyyssss+-[m
+[1m[31m     .ossssssssssssssssssd[32mMMMNy[31msssso.[m
+[1m[31m   /sssssssssss[32mhdmmNNmmyNMMMMh[31mssssss/[m
+[1m[31m  +sssssssss[32mhm[31myd[32mMMMMMMMNddddy[31mssssssss+[m
+[1m[31m /ssssssss[32mhNMMM[31myh[32mhyyyyhmNMMMNh[31mssssssss/[m
+[1m[31m.ssssssss[32mdMMMNh[31mssssssssss[32mhNMMMd[31mssssssss.[m
+[1m[31m+ssss[32mhhhyNMMNy[31mssssssssssss[32myNMMMy[31msssssss+[m
+[1m[31moss[32myNMMMNyMMh[31mssssssssssssss[32mhmmmh[31mssssssso[m
+[1m[31moss[32myNMMMNyMMh[31msssssssssssssshmmmhssssssso[m
+[1m[31m+ssss[32mhhhyNMMNy[31mssssssssssss[32myNMMMy[31msssssss+[m
+[1m[31m.ssssssss[32mdMMMNh[31mssssssssss[32mhNMMMd[31mssssssss.[m
+[1m[31m /ssssssss[32mhNMMM[31myh[32mhyyyyhdNMMMNh[31mssssssss/[m
+[1m[31m  +sssssssss[32mdm[31myd[32mMMMMMMMMddddy[31mssssssss+[m
+[1m[31m   /sssssssssss[32mhdmNNNNmyNMMMMh[31mssssss/[m
+[1m[31m    .ossssssssssssssssss[32mdMMMNy[31msssso.[m
+[1m[31m     -+sssssssssssssssss[32myyy[31mssss+-[m
+[1m[31m       `:+ssssssssssssssssss+:´[m
+[1m[31m           --+oossssssoo+--[m
+[m

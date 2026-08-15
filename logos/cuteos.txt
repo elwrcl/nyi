@@ -1,0 +1,17 @@
+# distro: CuteOS
+[m                                     
+[1m[31m                       [33m1ua[32m[m
+[1m[32m                  [33mMMM1ua[32m[m
+[1m[32m [31mMM[32mEE        [33m MMMMM1uazE[32m[m
+[1m[32m[31mMM [32mEEEE     [33mM1MM1uazzEn [32mEEEE  MME[m
+[1m[32m    EEEEE  [33mMMM uazEno [32mEEEE[m
+[1m[32m    EEEEE[31mMMMMMMEno~; [32mEE          E[32m[m
+[1m[32m     EE [31mMMMMMMMM~;;E  [32mMMMMM      M [32m[m
+[1m[32m     E [31mMMMMMMMMM          [32m  E  E   [32m[m
+[1m[32m      [31mMMMMMMMMMMM[m
+[1m[31m           [31mMMMMMMMMM [32mEE [31m[m
+[1m[31m                MM1MMMM [32mEEE [31m[m
+[1m[31m                     MMMMM[m
+[1m[31m                          MMM[m
+[1m[31m                              M[m
+[m

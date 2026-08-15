@@ -1,0 +1,25 @@
+# distro: Exherbo
+[m                                            
+[1m[31m[32m ,[m
+[1m[32mOXo.[m
+[1m[32mNXdX0:    .cok0KXNNXXK0ko:.[m
+[1m[32mKX  '0XdKMMK;.xMMMk, .0MMMMMXx;  ...[m
+[1m[32m'NO..xWkMMx   kMMM    cMMMMMX,NMWOxOXd.[m
+[1m[32m  cNMk  NK    .oXM.   OMMMMO. 0MMNo  kW.[m
+[1m[32m  lMc   o:       .,   .oKNk;   ;NMMWlxW'[m
+[1m[32m ;Mc    ..   .,,'    .0M[31mg;[32mWMN'dWMMMMMMO[m
+[1m[32m XX        ,WMMMMW.  cM[31mcfli[32mWMKlo.   .kMk[m
+[1m[32m.Mo        .WM[31mGD[32mMW.   XM[31mWO0[32mMMk        oMl[m
+[1m[32m,M:         ,XMMWx::,''oOK0x;          NM.[m
+[1m[32m'Ml      ,kNKOxxxxxkkO0XXKOd:.         oMk[m
+[1m[32m NK    .0Nxc[33m:::::::::::::::[32mfkKNk,      .MW[m
+[1m[32m ,Mo  .NXc[33m::[32mqXWXb[33m::::::::::[32moo[33m::[32mlNK.    .MW[m
+[1m[32m  ;Wo oMd[33m:::[32moNMNP[33m::::::::[32moWMMMx[33m:[32mc0M;   lMO[m
+[1m[32m   'NO;W0c[33m:::::::::::::::[32mdMMMMO[33m::[32mlMk  .WM'[m
+[1m[32m     xWONXdc[33m::::::::::::::[32moOOo[33m::[32mlXN. ,WMd[m
+[1m[32m      'KWWNXXK0Okxxo,[33m:::::::[32m,lkKNo  xMMO[m
+[1m[32m        :XMNxl,';:lodxkOO000Oxc. .oWMMo[m
+[1m[32m          'dXMMXkl;,.        .,o0MMNo'[m
+[1m[32m             ':d0XWMMMMWNNNNMMMNOl'[m
+[1m[32m                   ':okKXWNKkl'[m
+[m

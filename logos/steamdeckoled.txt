@@ -1,0 +1,27 @@
+# distro: SteamDeckOled
+[m                                       
+[1m[31m[32m           .xXK0kdc'..[m
+[1m[32m           .OMMMMWNK0Odc'.[m
+[1m[32m           .OMMMMMMMMMMWNOl'.[m
+[1m[32m           .OMMMMMMMMMMMMMWXx;.[m
+[1m[32m           .:ddk0XWMMMMMMMMMMNx'[m
+[1m[32m                ..;oxONMMMMMMMWKc.[m
+[1m[32m[31m      ..,;::::;,'.[32m   .;xXMMMMMMMNo.[m
+[1m[32m[31m   .':looooooooool:,..[32m .;OWMMMMMMNl.[m
+[1m[32m[31m  .:oooooooooooooooooc'[32m  .xWMMMMMMK:[m
+[1m[32m[31m 'coooooooooooooooooool,[32m  'OMMMMMMWx.[m
+[1m[32m[31m.coooooooooooooooooooool.[32m  cNMMMMMM0,[m
+[1m[32m[31m'loooooooooooooooooooooo,[32m  ,KMMMMMMX:[m
+[1m[32m[31m'loooooooooooooooooooooo,[32m  ,KMMMMMMX:[m
+[1m[32m[31m.:oooooooooooooooooooooc.[32m  lNMMMMMM0,[m
+[1m[32m[31m .coooooooooooooooooool'[32m  ,0MMMMMMWd.[m
+[1m[32m[31m  .:looooooooooooooolc.[32m  'OWMMMMMMK;[m
+[1m[32m[31m   ..;cloooooooooc;'..[32m .c0WMMMMMMXc.[m
+[1m[32m[31m      ..',;;;;,'..[32m  ..cONMMMMMMMXc.[m
+[1m[32m               ..,cxOKWMMMMMMMW0;.[m
+[1m[32m           .cxk0KNWMMMMMMMMMWXo.[m
+[1m[32m           .OMMMMMMMMMMMMMWKo'[m
+[1m[32m           .OMMMMMMMMMMWKx:.[m
+[1m[32m           .OMMMWNX0Oxl;.[m
+[1m[32m           .o0Oxoc,..[m
+[m

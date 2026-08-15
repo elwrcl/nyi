@@ -1,0 +1,19 @@
+# distro: linuxmint_old
+[m                                     
+[1m[31mMMMMMMMMMMMMMMMMMMMMMMMMMmds+.[m
+[1m[31mMMm----::-://////////////oymNMd+`[m
+[1m[31mMMd      [32m/++                [31m-sNMd:[m
+[1m[31mMMNso/`  [32mdMM    `.::-. .-::.` [31m.hMN:[m
+[1m[31mddddMMh  [32mdMM   :hNMNMNhNMNMNh: [31m`NMm[m
+[1m[31m    NMm  [32mdMM  .NMN/-+MMM+-/NMN` [31mdMM[m
+[1m[31m    NMm  [32mdMM  -MMm  `MMM   dMM. [31mdMM[m
+[1m[31m    NMm  [32mdMM  -MMm  `MMM   dMM. [31mdMM[m
+[1m[31m    NMm  [32mdMM  .mmd  `mmm   yMM. [31mdMM[m
+[1m[31m    NMm  [32mdMM`  ..`   ...   ydm. [31mdMM[m
+[1m[31m    hMM- [32m+MMd/-------...-:sdds  [31mdMM[m
+[1m[31m    -NMm- [32m:hNMNNNmdddddddddy/`  [31mdMM[m
+[1m[31m    -dMNs-[32m``-::::-------.``    [31mdMM[m
+[1m[31m    `/dMNmy+/:-------------:/yMMM[m
+[1m[31m      ./ydNMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m          .MMMMMMMMMMMMMMMMMMM[m
+[m

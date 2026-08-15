@@ -1,0 +1,21 @@
+# distro: Puppy
+[m                                      
+[1m[31m           `-/osyyyysosyhhhhhyys+-[m
+[1m[31m  -ohmNNmh+/hMMMMMMMMNNNNd+dMMMMNM+[m
+[1m[31m yMMMMNNmmddo/NMMMNNNNNNNNNo+NNNNNy[m
+[1m[31m.NNNNNNmmmddds:MMNNNNNNNNNNNh:mNNN/[m
+[1m[31m-NNNdyyyhdmmmd`dNNNNNmmmmNNmdd/os/[m
+[1m[31m.Nm+shddyooo+/smNNNNmmmmNh.   :mmd.[m
+[1m[31m NNNNy:`   ./hmmmmmmmNNNN:     hNMh[m
+[1m[31m NMN-    -++- +NNNNNNNNNNm+..-sMMMM-[m
+[1m[31m.MMo    oNNNNo hNNNNNNNNmhdNNNMMMMM+[m
+[1m[31m.MMs    /NNNN/ dNmhs+:-`  yMMMMMMMM+[m
+[1m[31m mMM+     .. `sNN+.      hMMMMhhMMM-[m
+[1m[31m +MMMmo:...:sNMMMMMms:` hMMMMm.hMMy[m
+[1m[31m  yMMMMMMMMMMMNdMMMMMM::/+o+//dMMd`[m
+[1m[31m   sMMMMMMMMMMN+:oyyo:sMMMNNMMMNy`[m
+[1m[31m    :mMMMMMMMMMMMmddNMMMMMMMMmh/[m
+[1m[31m      /dMMMMMMMMMMMMMMMMMMNdy/`[m
+[1m[31m        .+hNMMMMMMMMMNmdhs/.[m
+[1m[31m            .:/+ooo+/:-.[m
+[m

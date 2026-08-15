@@ -1,0 +1,22 @@
+# distro: GhostFreak
+[m                                            
+[1m[31m              xSSSSSSSSSSSx:[m
+[1m[31m          XSSSSSSSSSSSSSSSSSSSSX[m
+[1m[31m       xSSSSSSSSSSSSSSSSSSSSSSSxSSX[m
+[1m[31m     xSSSSSSSSSSSSSSSSSSSSSSSSSSSSXSS[m
+[1m[31m    SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSXXXS;[m
+[1m[31m  +SSSSSSx++SSSSSSSSSSSSSSSSSSSSSSSSSXSX[m
+[1m[31m  SSSSS:::::::SSSSSSSSSSSSSXSSSSSSSSSS+S+[m
+[1m[31m XSSSX::::::::XxSSSSSSSSXSx;::xSSSSSSSSSS[m
+[1m[31m;SSSS:::::::::XSSSSSSSSS+:::::::xSSSSSSSS;[m
+[1m[31m+SSSSx::::::::SSSSSSSSS;:::::::::XSSSSSSSX[m
+[1m[31m SSSSXSx:::::SSSSxXSSSS::::::::::XSSSSSSSX[m
+[1m[31m xSSSSSSSSSSSS:::::SSSX::::::::::XSSSSSSS;[m
+[1m[31m  +SSSSSSSSSSSSSSX:SSSSS;:::::::SxSSSSSSS[m
+[1m[31m    +SSSSSSSSSSSSSSSSSSSSSSSSSXSSxSSSSSS[m
+[1m[31m       xxSSSSSSSSSSSSSSSSSSSSSSSSSSSSSx[m
+[1m[31m        SSSSSSSSSSSSSSSSSSSSSSSSSSSX[m
+[1m[31m        xXSSSSSSSSSSSSX[m
+[1m[31m        SSS +SSSxSSSSS[m
+[1m[31m             ;x  xSSx[m
+[m

@@ -1,0 +1,22 @@
+# distro: Nurunner
+[m                                         
+[1m[31m                  ,xc[m
+[1m[31m                ;00cxXl[m
+[1m[31m              ;K0,   .xNo.[m
+[1m[31m            :KO'       .lXx.[m
+[1m[31m          cXk.    ;xl     cXk.[m
+[1m[31m        cXk.    ;k:.,xo.    cXk.[m
+[1m[31m     .lXx.    :x::0MNl,dd.    :KO,[m
+[1m[31m   .xNx.    cx;:KMMMMMNo'dx.    ;KK;[m
+[1m[31m .dNl.    cd,cXMMMMMMMMMWd,ox'    'OK:[m
+[1m[31m;WK.    'K,.KMMMMMMMMMMMMMWc.Kx     lMO[m
+[1m[31m 'OK:    'dl'xWMMMMMMMMMM0::x:    'OK:[m
+[1m[31m   .kNo    .xo'xWMMMMMM0;:O:    ;KK;[m
+[1m[31m     .dXd.   .do,oNMMO;ck:    ;00,[m
+[1m[31m        oNd.   .dx,;'cO;    ;K0,[m
+[1m[31m          oNx.    okk;    ;K0,[m
+[1m[31m            lXx.        :KO'[m
+[1m[31m              cKk'    cXk.[m
+[1m[31m                ;00:lXx.[m
+[1m[31m                  ,kd.[m
+[m

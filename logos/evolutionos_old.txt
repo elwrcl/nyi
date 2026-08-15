@@ -1,0 +1,21 @@
+# distro: EvolutionOS_old
+[m                                   
+[1m[31m    dddddddddddddddddddddddd[m
+[1m[31m.dddd''''''''''''''''''''''dddd.[m
+[1m[31mdd:   dddddddddddddddddddd;   dd:[m
+[1m[31mdd:   ldl:''''''''''''''''    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl: ddddddd;  ddddd;   dd:[m
+[1m[31mdd:   ldl: '''''''   '''''    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl:                    dd:[m
+[1m[31mdd:   ldl: ddddddddddddddd;   dd:[m
+[1m[31mdddd:.'''  '''''''''''''''  dddd:[m
+[1m[31m   dddddddddddddddddddddddddd;;'[m
+[1m[31m    '''''''''''''''''''''''''[m
+[m

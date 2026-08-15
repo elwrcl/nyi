@@ -1,0 +1,21 @@
+# distro: android
+[m                                  
+[1m[31m         -o          o-[m
+[1m[31m          +hydNNNNdyh+[m
+[1m[31m        +mMMMMMMMMMMMMm+[m
+[1m[31m      `dMM[32mm:[31mNMMMMMMN[32m:m[31mMMd`[m
+[1m[31m      hMMMMMMMMMMMMMMMMMMh[m
+[1m[31m  ..  yyyyyyyyyyyyyyyyyyyy  ..[m
+[1m[31m.mMMm`MMMMMMMMMMMMMMMMMMMM`mMMm.[m
+[1m[31m:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:[m
+[1m[31m:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:[m
+[1m[31m:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:[m
+[1m[31m:MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM:[m
+[1m[31m-MMMM-MMMMMMMMMMMMMMMMMMMM-MMMM-[m
+[1m[31m +yy+ MMMMMMMMMMMMMMMMMMMM +yy+[m
+[1m[31m      mMMMMMMMMMMMMMMMMMMm[m
+[1m[31m      `/++MMMMh++hMMMM++/`[m
+[1m[31m          MMMMo  oMMMM[m
+[1m[31m          MMMMo  oMMMM[m
+[1m[31m          oNMm-  -mMNs[m
+[m

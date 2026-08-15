@@ -1,0 +1,21 @@
+# distro: Grombyang
+[m                                     
+[1m[31m            eeeeeeeeeeee[m
+[1m[31m         eeeeeeeeeeeeeeeee[m
+[1m[31m      eeeeeeeeeeeeeeeeeeeeeee[m
+[1m[31m    eeeee       [32m.o+       [31meeee[m
+[1m[31m  eeee         [32m`ooo/         [31meeee[m
+[1m[31m eeee         [32m`+oooo:         [31meeee[m
+[1m[31meee          [32m`+oooooo:          [31meee[m
+[1m[31meee          [32m-+oooooo+:         [31meee[m
+[1m[31mee         [32m`/:oooooooo+:         [31mee[m
+[1m[31mee        [32m`/+   +++    +:        [31mee[m
+[1m[31mee              [32m+o+\             [31mee[m
+[1m[31meee             [32m+o+\            [31meee[m
+[1m[31meee        [32m//  \ooo/  \\        [31meee[m
+[1m[31m eee      [32m//++++oooo++++\\     [31meee[m
+[1m[31m  eeee    [32m::::++oooo+:::::   [31meeee[m
+[1m[31m    eeeee   [33mGrombyang OS [31m  eeee[m
+[1m[31m      eeeeeeeeeeeeeeeeeeeeeee[m
+[1m[31m         eeeeeeeeeeeeeeeee[m
+[m

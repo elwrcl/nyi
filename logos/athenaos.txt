@@ -1,0 +1,32 @@
+# distro: AthenaOS
+[m                                                   
+[1m[31m                                             u.[m
+[1m[31m                                          ..:Y[m
+[1m[31m                                        .Y..1[m
+[1m[31m                    ..::i::..          .br7S.[m
+[1m[31m                  .::::...::::.       5dDr:[m
+[1m[31m              ..:::..       .:i::..   Y7:[m
+[1m[31m         ..:::::..             ..::::.[m
+[1m[31m  ...:i:i:i:..         [32m...        [31m:.:..:i:::...[m
+[1m[31m ::i:.                [32m.USL       Yr        [31m..i::.[m
+[1m[31m.:::.                  [32m:K      :u.           [31m.::.[m
+[1m[31m:... [32mjB.             .:vUi:   77         KB: [31m..::[m
+[1m[31m...: [32miBR        vP::5X5PgSKXvLjS.       iBB  [31m.::.[m
+[1m[31m:i::  [32mBBQr       jgDIuj1UuJjXbbi       2BBP  [31m:::;[m
+[1m[31m'i::   [32msQBg:      i2S55121XSSU.      YBQZ:  [31m.:::[m
+[1m[31m r:::  [32mr:JgBMu.   Q :BqEqZEB: Q   :qBBK7i:  [31m:i:i[m
+[1m[31m .rir. [32mIBqPDgQBDr P    rB    :q 1QBRgEqgB  [31m.::i.[m
+[1m[31m  :i:i  [32m:JsXPDDRQQPBL   P   qQXBQRDDPIYY   [31mrir:[m
+[1m[31m   :iii  [32m5qvLUDDMgMgBB5  :DBQZRgMDdJ7Ygi  [31miir:[m
+[1m[31m    iri:  [32mMBRgdZZggQgRBMIBQQRRggdZdMBBr  [31mriri[m
+[1m[31m     irii  [32mIBQgdZbDDRRRgQgQQMZDdZdgBB.  [31miiri[m
+[1m[31m      i7rr  [32m.BBQZZbEEMQQDBQMEZdDDBBP  [31m.rir:[m
+[1m[31m       :7ir.  [32m7BBQMDMQSbB5ZBggQBBQ.  [31mivr7.[m
+[1m[31m         :r7r.  [32m7BBBB:rBbQ.1BBBM.  [31m:r7vi[m
+[1m[31m         ::rLrr.  [32m.b:rBQ7QB uU.  [31m:7vLi.[m
+[1m[31m       .BB  .iLYv:   [31midL B1    [31m:r77r.[m
+[1m[31m      LBB      :vrvvr       rvu7r:[m
+[1m[31m     ZB.         ':7v177Lsvurr:'[m
+[1m[31m   .d2              ''::r:''[m
+[1m[31m   :'[m
+[m

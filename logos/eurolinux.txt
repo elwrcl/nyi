@@ -1,0 +1,21 @@
+# distro: EuroLinux
+[m                                     
+[1m[31m                __[m
+[1m[31m         -wwwWWWWWWWWWwww-[m
+[1m[31m        -WWWWWWWWWWWWWWWWWWw-[m
+[1m[31m          \WWWWWWWWWWWWWWWWWWW-[m
+[1m[31m  _Ww      `WWWWWWWWWWWWWWWWWWWw[m
+[1m[31m -W[32mE[31mWww                -WWWWWWWWW-[m
+[1m[31m_WW[32mU[31mWWWW-                _WWWWWWWW[m
+[1m[31m_WW[32mR[31mWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW-[m
+[1m[31mwWW[32mO[31mWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW[m
+[1m[31mWWW[32mL[31mWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWw[m
+[1m[31mWWW[32mI[31mWWWWWWWWWWWWWWWWWWWWWWWWWWWWww-[m
+[1m[31mwWW[32mN[31mWWWWw[m
+[1m[31m WW[32mU[31mWWWWWWw[m
+[1m[31m wW[32mX[31mWWWWWWWWww[m
+[1m[31m   wWWWWWWWWWWWWWWWw[m
+[1m[31m    wWWWWWWWWWWWWWWWw[m
+[1m[31m       WWWWWWWWWWWWWw[m
+[1m[31m           wWWWWWWWw[m
+[m

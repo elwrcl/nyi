@@ -1,0 +1,16 @@
+# distro: opensuse-tumbleweed_old
+[m                                                      
+[1m[31m                                     ......[m
+[1m[31m     .,cdxxxoc,.               .:kKMMMNWMMMNk:.[m
+[1m[31m    cKMMN0OOOKWMMXo. A        ;0MWk:'      ':OMMk.[m
+[1m[31m  ;WMK;'       'lKMMNM,     :NMK'             'OMW;[m
+[1m[31m cMW;             WMMMN   ,XMK'                 oMM.[m
+[1m[31m.MMc             ''^*~l. xMN:                    KM0[m
+[1m[31m'MM.                   .NMO                      oMM[m
+[1m[31m.MM,                 .kMMl                       xMN[m
+[1m[31m KM0               .kMM0' .dl>~,.               .WMd[m
+[1m[31m 'XM0.           ,OMMK'    OMMM7'              .XMK[m
+[1m[31m   *WMO:.    .;xNMMk'       NNNMKl.          .xWMx[m
+[1m[31m     ^ONMMNXMMMKx;          V  'xNMWKkxllox0NMWk'[m
+[1m[31m         '''''                    ':dOOXXKOxl'[m
+[m

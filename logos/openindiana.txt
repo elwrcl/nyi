@@ -1,0 +1,19 @@
+# distro: OpenIndiana
+[m                                          
+[1m[31m[32m                         .sy/[m
+[1m[32m                         .yh+[m
+
+[1m[32m           [31m-+syyyo+-     [32m /+.[m
+[1m[32m         [31m+ddo/---/sdh/   [32m ym-[m
+[1m[32m       [31m`hm+        `sms[32m   ym-```````.-.[m
+[1m[32m       [31msm+           sm/ [32m ym-         +s[m
+[1m[32m       [31mhm.           /mo [32m ym-         /h[m
+[1m[32m       [31momo           ym: [32m ym-       `os`[m
+[1m[32m        [31msmo`       .ym+ [32m  ym-     .os-[m
+[1m[32m     ``  [31m:ymy+///oyms- [32m   ym-  .+s+.[m
+[1m[32m   ..`     [31m`:+oo+/-`  [32m    -//oyo-[m
+[1m[32m -:`                   .:oys/.[m
+[1m[32m+-               `./oyys/.[m
+[1m[32mh+`      `.-:+oyyyo/-`[m
+[1m[32m`/ossssysso+/-.`[m
+[m

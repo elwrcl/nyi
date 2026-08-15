@@ -1,0 +1,24 @@
+# distro: Xray_OS
+[m                                                         
+[1m[31m               [31mrrrrrraaaaaaaaaaaayyyy[m
+[1m[31m           [31mxxrrrrrrrraaaaaaaaaaaayyyyyyyyy[m
+[1m[31m        [31mxxxxxrrrrrrrraaaaaaaaaaaayyyyyyy[33myyyyy[32myyyyyyyyyy[m
+[1m[32m      [31mxxxxxxxrrrrrrrraaaaa [32maaaaayyyyyyyyyyyyyyyyyyy[m
+[1m[32m    [31mxxxxxx[33mxxx[31mrrrrrrrraaaa [32maaaaaaayyyyyyyyyyyyyyyyy[m
+[1m[32m  [31mxxxxxx[33mxxxxxr[31mrrrrrrraa [32maaaaaaaaay[33myyyyyyyyy[32myyyy [31myy[m
+[1m[31m [31mxxxxxxx[33mxxx[31mxxrrrrrrrra [32maaaaaaaaa[33mayyyyyyyyyyyy[31myyyyyy[m
+[1m[31m [31mxxxxxxxxxxxxrrrrrrrr [32maaaaaaaaaaa[33myyyyyyyyyyyy[31myyyyyyy[m
+[1m[31m[31mxxxxxxxxxxxxxrrrrrr [32mraaaaaaaaaaaayyy[33myyyyyyyy[31myyyyyy[31myyy[m
+[1m[31m[31mxxxxxxxxxxxxxrrrrr [32mrraaaaaaaaaaaayyyyy[33myy[32myyyyyy [31myyyyyy[m
+[1m[31m[31mxxxxxxxx[33mxxxx[31mxrrrrr[32mrr[33mraaaaaaa[32maaaaayyyyyyyyyy [31myyyyyyyyy[m
+[1m[31m[31mxxxxxxx[33mxxxx[31mxxrrrrrrr[33mraaaaaa[32maaaaaayyyyyyy [31myyyyyyyyyyyy[m
+[1m[31m[31mxxxxxxx[33mxxx[31mxxxrrrrrrrr[33maaaaaa[32maaaaaayyyy [31myyyyyyyyyyyyyy[m
+[1m[31m [31mxxxxxxxxxxxxrrrrrrrra [32maaaaaaaaaay [31myyyyyyyyyyyyyyyy[m
+[1m[31m  [31mxxxxxxxxxxxrrrrrrr [32maaaaaaaaaaaayyyy[31myyyyyyyyyyyyy[m
+[1m[31m   [31mxxxxxxx[33mxxxrr[31mrrrr [32mraaaaaaaaaaaa [31myyyyyyyyyyyyyyy[m
+[1m[31m     [31mxxxxxxxxrrrr [32mrrraaaaaaaaa [31maayyyyyyyyyyyyyy[m
+[1m[31m       [31mxxxxxxrrrrrrr [32maaaaaa  [31maaaayyyyyyyyyyyy[m
+[1m[31m          [31mxxxrrrrrr [32mraaa  [31maaaaaaayyyyyyyyy[m
+[1m[31m              [31mrrrr [32mrr  [31maaaaaaaaaayyyyyy[m
+[1m[31m                 [32mr   [31maaaaaaaaaa[m
+[m

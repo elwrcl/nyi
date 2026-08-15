@@ -1,0 +1,22 @@
+# distro: ArchBox
+[m                                           
+[1m[31m              ...:+oh/:::..[m
+[1m[31m         ..-/oshhhhhh`   `::::-.[m
+[1m[31m     .:/ohhhhhhhhhhhh`        `-::::.[m
+[1m[31m .+shhhhhhhhhhhhhhhhh`             `.::-.[m
+[1m[31m /`-:+shhhhhhhhhhhhhh`            .-/+shh[m
+[1m[31m /      .:/ohhhhhhhhh`       .:/ohhhhhhhh[m
+[1m[31m /           `-:+shhh`  ..:+shhhhhhhhhhhh[m
+[1m[31m /                 .:ohhhhhhhhhhhhhhhhhhh[m
+[1m[31m /                  `hhhhhhhhhhhhhhhhhhhh[m
+[1m[31m /                  `hhhhhhhhhhhhhhhhhhhh[m
+[1m[31m /                  `hhhhhhhhhhhhhhhhhhhh[m
+[1m[31m /                  `hhhhhhhhhhhhhhhhhhhh[m
+[1m[31m /      .+o+        `hhhhhhhhhhhhhhhhhhhh[m
+[1m[31m /     -hhhhh       `hhhhhhhhhhhhhhhhhhhh[m
+[1m[31m /     ohhhhho      `hhhhhhhhhhhhhhhhhhhh[m
+[1m[31m /:::+`hhhhoos`     `hhhhhhhhhhhhhhhhhs+`[m
+[1m[31m    `--/:`   /:     `hhhhhhhhhhhho/-[m
+[1m[31m             -/:.   `hhhhhhs+:-`[m
+[1m[31m                ::::/ho/-`[m
+[m

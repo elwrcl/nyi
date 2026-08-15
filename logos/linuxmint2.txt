@@ -1,0 +1,22 @@
+# distro: linuxmint2
+[m                                          
+[1m[31m             [32m...-:::::-...[m
+[1m[32m          .-MMMMMMMMMMMMMMM-.[m
+[1m[32m      .-MMMM[31m`..-:::::::-..`[32mMMMM-.[m
+[1m[32m    .:MMMM[31m.:MMMMMMMMMMMMMMM:.[32mMMMM:.[m
+[1m[32m   -MMM[31m-M---MMMMMMMMMMMMMMMMMMM.[32mMMM-[m
+[1m[32m  :MMM[31m:MM`  :MMMM:....::-...-MMMM:[32mMMM:[m
+[1m[32m :MMM[31m:MMM`  :MM:`  ``    ``  `:MMM:[32mMMM:[m
+[1m[32m.MMM[31m.MMMM`  :MM.  -MM.  .MM-  `MMMM.[32mMMM.[m
+[1m[32m:MMM[31m:MMMM`  :MM.  -MM-  .MM:  `MMMM-[32mMMM:[m
+[1m[32m:MMM[31m:MMMM`  :MM.  -MM-  .MM:  `MMMM:[32mMMM:[m
+[1m[32m:MMM[31m:MMMM`  :MM.  -MM-  .MM:  `MMMM-[32mMMM:[m
+[1m[32m.MMM[31m.MMMM`  :MM:--:MM:--:MM:  `MMMM.[32mMMM.[m
+[1m[32m :MMM[31m:MMM-  `-MMMMMMMMMMMM-`  -MMM-[32mMMM:[m
+[1m[32m  :MMM[31m:MMM:`                `:MMM:[32mMMM:[m
+[1m[32m   .MMM[31m.MMMM:--------------:MMMM.[32mMMM.[m
+[1m[32m     '-MMMM[31m.-MMMMMMMMMMMMMMM-.[32mMMMM-'[m
+[1m[32m       '.-MMMM[31m``--:::::--``[32mMMMM-.'[m
+[1m[32m            '-MMMMMMMMMMMMM-'[m
+[1m[32m               ``-:::::-``[m
+[m

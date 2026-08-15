@@ -1,0 +1,23 @@
+# distro: LinuxLite
+[m                    
+[1m[31m          ,xXc[m
+[1m[31m      .l0MMMMMO[m
+[1m[31m   .kNMMMMM[32mW[31mMMMN,[m
+[1m[31m   KMMMMMM[32mK[31mMMMMMMo[m
+[1m[31m  'MMMMMMN[32mK[31mMMMMMM:[m
+[1m[31m  kMMMMMM[32mO[31mMMMMMMO[m
+[1m[31m .MMMMMM[32m0[31mXMMMMMW.[m
+[1m[31m oMMMMM[32mx[31mMMMMMMM:[m
+[1m[31m WMMMMM[32mx[31mMMMMMMO[m
+[1m[31m:MMMMMM[32mO[31mXMMMMW[m
+[1m[31m.0MMMMM[32mx[31mMMMMM;[m
+[1m[31m:;cKMMW[32mx[31mMMMMO[m
+[1m[31m'MMWMMX[32mO[31mMMMMl[m
+[1m[31m kMMMMK[32mO[31mMMMMMX:[m
+[1m[31m .WMMMMK[32mO[31mWMMM0c[m
+[1m[31m  lMMMMMW[32mO[31mWMNd:'[m
+[1m[31m   oollXMK[32mo[31mXxl;.[m
+[1m[31m     ':. .:[32m .[31m'[m
+[1m[31m              [32m..[m
+[1m[32m                .[m
+[m

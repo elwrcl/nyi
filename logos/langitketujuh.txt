@@ -1,0 +1,14 @@
+# distro: langitketujuh
+[m                                        
+[1m[31m[32m. [31m'7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7[m
+[1m[31m[32mL7.   [31m'7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7[m
+[1m[31m[32mL7L7L      [31m7L7L7L7L7L7L7L7L7L7L7L7L7L7[m
+[1m[31m[32mL7L7L7                          [31mL7L7L7[m
+[1m[31m[32mL7L7L7           [31m'L7L7L7L7L7L7L7L7L7L7[m
+[1m[31m[32mL7L7L7               [31m'L7L7L7L7L7L7L7L7[m
+[1m[31m[32mL7L7L7                   [31m'L7L7L7L7L7L7[m
+[1m[31m[32mL7L7L7                          [31mL7L7L7[m
+[1m[31m[32mL7L7L7L7L7L7L7L7L7L7LL7L7L7.    [31m'7L7L7[m
+[1m[31m[32mL7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L.   [31m'L7[m
+[1m[31m[32mL7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7L7.  [31m'[m
+[m

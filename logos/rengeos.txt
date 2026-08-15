@@ -1,0 +1,19 @@
+# distro: RengeOS
+[m                                         
+[1m[31m                                    ..[m
+[1m[31m                                  .:~!.[m
+[1m[31m                      ...::^~!!7?J?:[m
+[1m[31m            ..::^^~~!!!7?JYYYYYYY?.[m
+[1m[31m           .::::..::^!7?JJYYYJYY![m
+[1m[31m:~~~:..      .:~!?JJYYYYYYYJ!?J^[m
+[1m[31m  :!?JJ?7!!7?JYYYYYYYYYYYJ~.~?:[m
+[1m[31m     :~?YYYYYYYYYYYYYYY?~. ^7.[m
+[1m[31m        .~?YYYYYYYYYY?^   .~[m
+[1m[31m   ..:~!7?JYYYYYYYY?^[m
+[1m[31m.^~!7777777JYYYYY7:[m
+[1m[31m          ^YYYJ7:[m
+[1m[31m         :YYJ!:[m
+[1m[31m        :JJ!.[m
+[1m[31m       .7~.[m
+[1m[31m       ..[m
+[m

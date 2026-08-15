@@ -1,0 +1,22 @@
+# distro: Mageia
+[m                          
+[1m[31m        .°°.[m
+[1m[31m         °°   .°°.[m
+[1m[31m         .°°°. °°[m
+[1m[31m         .   .[m
+[1m[31m          °°° .°°°.[m
+[1m[31m      .°°°.   '___'[m
+[1m[31m[32m     .[31m'___'     [32m   .[m
+[1m[32m   :dkxc;'.  ..,cxkd;[m
+[1m[32m .dkk. kkkkkkkkkk .kkd.[m
+[1m[32m.dkk.  ';cloolc;.  .kkd[m
+[1m[32mckk.                .kk;[m
+[1m[32mxO:                  cOd[m
+[1m[32mxO:                  lOd[m
+[1m[32mlOO.                .OO:[m
+[1m[32m.k00.              .00x[m
+[1m[32m .k00;            ;00O.[m
+[1m[32m  .lO0Kc;,,,,,,;c0KOc.[m
+[1m[32m     ;d00KKKKKK00d;[m
+[1m[32m        .,KKKK,.[m
+[m

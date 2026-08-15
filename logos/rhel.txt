@@ -1,0 +1,21 @@
+# distro: rhel
+[m                                          
+[1m[31m           .MMM..:MMMMMMM[m
+[1m[31m          MMMMMMMMMMMMMMMMMM[m
+[1m[31m          MMMMMMMMMMMMMMMMMMMM.[m
+[1m[31m         MMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m        ,MMMMMMMMMMMMMMMMMMMMMM:[m
+[1m[31m        MMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m MMMMMM    `MMMMMMMMMMMMMMMMMMMM.[m
+[1m[31mMMMMMMMM      MMMMMMMMMMMMMMMMMM .[m
+[1m[31mMMMMMMMMM.       `MMMMMMMMMMMMM' MM.[m
+[1m[31mMMMMMMMMMMM.                     MMMM[m
+[1m[31m`MMMMMMMMMMMMM.                 ,MMMMM.[m
+[1m[31m `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.[m
+[1m[31m    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:[m
+[1m[31m         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[31m            `MMMMMMMMMMMMMMMMMMMMMMMM:[m
+[1m[31m                ``MMMMMMMMMMMMMMMMM'[m
+[m

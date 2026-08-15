@@ -1,0 +1,23 @@
+# distro: Archcraft2
+[m                                            
+[1m[31m                   -o\[m
+[1m[31m                  :ooo:[m
+[1m[31m                 .ooooo.[m
+[1m[31m                 ooooooo.[m
+[1m[31m                +oooooooo.[m
+[1m[31m               -oooooooooo.[m
+[1m[31m              --:-+oooooooo.[m
+[1m[31m             yooo+=+sooooooo.[m
+[1m[31m            yoooooosooooooooo.[m
+[1m[31m           y+ooooooooooooooooo.[m
+[1m[31m          yoooooooooooooooooooo`[m
+[1m[31m         yoooooo+oo=  :oo++ooooo`[m
+[1m[31m        :oooooo.           +ooooo-[m
+[1m[31m       -ooooooo.   .::.    +ooosoo=[m
+[1m[31m      -oooooo`    .oooo`     +os-=o=[m
+[1m[31m     =ooooooo=:    `oo+    :=ooo=--`.[m
+[1m[31m    +ooooooooos.          .=sooooooo+-[m
+[1m[31m  .+osossos+-`              `-+osososs+.[m
+[1m[31m :sss+=-:`                     `:-=+ssss:[m
+[1m[31m:=-:`                                `-=+:[m
+[m

@@ -1,0 +1,23 @@
+# distro: OSMC
+[m                                          
+[1m[31m            -+shdmNNNNmdhs+-[m
+[1m[31m        .+hMNho/:..``..:/ohNMh+.[m
+[1m[31m      :hMdo.                .odMh:[m
+[1m[31m    -dMy-                      -yMd-[m
+[1m[31m   sMd-                          -dMs[m
+[1m[31m  hMy       +.            .+       yMh[m
+[1m[31m yMy        dMs.        .sMd        yMy[m
+[1m[31m:Mm         dMNMs`    `sMNMd        `mM:[m
+[1m[31myM+         dM//mNs``sNm//Md         +My[m
+[1m[31mmM-         dM:  +NNNN+  :Md         -Mm[m
+[1m[31mmM-         dM: `oNN+    :Md         -Mm[m
+[1m[31myM+         dM/+NNo`     :Md         +My[m
+[1m[31m:Mm`        dMMNs`       :Md        `mM:[m
+[1m[31m yMy        dMs`         -ms        yMy[m
+[1m[31m  hMy       +.                     yMh[m
+[1m[31m   sMd-                          -dMs[m
+[1m[31m    -dMy-                      -yMd-[m
+[1m[31m      :hMdo.                .odMh:[m
+[1m[31m        .+hMNho/:..``..:/ohNMh+.[m
+[1m[31m            -+shdmNNNNmdhs+-[m
+[m

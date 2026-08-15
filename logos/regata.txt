@@ -1,0 +1,23 @@
+# distro: Regata
+[m                                          
+[1m[31m            ddhso+++++osydd[m
+[1m[31m        dho/.`hh[32m.:/+/:.[31mhhh`:+yd[m
+[1m[31m      do-hhhhhh[32m/sssssss+`[31mhhhhh./yd[m
+[1m[31m    h/`hhhhhhh[32m-sssssssss:[31mhhhhhhhh-yd[m
+[1m[31m  do`hhhhhhhhh[32m`ossssssso.[31mhhhhhhhhhh/d[m
+[1m[31m d/hhhhhhhhhhhh[32m`/ossso/.[31mhhhhhhhhhhhh.h[m
+[1m[31m /hhhhhhhhhhhh[33m`-/osyso/-`[31mhhhhhhhhhhhh.h[m
+[1m[31mshh[34m-/ooo+-[31mhhh[33m:syyso+osyys/`[31mhhh[35m`+oo`[31mhhh/[m
+[1m[31mh[34m`ohhhhhhho`[33m+yyo.[31mhhhhh[33m.+yyo`[35m.sssssss.[31mh`h[m
+[1m[31ms[34m:hhhhhhhhho[33myys`[31mhhhhhhh[33m.oyy/[35mossssssso-[31mhs[m
+[1m[31ms[34m.yhhhhhhhy/[33myys`[31mhhhhhhh[33m.oyy/[35mossssssso-[31mhs[m
+[1m[31mhh[34m./syyys+.[31m [33m+yy+.[31mhhhhh[33m.+yyo`[35m.ossssso/[31mh`h[m
+[1m[31mshhh[34m``.`[31mhhh[33m`/syyso++oyys/`[31mhhh[35m`+++-`[31mhh:h[m
+[1m[31md/hhhhhhhhhhhh[33m`-/osyso+-`[31mhhhhhhhhhhhh.h[m
+[1m[31m d/hhhhhhhhhhhh[36m`/ossso/.[31mhhhhhhhhhhhh.h[m
+[1m[31m  do`hhhhhhhhh[36m`ossssssso.[31mhhhhhhhhhh:h[m
+[1m[31m    h/`hhhhhhh[36m-sssssssss:[31mhhhhhhhh-yd[m
+[1m[31m      h+.hhhhhh[36m+sssssss+[31mhhhhhh`/yd[m
+[1m[31m        dho:.hhh[36m.:+++/.[31mhhh`-+yd[m
+[1m[31m            ddhso+++++osyhd[m
+[m

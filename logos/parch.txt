@@ -1,0 +1,28 @@
+# distro: Parch
+[m                             
+[1m[31m            ,:lodddd.[m
+[1m[31m          .:clooood.[m
+[1m[31m        ;clllooooc[m
+[1m[31m      ;cclllllloo[m
+[1m[31m     .cccccllllll[m
+[1m[31m   .   ,cccclllll[m
+[1m[31m  ':::;; ccccclll;[m
+[1m[31m .:::cccccccccccll;[m
+[1m[31m ;::::ccccllllllcll:[m
+[1m[31m.;::::cccclllloool::;[m
+[1m[31m;;;::::cccclllolc::::;.[m
+[1m[31m;;;::::cccclllccc:::::;.[m
+[1m[31m;;;::::cccclccccc::::::;.[m
+[1m[31m;;;;::::::llcccccc:::::'[m
+[1m[31m;;;;:; ,clllccccccc::[m
+[1m[31m.;;  .cllllllcccccc::;::::'[m
+[1m[31m    .'''''''''',:lddoooolll[m
+[1m[31m   '.....'''',cdddooooollll[m
+[1m[31m  ........':oddddoooolllllc[m
+[1m[31m   ....';ldddddooooolllllc:[m
+[1m[31m     ,cdddddddooooollllccc[m
+[1m[31m      :ddddddoooolllllccc[m
+[1m[31m        ;ddooooolllllcc.[m
+[1m[31m           :ooollllc.[m
+[1m[31m               c'[m
+[m

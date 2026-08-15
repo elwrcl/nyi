@@ -1,0 +1,12 @@
+# distro: openwrt_small
+[m                 
+[1m[31m     ..,..[m
+[1m[31m ,odM"""""Mbo,[m
+[1m[31m `.odMMMMMbo.`[m
+[1m[31m [32md,[31m" ,mmm, "[32m,b[m
+[1m[32miM   [31m" . "   [32mMi[m
+[1m[32mMl    [31mdMb    [32mlM[m
+[1m[32m'M,    [31m'    [32m.M'[m
+[1m[32m "0b.     ,d0"[m
+[1m[32m   `"WWWWW"`[m
+[m

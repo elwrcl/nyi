@@ -1,0 +1,9 @@
+# distro: T2_small
+[m               
+[1m[31m[32mTTTTTTTTTT[m
+[1m[32m    tt   [31m222[32m[m
+[1m[32m    tt  [31m2   2[32m[m
+[1m[32m    tt     [31m2[32m[m
+[1m[32m    tt    [31m2[32m[m
+[1m[32m    tt  [31m22222[32m[m
+[m

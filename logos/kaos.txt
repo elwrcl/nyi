@@ -1,0 +1,19 @@
+# distro: KaOS
+[m                                     
+[1m[31m                     ..[m
+[1m[31m  .....         ..OSSAAAAAAA..[m
+[1m[31m .KKKKSS.     .SSAAAAAAAAAAA.[m
+[1m[31m.KKKKKSO.    .SAAAAAAAAAA...[m
+[1m[31mKKKKKKS.   .OAAAAAAAA.[m
+[1m[31mKKKKKKS.  .OAAAAAA.[m
+[1m[31mKKKKKKS. .SSAA..[m
+[1m[31m.KKKKKS..OAAAAAAAAAAAA........[m
+[1m[31m DKKKKO.=AA=========A===AASSSO..[m
+[1m[31m  AKKKS.==========AASSSSAAAAAASS.[m
+[1m[31m  .=KKO..========ASS.....SSSSASSSS.[m
+[1m[31m    .KK.       .ASS..O.. =SSSSAOSS:[m
+[1m[31m     .OK.      .ASSSSSSSO...=A.SSA.[m
+[1m[31m       .K      ..SSSASSSS.. ..SSA.[m
+[1m[31m                 .SSS.AAKAKSSKA.[m
+[1m[31m                    .SSS....S..[m
+[m

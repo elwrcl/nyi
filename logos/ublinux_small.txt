@@ -1,0 +1,14 @@
+# distro: UBLinux_small
+[m                    
+[1m[31m[31m       UUUU[m
+[1m[31m[31m    UUUUUUUUUU[m
+[1m[31m[31m [32mBBB[31mUUUU[32mBBBBBB[31mUU[33m#[m
+[1m[33m[31mU[32mBBB[31mUUUU[32mBBB[31mUUU[32mB[31mUU[33m#[m
+[1m[33m[31mU[32mBBB[31mUUUU[32mBBB[31mUUU[32mB[31mUU[33m#[m
+[1m[33m[31mU[32mBBB[31mUUUU[32mBBBBBB[31mUUU[33m#[m
+[1m[33m[31mU[32mBBB[31mUUUU[32mBBB[31mUUU[32mBB[31mU[33m#[m
+[1m[33m[31mUU[32mBBB[31mUUU[32mBBB[31mUUU[32mBB[31mU[33m#[m
+[1m[33m[31m UU[32mBBBBBBBBBBB[31mUU[33m#[m
+[1m[33m[31m    UUUUUUUUU[33m#[m
+[1m[33m[31m       UUU[33m#[m
+[m

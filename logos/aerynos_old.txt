@@ -1,0 +1,19 @@
+# distro: AerynOS_old
+[m                                                
+[1m[31m                       ;llll.[m
+[1m[31m                      0MMMMMM:[m
+[1m[31m                     NMMMMMMMMd[m
+[1m[31m    .@   .cccccccccoWMMMMMMMMMM0[m
+[1m[31m    @@  .MMMMMMMMMMMMMMMMMMMMMMMN[m
+[1m[31m                 OMMMMMMMMMMMMMMMW.[m
+[1m[31m.@             .MMMMMMMMMMMMMMMMMMM.[m
+[1m[31m.@    dMMMMMMMMMMMMMMMMMMl OMMMMMMMMk[m
+[1m[31m               .OWMMMMM;   dMMMMMMMMMk[m
+[1m[31m                            .MMMMMMMMMk[m
+[1m[31m @@   ooooooooooooooooooo    .MMMMMMMMMN[m
+[1m[31m .@  oooooMMMMMMMMMMMMP        NMMMMMMMMW.[m
+[1m[31m         KMMMMMMMMMM.           0MMMMMMMMM:[m
+[1m[31m        NMMMMMMMMM.              dMMMMMMMMMd[m
+[1m[31m      .WMMMMMMMW.                  XMMMMMMMMO[m
+[1m[31m     .MMMMMMMk.                     xMMMMMMMMX[m
+[m

@@ -1,0 +1,23 @@
+# distro: Kubuntu
+[m                                          
+[1m[31m[31m           `.:/ossyyyysso/:.[m
+[1m[31m        .:oyyyyyyyyyyyyyyyyyyo:`[m
+[1m[31m      -oyyyyyyyo[32mdMMy[31myyyyyyysyyyyo-[m
+[1m[31m    -syyyyyyyyyy[32mdMMy[31moyyyy[32mdmMMy[31myyyys-[m
+[1m[31m   oyyys[32mdMy[31msyyyy[32mdMMMMMMMMMMMMMy[31myyyyyyo[m
+[1m[31m `oyyyy[32mdMMMMy[31msyysoooooo[32mdMMMMy[31myyyyyyyyo`[m
+[1m[31m oyyyyyy[32mdMMMMy[31myyyyyyyyyyys[32mdMMy[31msssssyyyo[m
+[1m[31m-yyyyyyyy[32mdMy[31msyyyyyyyyyyyyyys[32mdMMMMMy[31msyyy-[m
+[1m[31moyyyysoo[32mdMy[31myyyyyyyyyyyyyyyyyy[32mdMMMMy[31msyyyo[m
+[1m[31myyys[32mdMMMMMy[31myyyyyyyyyyyyyyyyyysosyyyyyyyy[m
+[1m[31myyys[32mdMMMMMy[31myyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[31moyyyyysos[32mdy[31myyyyyyyyyyyyyyyyyy[32mdMMMMy[31msyyyo[m
+[1m[31m-yyyyyyyy[32mdMy[31msyyyyyyyyyyyyyys[32mdMMMMMy[31msyyy-[m
+[1m[31m oyyyyyy[32mdMMMy[31msyyyyyyyyyyys[32mdMMy[31moyyyoyyyo[m
+[1m[31m `oyyyy[32mdMMMy[31msyyyoooooo[32mdMMMMy[31moyyyyyyyyo[m
+[1m[31m   oyyysyyoyyyys[32mdMMMMMMMMMMMy[31myyyyyyyo[m
+[1m[31m    -syyyyyyyyy[32mdMMMy[31msyyy[32mdMMMy[31msyyyys-[m
+[1m[31m      -oyyyyyyy[32mdMMy[31myyyyyysosyyyyo-[m
+[1m[31m        ./oyyyyyyyyyyyyyyyyyyo/.[m
+[1m[31m           `.:/oosyyyysso/:.`[m
+[m

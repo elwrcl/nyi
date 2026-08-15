@@ -1,0 +1,21 @@
+# distro: Salix
+[m                                          
+[1m[31m              __s_aaaaaaaaauuoXSSSSSSSS:[m
+[1m[31m          ._xSSSSSSSSSSSSSSSSSSSSSSSSSS:[m
+[1m[31m        _aSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:[m
+[1m[31m      _xSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:[m
+[1m[31m     <XSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:[m
+[1m[31m    -"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'[m
+[1m[31m  .ssssssssssssssssssssssssssssssssssss[m
+[1m[31m  {SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSl[m
+[1m[31m  oSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS;[m
+[1m[31m :XSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS;[m
+[1m[31m {SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS[m
+[1m[31m -"""""""""""""""""""""""""""""""""""'[m
+[1m[31m <assssssssssssssssssssssssssssssss>[m
+[1m[31m nSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS}[m
+[1m[31m nSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS}`[m
+[1m[31m XSSSSSSSSSSSSSSSSSSSSSSSSSSSS"`[m
+[1m[31m SSSSSSSSSSSSSSSSSSSSSSSSS!"`[m
+[1m[31m-""""""""""""""""""""""`[m
+[m

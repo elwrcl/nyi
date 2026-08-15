@@ -1,0 +1,25 @@
+# distro: OpenMandriva
+[m                                           
+[1m[31m                 ``````[m
+[1m[31m            `-:/+++++++//:-.`[m
+[1m[31m         .:+++oooo+/:.``   ``[m
+[1m[31m      `:+ooooooo+:.  `-:/++++++/:.`[m
+[1m[31m     -+oooooooo:` `-++o+/::::://+o+/-[m
+[1m[31m   `/ooooooooo-  -+oo/.`        `-/oo+.[m
+[1m[31m  `+ooooooooo.  :os/`              .+so:[m
+[1m[31m  +sssssssss/  :ss/                 `+ss-[m
+[1m[31m :ssssssssss`  sss`                  .sso[m
+[1m[31m ossssssssss  `yyo                    sys[m
+[1m[31m`sssssssssss` `yys                   `yys[m
+[1m[31m`sssssssssss:  +yy/                  +yy:[m
+[1m[31m oyyyyyyyyyys. `oyy/`              `+yy+[m
+[1m[31m :yyyyyyyyyyyo. `+yhs:.         `./shy/[m
+[1m[31m  oyyyyyyyyyyys:` .oyhys+:----/+syhy+. `[m
+[1m[31m  `syyyyyyyyyyyyo-` .:osyhhhhhyys+:``.:`[m
+[1m[31m   `oyyyyyyyyyyyyys+-`` `.----.```./oo.[m
+[1m[31m     /yhhhhhhhhhhhhhhyso+//://+osyhy/`[m
+[1m[31m      `/yhhhhhhhhhhhhhhhhhhhhhhhhy/`[m
+[1m[31m        `:oyhhhhhhhhhhhhhhhhhhyo:`[m
+[1m[31m            .:+syhhhhhhhhys+:-`[m
+[1m[31m                ``....``[m
+[m

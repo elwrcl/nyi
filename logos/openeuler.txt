@@ -1,0 +1,26 @@
+# distro: OpenEuler
+[m                                          
+[1m[31m                 `.cc.`[m
+[1m[31m             ``.cccccccc..`[m
+[1m[31m          `.cccccccccccccccc.`[m
+[1m[31m      ``.cccccccccccccccccccccc.``[m
+[1m[31m   `..cccccccccccccccccccccccccccc..`[m
+[1m[31m`.ccccccccccccccc[32m/++/[31mccccccccccccccccc.`[m
+[1m[31m.ccccccccccccccc[32mmNMMNdo+oso+[31mccccccccccc.[m
+[1m[31m.cccccccccc[32m/++odms+//+mMMMMm/:+syso/[31mcccc[m
+[1m[31m.ccccccccc[32myNNMMMs:::/::+o+/:[31mc[32mdMMMMMm[31mcccc[m
+[1m[31m.ccccccc[32m:+NmdyyhNNmNNNd:[31mccccc[31m[32m:oyyyo:[31mcccc[m
+[1m[31m.ccc[32m:ohdmMs:[31mcccc[32m+mNMNmy[31mccccccccccccccccc[m
+[1m[31m.cc[32m/NMMMMMo////:[31mc[32m:///:[31mcccccccccccccccccc[m
+[1m[31m.cc[32m:syysyNMNNNMNy[31mccccccccccccccccccccccc[m
+[1m[31m.cccccccc[32m+MMMMMNy[31mc[32m:/+++/[31mcccccccccccccccc[m
+[1m[31m.ccccccccc[32mohhhs/[31mc[32momMMMMNh[31mccccccccccccccc[m
+[1m[31m.ccccccccccccccc[32m:MMMMMMMM/[31mcccccccccccccc[m
+[1m[31m.cccccccccccccccc[32msNNNNNd+[31mcccccccccccccc.[m
+[1m[31m`..cccccccccccccccc[32m/+/:[31mcccccccccccccc..`[m
+[1m[31m   ``.cccccccccccccccccccccccccccc.``[m
+[1m[31m       `.cccccccccccccccccccccc.`[m
+[1m[31m          ``.cccccccccccccc.``[m
+[1m[31m              `.cccccccc.`[m
+[1m[31m                 `....`[m
+[m

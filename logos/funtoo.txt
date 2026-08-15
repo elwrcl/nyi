@@ -1,0 +1,13 @@
+# distro: Funtoo
+[m                                                
+[1m[31m   .dKXXd                         .[m
+[1m[31m  :XXl;:.                      .OXo[m
+[1m[31m.'OXO''  .''''''''''''''''''''':XNd..'oco.lco,[m
+[1m[31mxXXXXXX, cXXXNNNXXXXNNXXXXXXXXNNNNKOOK; d0O .k[m
+[1m[31m  kXX  xXo  KNNN0  KNN.       'xXNo   :c; 'cc.[m
+[1m[31m  kXX  xNo  KNNN0  KNN. :xxxx. 'NNo[m
+[1m[31m  kXX  xNo  loooc  KNN. oNNNN. 'NNo[m
+[1m[31m  kXX  xN0:.       KNN' oNNNX' ,XNk[m
+[1m[31m  kXX  xNNXNNNNNNNNXNNNNNNNNXNNOxXNX0Xl[m
+[1m[31m  ...  ......................... .;cc;.[m
+[m

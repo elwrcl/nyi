@@ -1,0 +1,18 @@
+# distro: Arya
+[m                                          
+[1m[31m[31m                `oyyy/[32m-yyyyyy+[m
+[1m[32m[31m               -syyyy/[32m-yyyyyy+[m
+[1m[32m[31m              .syyyyy/[32m-yyyyyy+[m
+[1m[32m[31m              :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m           `/ :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m          .+s :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m         .oys :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m        -oyys :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m       :syyys :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m      /syyyys :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m     +yyyyyys :yyyyyy/[32m-yyyyyy+[m
+[1m[32m[31m   .oyyyyyyo. :yyyyyy/[32m-yyyyyy+ ---------[m
+[1m[32m[31m  .syyyyyy+`  :yyyyyy/[32m-yyyyy+-+syyyyyyyy[m
+[1m[32m[31m -syyyyyy/    :yyyyyy/[32m-yyys:.syyyyyyyyyy[m
+[1m[32m[31m:syyyyyy/     :yyyyyy/[32m-yyo.:syyyyyyyyyyy[m
+[m

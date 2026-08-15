@@ -1,0 +1,18 @@
+# distro: CelOS
+[m                                       
+[1m[31m             `-:/++++/:-`[m
+[1m[31m          -/syyyyyyyyyyyyy+-[m
+[1m[31m        :ssssyyyyyyyyyyyyyyyy/[m
+[1m[31m      .osy[32mmmmmmmmmmmmmmmmNNNNNmmhy+[m
+[1m[32m     [31m.sssshhhhhhhddddddddddddddds-[m
+[1m[31m    [31m`osssssssyyyyyyyyyyyyyyyyyyhy`[m
+[1m[31m    [31m:ssssssyyyyyyyyyyyyyyyyyyyyhh/[m
+[1m[31m[32msMMMMMMMMMMMMMMMMMMMMMMMh[31myyyyyyhho[m
+[1m[31m    :sssssssyyyyyyyyyyyyyyyyyyyhh/[m
+[1m[31m    `ssssssssyyyyyyyyyyyyyyyyyyhy.[m
+[1m[31m     -sssssyddddddddddddddddddddy[m
+[1m[31m      -ssss[32mhmmmmmmmmmmmmmmmmmmmyssss-[m
+[1m[32m       [31m`/ssssyyyyyyyyyyyyyyyy+`[m
+[1m[31m         [31m`:osyyyyyyyyyyyyys/`[m
+[1m[31m            [31m`.:/+ooooo+:-`[m
+[m

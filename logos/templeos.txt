@@ -1,0 +1,23 @@
+# distro: TempleOS
+[m                                
+[1m[31m           [31maooooo[32m,[m
+[1m[32m           [31maooooo[32m``[m
+[1m[32m           [31maooooo[32m``[m
+[1m[32m    [33m(((((( [31maooooo[32m``[33m(((((([m
+[1m[33m [31moooo[33m@@ @C@*;,./k@@ @@ @[31moooo[32m[m
+[1m[32m [31moooooo[33m@@ @@@@@@@@ @@k[31moooooo[32m``[m
+[1m[32m [31moooooooo[33m\@ @/@@ @@[31mooooooooo[32m``[m
+[1m[32m  `````````[33m'*@*/'[32m````````````[m
+[1m[32m    [33m@@@(   [31maooooo[32m`` [33m@@@@[m
+[1m[33m    @@ @   [31maooooo[32m`` [33m@ @@[m
+[1m[33m     @@@   [31maooooo[32m`` [33m@@@,[m
+[1m[33m     @@    [31maooooo[32m`` [33m @@[m
+[1m[33m      @    [31maooooo[32m`` [33m (@[m
+[1m[33m           [31maooooo[32m``[m
+[1m[32m           [31maooooo[32m``[m
+[1m[32m           [31maooooo[32m``[m
+[1m[32m           [31maooooo[32m``[m
+[1m[32m           [31maooooo[32m``[m
+[1m[32m            ```````[m
+[1m[32m              `````[m
+[m

@@ -1,0 +1,22 @@
+# distro: CentOS
+[m                                      
+[1m[31m                 ..[m
+[1m[31m               .PLTJ.[m
+[1m[31m              <><><><>[m
+[1m[31m     [32mKKSSV' 4KKK [31mLJ[34m KKKL.'VSSKK[m
+[1m[34m     [32mKKV' 4KKKKK [31mLJ[34m KKKKAL 'VKK[m
+[1m[34m     [32mV' ' 'VKKKK [31mLJ[34m KKKKV' ' 'V[m
+[1m[34m     [32m.4MA.' 'VKK [31mLJ[34m KKV' '.4Mb.[m
+[1m[34m   [34m. [32mKKKKKA.' 'V [31mLJ[34m V' '.4KKKKK [33m.[m
+[1m[33m [34m.4D [32mKKKKKKKA.'' [31mLJ[34m ''.4KKKKKKK [33mFA.[m
+[1m[33m[34m<QDD ++++++++++++  [33m++++++++++++ GFD>[m
+[1m[33m '[34mVD [33mKKKKKKKK'.. [32mLJ [31m..'KKKKKKKK [33mFV[m
+[1m[33m   [34m' [33mVKKKKK'. .4 [32mLJ [31mK. .'KKKKKV [33m'[m
+[1m[33m      [33m'VK'. .4KK [32mLJ [31mKKA. .'KV'[m
+[1m[31m     [33mA. . .4KKKK [32mLJ [31mKKKKA. . .4[m
+[1m[31m     [33mKKA. 'KKKKK [32mLJ [31mKKKKK' .4KK[m
+[1m[31m     [33mKKSSA. VKKK [32mLJ [31mKKKV .4SSKK[m
+[1m[31m              [32m<><><><>[m
+[1m[32m               [32m'MKKM'[m
+[1m[32m                 [32m''[m
+[m

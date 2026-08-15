@@ -1,0 +1,25 @@
+# distro: opensuse-tumbleweed
+[m                                              
+[1m[31m          ,...,[m
+[1m[31m     .,:lloooooc;.[m
+[1m[31m   ,ool'     oo,;oo:[m
+[1m[31m .lo'        oo.   oo:[m
+[1m[31m.oo.         oo.    oo:[m
+[1m[31m:ol          oo.    'oo[m
+[1m[31m:oo         .oo.    .oo.[m
+[1m[31m.oooooooooooooo.    .oo.[m
+[1m[31m ;oo.               .oo.[m
+[1m[31m  'oo,              .oo.[m
+[1m[31m    "ooc,',,,,,,,,,,:ooc,,,,,,,,,,,[m
+[1m[31m       ':cooooooooooooooooooooooooool;.[m
+[1m[31m                    .oo.             .oo;[m
+[1m[31m                    .oo.               .oo.[m
+[1m[31m                    .oo.    'oooooooooo:ooo.[m
+[1m[31m                    .oo.    'oo.         col[m
+[1m[31m                    .oo'    'oo          col[m
+[1m[31m                     coo    'oo          oo'[m
+[1m[31m                      coc   'oo        .lo,[m
+[1m[31m                       `oo, 'oo      .:oo[m
+[1m[31m                         'ooooc,, ,:lol[m
+[1m[31m                            `''"clc"'[m
+[m

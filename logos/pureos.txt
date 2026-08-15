@@ -1,0 +1,15 @@
+# distro: PureOS
+[m                                          
+[1m[31mdmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd[m
+[1m[31mdNm//////////////////////////////////mNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNd                                  dNd[m
+[1m[31mdNm//////////////////////////////////mNd[m
+[1m[31mdmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd[m
+[m

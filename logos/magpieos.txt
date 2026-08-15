@@ -1,0 +1,23 @@
+# distro: MagpieOS
+[m                                 
+[1m[31m        ;00000     :000Ol[m
+[1m[31m     .x00kk00:    O0kk00k;[m
+[1m[31m    l00:   :00.  o0k   :O0k.[m
+[1m[31m  .k0k.     x[32md$dddd[31mk'    .d00;[m
+[1m[31m  k0k.      [32m.dddddl       [31mo00,[m
+[1m[31m o00.        [32m':cc:.        [31md0O[m
+[1m[31m.00l                       ,00.[m
+[1m[31ml00.                       d0x[m
+[1m[31mk0O                     .:k0o[m
+[1m[31mO0k                 ;dO0000d.[m
+[1m[31mk0O               .O0O[32mxxxxk[31m00:[m
+[1m[31mo00.              k0O[32mdddddd[31mocc[m
+[1m[31m'00l              x0O[32mdddddo[33m;..[31m[m
+[1m[31m x00.             .x00[32mkxxd[33m:..[31m[m
+[1m[31m .O0x               .:oxxx[34mOkl.[31m[m
+[1m[31m  .x0d                     [34m,xx,[31m[m
+[1m[31m    .:o.          [34m.xd       ckd[31m[m
+[1m[31m       ..          [34mdxl     .xx;[m
+[1m[34m                    :xxolldxd'[m
+[1m[34m                      ;oxdl.[m
+[m

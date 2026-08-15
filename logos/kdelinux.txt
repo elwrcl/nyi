@@ -1,0 +1,17 @@
+# distro: kdelinux
+[m                              
+[1m[31m            [31mkB@BB     >BWWmm[32m[m
+[1m[32m            [31m$BBBB   .kBBBBB"[32m[m
+[1m[32m    ,mp.    [31m%BBBB  {BBBBBF[32m[m
+[1m[32m   '%BBBBmm [31m$BBBR,$BBBBB`[32m[m
+[1m[32m    `TBBB"` [31m$BBBBBBBBBF[32m[m
+[1m[32m     kBF    [31m%BBBRRBBBBB.[32m[m
+[1m[32m,mmWBBF     [31mkBBBB `%BBBBm[32m[m
+[1m[32mT%BBBB      [31m%BBBB   %BBBBBn[32m[m
+[1m[32m  `"T%m     [31m$BBBB    "%BBBBm[32m[m
+[1m[32m     TBm    [31m"*"""   [32m,m.[31m"F""`[32m[m
+[1m[32m    {BBBBm,.     ,zmBBBm.[m
+[1m[32m   !%BBBP"T%BBBBBB""R%BBB[m
+[1m[32m     ``     %BBBF     ``[m
+[1m[32m            !BBP[m
+[m

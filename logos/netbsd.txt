@@ -1,0 +1,20 @@
+# distro: NetBSD
+[m                                          
+[1m[31m[31m                     `-/oshdmNMNdhyo+:-`[m
+[1m[31m[32my[31m/s+:-``    `.-:+oydNMMMMNhs/-``[m
+[1m[31m[32m-m+[31mNMMMMMMMMMMMMMMMMMMMNdhmNMMMmdhs+/-`[m
+[1m[31m [32m-m+[31mNMMMMMMMMMMMMMMMMMMMMmy+:`[m
+[1m[31m  [32m-N/[31mdMMMMMMMMMMMMMMMds:`[m
+[1m[31m   [32m-N/[31mhMMMMMMMMMmho:`[m
+[1m[31m    [32m-N/[31m-:/++/:.`[m
+[1m[31m[32m     :M+[m
+[1m[32m      :Mo[m
+[1m[32m       :Ms[m
+[1m[32m        :Ms[m
+[1m[32m         :Ms[m
+[1m[32m          :Ms[m
+[1m[32m           :Ms[m
+[1m[32m            :Ms[m
+[1m[32m             :Ms[m
+[1m[32m              :Ms[m
+[m

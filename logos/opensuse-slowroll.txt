@@ -1,0 +1,23 @@
+# distro: opensuse-slowroll
+[m                                            
+[1m[31m                _,......,_[m
+[1m[31m           _aaQQQQQQWQQQQQQQaa.[m
+[1m[31m        ajQQQ??^'        '^??QQQw.[m
+[1m[31m     ,aQQP^                    ?4QQa[m
+[1m[31m    wQQP                         ^4QQa[m
+[1m[31m  ,QQP'          ,aaaaa.           ^$Q6,[m
+[1m[31m ,QQP         ajQQQWWWWQQQw.         4QQ[m
+[1m[31m QQP        aQQP?        ?$QQ.        4Q6[m
+[1m[31mjQQ        jQQ'            ?WQr       'QQb[m
+[1m[31mQQf       ]QQ'              ]QQ        QQ6[m
+[1m[31mQQf       ]QQ               ]QQ)       QQQ[m
+[1m[31mQQ6       'QQ6              ]QQ        QQf[m
+[1m[31m]QQ.       ^4QQaa          .QQP       ,QQ'[m
+[1m[31m $QQ.        ^?QQQQf      _yQP       ,QQP[m
+[1m[31m ^WQQ6.                  aQQ?       _QQP[m
+[1m[31m  ^4QQQ6a.            ajQQP'       aQQP[m
+[1m[31m    ?QQQQQWQaaaaaaajQWQP?        aQQP'[m
+[1m[31m      ?QQQQP????????^'        saWQP?[m
+[1m[31m        ^?QQQgaaa._    __aaaQQQP?'[m
+[1m[31m            '^?QWQQQQQQQQ@??^'[m
+[m

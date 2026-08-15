@@ -1,0 +1,26 @@
+# distro: HamoniKR
+[m                                                 
+[1m[31m                     cO0Ox.[m
+[1m[31m                  .ldddddddo.[m
+[1m[31m                .lddddddddddo[m
+[1m[31m              'lddddddddddddc[m
+[1m[31m            ,oddddddddddddd;[m
+[1m[31m          'ldddddddddddddo.[m
+[1m[31m        .oddddddddddddddc.[m
+[1m[31m      ,dddddddddddddddo.[m
+[1m[31m    ,ccoooooooocoddooo:[m
+[1m[31m  ,cooooooooooooooooop [33m                 c000x.[m
+[1m[33m[31m.cooooooooooooooopcllll[33m              .cddddddo.[m
+[1m[33m[31mcoooooooooooooop' .qlll.[33m           .ddoooooooo;[m
+[1m[33m[31mcooooooooooc;        [33m'qlllp.     .ddoooooooooo;[m
+[1m[33m[31m.cooooooc;             [33m'lllbc...coooooooooooo;[m
+[1m[33m[31m  .cooc'                [33m.llllcoooooooooooooo.[m
+[1m[33m                         .coooooooooooooop:[m
+[1m[33m                       .coooooooooooooop'[m
+[1m[33m                      .cooooooooooooop.[m
+[1m[33m                    .cooooooooooooop.[m
+[1m[33m                   .coooooooooooop.[m
+[1m[33m                  .cooooooooooop.[m
+[1m[33m                  .cooooooooop.[m
+[1m[33m                   .cooooop'[m
+[m

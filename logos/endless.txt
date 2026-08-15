@@ -1,0 +1,23 @@
+# distro: Endless
+[m                                          
+[1m[31m           `:+yhmNMMMMNmhy+:`[m
+[1m[31m        -odMMNhso//////oshNMMdo-[m
+[1m[31m      /dMMh+.              .+hMMd/[m
+[1m[31m    /mMNo`                    `oNMm:[m
+[1m[31m  `yMMo`                        `oMMy`[m
+[1m[31m `dMN-                            -NMd`[m
+[1m[31m hMN.                              .NMh[m
+[1m[31m/MM/                  -os`          /MM/[m
+[1m[31mdMm    `smNmmhs/- `:sNMd+   ``       mMd[m
+[1m[31mMMy    oMd--:+yMMMMMNo.:ohmMMMNy`    yMM[m
+[1m[31mMMy    -NNyyhmMNh+oNMMMMMy:.  dMo    yMM[m
+[1m[31mdMm     `/++/-``/yNNh+/sdNMNddMm-    mMd[m
+[1m[31m/MM/          `dNy:       `-::-     /MM/[m
+[1m[31m hMN.                              .NMh[m
+[1m[31m `dMN-                            -NMd`[m
+[1m[31m  `yMMo`                        `oMMy`[m
+[1m[31m    /mMNo`                    `oNMm/[m
+[1m[31m      /dMMh+.              .+hMMd/[m
+[1m[31m        -odMMNhso//////oshNMMdo-[m
+[1m[31m           `:+yhmNMMMMNmhy+:`[m
+[m

@@ -1,0 +1,20 @@
+# distro: Redrose
+[m                
+[1m[31m  xxrjr  ftttt[m
+[1m[31m  xxxxxjjfffft[m
+[1m[31m  xxxxxxxjjjjj[m
+[1m[31m  xxxxxxxjjjjj[m
+[1m[31m  xxxxxxxxxnxx[m
+[1m[31m    xxxxxxxn[m
+[1m[31m       [32m[[[m
+[1m[32m////   [[[m
+[1m[32m////   [[[m
+[1m[32m///////[[[m
+[1m[32m  /////]][m
+[1m[32m       [[[m
+[1m[32m       [[[m
+[1m[32m       [[[m
+[1m[32m       [[[m
+[1m[32m       [[[m
+[1m[32m       [][m
+[m

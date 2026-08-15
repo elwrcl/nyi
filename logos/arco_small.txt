@@ -1,0 +1,14 @@
+# distro: arco_small
+[m                       
+[1m[31m          A[m
+[1m[31m         ooo[m
+[1m[31m        ooooo[m
+[1m[31m       ooooooo[m
+[1m[31m      ooooooooo[m
+[1m[31m     ooooo ooooo[m
+[1m[31m    ooooo   ooooo[m
+[1m[31m   ooooo     ooooo[m
+[1m[31m  ooooo  [32m<oooooooo>[31m[m
+[1m[31m ooooo      [32m<oooooo>[31m[m
+[1m[31mooooo          [32m<oooo>[m
+[m

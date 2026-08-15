@@ -1,0 +1,21 @@
+# distro: Chimera
+[m                                      
+[1m[31m[33mddddddddddddddc  [31m,cc:[m
+[1m[31m[33mddddddddddddddc  [31m,cc:[m
+[1m[31m[33mddddddddddddddd  [31m,cc:[m
+[1m[31m[33mddddddddddddl:'  [31m,cc:[m
+[1m[31m[33mdddddddddl'    [31m..;cc:[m
+[1m[31m[33mdddddddo.   [31m,:cccccc:[m
+[1m[31m[33mddddddl   [31m,ccc:'''''[m
+[1m[31m[33mdddddo.  [31m;ccc.          ............[m
+[1m[31m        .ccc.           cccccccccccc[m
+[1m[31m[32m......  [31m.ccc.          .ccc'''''''''[m
+[1m[31m[32mOOOOOk.  [31m;ccc.        .ccc;   ......[m
+[1m[31m[32mOOOOOOd   [31m'ccc:,....,:ccc'   [34mcoooooo[m
+[1m[34m[32mOOOOOOOx.   [31m':cccccccc:'   [34m.looooooo[m
+[1m[34m[32mOOOOOOOOOd,     [31m`'''`     [34m.coooooooo[m
+[1m[34m[32mOOOOOOOOOOOOdc,.    [34m..,coooooooooooo[m
+[1m[34m[32mOOOOOOOOOOOOOOOO'  [34m.oooooooooooooooo[m
+[1m[34m[32mOOOOOOOOOOOOOOOO'  [34m.oooooooooooooooo[m
+[1m[34m[32mOOOOOOOOOOOOOOOO'  [34m.oooooooooooooooo[m
+[m

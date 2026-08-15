@@ -1,0 +1,22 @@
+# distro: Fedora
+[m                                        
+[1m[31m             .',;::::;,'.[m
+[1m[31m         .';:cccccccccccc:;,.[m
+[1m[31m      .;cccccccccccccccccccccc;.[m
+[1m[31m    .:cccccccccccccccccccccccccc:.[m
+[1m[31m  .;ccccccccccccc;[32m.:dddl:.[31m;ccccccc;.[m
+[1m[31m .:ccccccccccccc;[32mOWMKOOXMWd[31m;ccccccc:.[m
+[1m[31m.:ccccccccccccc;[32mKMMc[31m;cc;[32mxMMc[31m;ccccccc:.[m
+[1m[31m,cccccccccccccc;[32mMMM.[31m;cc;[32m;WW:[31m;cccccccc,[m
+[1m[31m:cccccccccccccc;[32mMMM.[31m;cccccccccccccccc:[m
+[1m[31m:ccccccc;[32moxOOOo[31m;[32mMMM000k.[31m;cccccccccccc:[m
+[1m[31mcccccc;[32m0MMKxdd:[31m;[32mMMMkddc.[31m;cccccccccccc;[m
+[1m[31mccccc;[32mXMO'[31m;cccc;[32mMMM.[31m;cccccccccccccccc'[m
+[1m[31mccccc;[32mMMo[31m;ccccc;[32mMMW.[31m;ccccccccccccccc;[m
+[1m[31mccccc;[32m0MNc.[31mccc[32m.xMMd[31m;ccccccccccccccc;[m
+[1m[31mcccccc;[32mdNMWXXXWM0:[31m;cccccccccccccc:,[m
+[1m[31mcccccccc;[32m.:odl:.[31m;cccccccccccccc:,.[m
+[1m[31mccccccccccccccccccccccccccccc:'.[m
+[1m[31m:ccccccccccccccccccccccc:;,..[m
+[1m[31m ':cccccccccccccccc::;,.[m
+[m

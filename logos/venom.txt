@@ -1,0 +1,22 @@
+# distro: Venom
+[m                                 
+[1m[31m`-`[m
+[1m[31m -yys+/-`[m
+[1m[31m  `oyyyyy: /osyyyyso+:.[m
+[1m[31m    /yyyyy+`+yyyyyyyyyys/.[m
+[1m[31m    .-yyyyys.:+//+oyyyyyyyo.[m
+[1m[31m  `oy/`oyyyyy/      ./syyyyy:[m
+[1m[31m  syyys`:yyyyyo`       :yyyyy:[m
+[1m[31m /yyyyo  .syyyyy-       .yyyyy.[m
+[1m[31m yyyyy.    +yyyyy/       /yyyy/[m
+[1m[31m`yyyyy      :yyyyys`     -yyyyo[m
+[1m[31m yyyyy.      `syyyyy-    /yyyy/[m
+[1m[31m /yyyyo        /yyyyy+  .yyyyy.[m
+[1m[31m  syyyys.       -yyyyys.:yyyy:[m
+[1m[31m  `oyyyyyo-`     `oyyyyy:.sy:[m
+[1m[31m    :syyyyyyso+/++`/yyyyyo``[m
+[1m[31m      -oyyyyyyyyyyy-.syyyys.[m
+[1m[31m         -/+osyyyyso.`+yyyyy/[m
+[1m[31m                       .-/+syo`[m
+[1m[31m                             `.[m
+[m

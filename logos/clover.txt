@@ -1,0 +1,23 @@
+# distro: Clover
+[m                                          
+[1m[31m               `omo``omo`[m
+[1m[31m             `oNMMMNNMMMNo`[m
+[1m[31m           `oNMMMMMMMMMMMMNo`[m
+[1m[31m          oNMMMMMMMMMMMMMMMMNo[m
+[1m[31m          `sNMMMMMMMMMMMMMMNs`[m
+[1m[31m     `omo`  `sNMMMMMMMMMMNs`  `omo`[m
+[1m[31m   `oNMMMNo`  `sNMMMMMMNs`  `oNMMMNo`[m
+[1m[31m `oNMMMMMMMNo`  `oNMMNs`  `oNMMMMMMMNo`[m
+[1m[31moNMMMMMMMMMMMNo`  `sy`  `oNMMMMMMMMMMMNo[m
+[1m[31m`sNMMMMMMMMMMMMNo.[32moNNs[31m.oNMMMMMMMMMMMMNs`[m
+[1m[31m`oNMMMMMMMMMMMMNs.[32moNNs[31m.oNMMMMMMMMMMMMNo`[m
+[1m[31moNMMMMMMMMMMMNs`  `sy`  `oNMMMMMMMMMMMNo[m
+[1m[31m `oNMMMMMMMNs`  `oNMMNo`  `oNMMMMMMMNs`[m
+[1m[31m   `oNMMMNs`  `sNMMMMMMNs`  `oNMMMNs`[m
+[1m[31m     `oNs`  `sNMMMMMMMMMMNs`  `oNs`[m
+[1m[31m          `sNMMMMMMMMMMMMMMNs`[m
+[1m[31m          +NMMMMMMMMMMMMMMMMNo[m
+[1m[31m           `oNMMMMMMMMMMMMNo`[m
+[1m[31m             `oNMMMNNMMMNs`[m
+[1m[31m               `omo``oNs`[m
+[m

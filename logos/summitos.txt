@@ -1,0 +1,25 @@
+# distro: SummitOS
+[m                                                
+[1m[31m                :~^[m
+[1m[31m               ~5PPJ[m
+[1m[31m              :5555P7[m
+[1m[31m             .Y55555P~[m
+[1m[31m             ?P5555555^[m
+[1m[31m            7P55555555Y.[m
+[1m[31m           ~5555555555PJ[32m       7YJ^[m
+[1m[32m          [31m^555555555555P7[32m     7GGGP^[m
+[1m[32m         [31m.Y5555555555555P![32m   ~PPPPP5.[m
+[1m[32m         [31mJP555555555555555^[32m ^PPPPPPGY[m
+[1m[32m        [31m7P5555555555555555Y[32m^5PPPPPPPG?[m
+[1m[32m       [31m~P55555555555555555[32m^PPPPPPPPPPP![m
+[1m[32m      [31m^555555555555555555[32m^PPPPPPPPPPPPP^[m
+[1m[32m     [31m.Y555555555555P[33mG[31mP55[32m^PPPPPPPPPPPPPP5:[m
+[1m[32m     [31mJP55555555555P[33mGGG[31mP[32m^PPPPPPPPPPPPPPPGY[m
+[1m[32m    [31m7P555555555555[33mGGGGG[32mPPPPPPPPPPPPPPPPPG?[m
+[1m[32m   [31m!P555555555555[33mGGGGGGG[32mPPPPPPPPPPPPPPPPPG![m
+[1m[32m  [31m^5555555555555[33mPGGGGGGGG[32mPPPPPPPPPPPPPPPPPP^[m
+[1m[32m [31m:Y555555555555[33mPGGGGGGGGGG[32mPPPPPPPPPPPPPPPPP5:[m
+[1m[32m[31m.JP55555555555[33mPGGGGGGGGGGGG[32mPPPPPPPPPPPPPPPPGY.[m
+[1m[32m[31m?PPPPPPPPPPPP[33mGGBBBBBBBBBBBBB[32mGGGGGGGGGGGGGGGGGJ[m
+[1m[32m[31m^~~~~~~~~~~~[33m!!!!!!!!!!!!!!!!![32m!!!!!!!!!!!!!!!!~[m
+[m

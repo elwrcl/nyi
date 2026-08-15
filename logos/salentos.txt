@@ -1,0 +1,23 @@
+# distro: SalentOS
+[m                                          
+[1m[31m                 ``..``[m
+[1m[31m        .-:+oshdNMMMMMMNdhyo+:-.`[m
+[1m[31m  -oydmMMMMMMMMMMMMMMMMMMMMMMMMMMNdhs/[m
+[1m[31m[34m +hdddm[31mNMMMMMMMMMMMMMMMMMMMMMMMMN[34mmdddh+`[m
+[1m[34m[32m`MMMMMN[34mmdddddm[31mMMMMMMMMMMMM[34mmdddddm[33mNMMMMM-[m
+[1m[33m[32m mMMMMMMMMMMMN[34mddddhyyhhddd[33mNMMMMMMMMMMMM`[m
+[1m[33m[32m dMMMMMMMMMMMMMMMMM[34moo[33mMMMMMMMMMMMMMMMMMN`[m
+[1m[33m[32m yMMMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMMd[m
+[1m[33m[32m +MMMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMMy[m
+[1m[33m[32m :MMMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMMo[m
+[1m[33m[32m .MMMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMM/[m
+[1m[33m[32m `NMMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMM-[m
+[1m[33m[32m  mMMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMN`[m
+[1m[33m[32m  hMMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMm[m
+[1m[33m[32m  /MMMMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMMMMy[m
+[1m[33m[32m   .+hMMMMMMMMMMMMM[34mhh[33mMMMMMMMMMMMMMms:[m
+[1m[33m[32m      `:smMMMMMMMMM[34mhh[33mMMMMMMMMMNh+.[m
+[1m[33m[32m          .+hMMMMMM[34mhh[33mMMMMMMdo:[m
+[1m[33m[32m             `:smMM[34myy[33mMMNy/`[m
+[1m[33m                 [32m.- [34m`[33m:.[m
+[m

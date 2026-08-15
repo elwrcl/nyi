@@ -1,0 +1,22 @@
+# distro: GalliumOS
+[m                                          
+[1m[31msooooooooooooooooooooooooooooooooooooo+:[m
+[1m[31myyooooooooooooooooooooooooooooooooo+/:::[m
+[1m[31myyysoooooooooooooooooooooooooooo+/::::::[m
+[1m[31myyyyyoooooooooooooooooooooooo+/:::::::::[m
+[1m[31myyyyyysoooooooooooooooooo++/::::::::::::[m
+[1m[31myyyyyyysoooooooooooooo++/:::::::::::::::[m
+[1m[31myyyyyyyyysoooooo[32msydddys[31m+/:::::::::::::::[m
+[1m[31myyyyyyyyyysooo[32msmMMMMMMMNd[31m+::::::::::::::[m
+[1m[31myyyyyyyyyyyyo[32msMMMMMMMMMMMN[31m/:::::::::::::[m
+[1m[31myyyyyyyyyyyyy[32mdMMMMMMMMMMMM[31mo//:::::::::::[m
+[1m[31myyyyyyyyyyyyy[32mhMMMMMMMMMMMm[31m--//::::::::::[m
+[1m[31myyyyyyyyyyyyyy[32mhmMMMMMMMNy[31m:..-://::::::::[m
+[1m[31myyyyyyyyyyyyyyy[32myyhhyys+:[31m......://:::::::[m
+[1m[31myyyyyyyyyyyyyyys+:--...........-///:::::[m
+[1m[31myyyyyyyyyyyys+:--................://::::[m
+[1m[31myyyyyyyyyo+:-.....................-//:::[m
+[1m[31myyyyyyo+:-..........................://:[m
+[1m[31myyyo+:-..............................-//[m
+[1m[31mo/:-...................................:[m
+[m

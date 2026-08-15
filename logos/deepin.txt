@@ -1,0 +1,21 @@
+# distro: Deepin
+[m                                        
+[1m[31m             ............[m
+[1m[31m         .';;;;;.       .,;,.[m
+[1m[31m      .,;;;;;;;.       ';;;;;;;.[m
+[1m[31m    .;::::::::'     .,::;;,''''',.[m
+[1m[31m   ,'.::::::::    .;;'.          ';[m
+[1m[31m  ;'  'cccccc,   ,' :: '..        .:[m
+[1m[31m ,,    :ccccc.  ;: .c, '' :.       ,;[m
+[1m[31m.l.     cllll' ., .lc  :; .l'       l.[m
+[1m[31m.c       :lllc  ;cl:  .l' .ll.      :'[m
+[1m[31m.l        'looc. .   ,o:  'oo'      c,[m
+[1m[31m.o.         .:ool::coc'  .ooo'      o.[m
+[1m[31m ::            .....   .;dddo      ;c[m
+[1m[31m  l:...            .';lddddo.     ,o[m
+[1m[31m   lxxxxxdoolllodxxxxxxxxxc      :l[m
+[1m[31m    ,dxxxxxxxxxxxxxxxxxxl.     'o,[m
+[1m[31m      ,dkkkkkkkkkkkkko;.    .;o;[m
+[1m[31m        .;okkkkkdl;.    .,cl:.[m
+[1m[31m            .,:cccccccc:,.[m
+[m

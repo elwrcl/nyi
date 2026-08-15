@@ -1,0 +1,24 @@
+# distro: Xenia_old
+[m                                           
+[1m[31m[32m      ,c.                       .c;[m
+[1m[32m[32m    .[31mKMMMk[32m....             ....[31mkMMMK[32m.[m
+[1m[32m[32m   .[31mWMMMMMX[32m.....         .....[31mKMMMMMW.[m
+[1m[31m[31m   XMMMMMMM0[32m.....        ....[31mOMMMMMMMN[m
+[1m[31m[31m  dMMMMMMMMM;[32m.... ..... ....,[31mMMMMMMMMMd[m
+[1m[31m[31m  WMMMMMMMMMl;[33mokKKKKKKKKKOo[31m;cMMMMMMMMMM[m
+[1m[31m[31m 'MMMMMMMNX[32mK0[33mKKKKKKKKKKKKKKK[32m0K[31mXNMMMMMMM;[m
+[1m[31m[31m oMMMMMMM[32mOxo[33mKKKKKKKKKKKKKKKKK[32moxO[31mMMMMMMMd[m
+[1m[31m[31m dMMMMMMM[32mdxxx[33mKKKKKKKKKKKKKKK[32mxxxd[31mNMMMMMMk[m
+[1m[31m[31m :MMMMX0[32mxxxxxx[33m0KKKKKKKK0KK0[32mxxxxxx0[31mXMMMMc[m
+[1m[31m[31m  MMMO[32mxxxxxxxxdx[33mkdd[32m0x0[33mddk[32mxdxxxxxxxx[31mOMMM[m
+[1m[31m[31m ;[32mxxkxddxxxxdodxxxxdxdxxxxdodxxxxddxkxx[31m;[m
+[1m[31m[31mdxd[32mKMMMWXo[31m'.....'[32mcdxxxdc[31m'.....'[32mlXWMMMX[31mdxd[m
+[1m[31m[31mcxd[32mXMMMN[31m,..........[32mdxd[31m'.........'[32mXMMMN[31mdxl[m
+[1m[31m[31m .xx[32mWMMl[31m...''....'.;k:.'....''...[32mlMMW[31mxx.[m
+[1m[31m[31m..:kXMMx..'....''..kMk..''....'..xMMXkc..[m
+[1m[31m[31m dMMMMMMd.....'...xMMMx...''....dMMMMMMx[m
+[1m[31m[31m    kMMMMWOoc:coOkolllokOoc:coOWMMMMO[m
+[1m[31m[31m         .MMMMMMMMl[32m...[31mlNMMMMMMM.[m
+[1m[31m[31m            KMMMMMMX[32ml[31mKMMMMMMX[m
+[1m[31m[31m               .MMMMMMMMM.[m
+[m

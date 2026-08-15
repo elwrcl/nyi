@@ -1,0 +1,23 @@
+# distro: Almalinux
+[m                                          
+[1m[31m[31m         'c:.[m
+[1m[31m[31m        lkkkx, ..       [32m..   ,cc,[m
+[1m[32m[31m        okkkk:ckkx'  [32m.lxkkx.okkkkd[m
+[1m[32m[31m        .:llcokkx'  [32m:kkkxkko:xkkd,[m
+[1m[32m[31m      .xkkkkdood:  [32m;kx,  .lkxlll;[m
+[1m[32m[31m       xkkx.       [32mxk'     xkkkkk:[m
+[1m[32m[31m       'xkx.       [32mxd      .....,.[m
+[1m[32m[33m      .. [31m:xkl'     [32m:c      ..''..[m
+[1m[32m[33m    .dkx'  [31m.:ldl:'. [32m'  [34m':lollldkkxo;[m
+[1m[34m[33m  .''lkkko'                     [34mckkkx.[m
+[1m[34m[33m'xkkkd:kkd.       ..  [35m;'        [34m:kkxo.[m
+[1m[34m[33m,xkkkd;kk'      ,d;    [35mld.   [34m':dkd::cc,[m
+[1m[34m[33m .,,.;xkko'.';lxo.      [35mdx,  [34m:kkk'xkkkkc[m
+[1m[34m[33m     'dkkkkkxo:.        [35m;kx  [34m.kkk:;xkkd.[m
+[1m[34m[33m       .....   [35m.;dk:.   [35mlkk.  [34m:;,[m
+[1m[34m             [35m:kkkkkkkdoxkkx[m
+[1m[35m              ,c,,;;;:xkkd.[m
+[1m[35m                ;kkkkl...[m
+[1m[35m                ;kkkkl[m
+[1m[35m                 ,od;[m
+[m

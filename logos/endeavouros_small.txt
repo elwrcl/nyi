@@ -1,0 +1,10 @@
+# distro: EndeavourOS_small
+[m                      
+[1m[31m          /[32mo[33m.[m
+[1m[33m[31m        /[32msssso[33m-[m
+[1m[33m[31m      /[32mossssssso[33m:[m
+[1m[33m[31m    /[32mssssssssssso[33m+[m
+[1m[33m[31m  /[32mssssssssssssssso[33m+[m
+[1m[33m[31m//[32mosssssssssssssso[33m+-[m
+[1m[33m `+++++++++++++++-`[m
+[m

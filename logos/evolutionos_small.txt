@@ -1,0 +1,12 @@
+# distro: EvolutionOS_small
+[m                      
+[1m[31m      [32m,coddoc'[m
+[1m[32m   'cddddddddddc'[m
+[1m[32m 'ddd[31mOWWXXXXXXK[32mddo.[m
+[1m[32m.dddd[31mOMX[32mddddddddddd.[m
+[1m[32modddd[31mOMX[32mk[31m00O[32mk[31mOO[32mddddo[m
+[1m[32m.dddd[31mOMX[32mkOOOxOkdddd.[m
+[1m[32m .ddd[31mOWW[32mX[31mXXXXXK[32mddd'[m
+[1m[32m   'dddddddddddd'[m
+[1m[32m      'cddddd,[m
+[m

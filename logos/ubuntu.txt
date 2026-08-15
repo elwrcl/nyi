@@ -1,0 +1,23 @@
+# distro: ubuntu
+[m                                             
+[1m[31m                             ....[m
+[1m[31m              [32m.',:clooo:  [31m.:looooo:.[m
+[1m[31m           [32m.;looooooooc  [31m.oooooooooo'[m
+[1m[31m        [32m.;looooool:,''.  [31m:ooooooooooc[m
+[1m[31m       [32m;looool;.         [31m'oooooooooo,[m
+[1m[31m      [32m;clool'             [31m.cooooooc.  [32m,,[m
+[1m[32m         [32m...                [31m......  [32m.:oo,[m
+[1m[32m  [31m.;clol:,.                        [32m.loooo'[m
+[1m[32m [31m:ooooooooo,                        [32m'ooool[m
+[1m[32m[31m'ooooooooooo.                        [32mloooo.[m
+[1m[32m[31m'ooooooooool                         [32mcoooo.[m
+[1m[32m [31m,loooooooc.                        [32m.loooo.[m
+[1m[32m   [31m.,;;;'.                          [32m;ooooc[m
+[1m[32m       [32m...                         [32m,ooool.[m
+[1m[32m    [32m.cooooc.              [31m..',,'.  [32m.cooo.[m
+[1m[32m      [32m;ooooo:.           [31m;oooooooc.  [32m:l.[m
+[1m[32m       [32m.coooooc,..      [31mcoooooooooo.[m
+[1m[31m         [32m.:ooooooolc:. [31m.ooooooooooo'[m
+[1m[31m           [32m.':loooooo;  [31m,oooooooooc[m
+[1m[31m               [32m..';::c'  [31m.;loooo:'[m
+[m

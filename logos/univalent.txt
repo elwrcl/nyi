@@ -1,0 +1,21 @@
+# distro: Univalent
+[m                                   
+[1m[31mUUUUUUU                   UUUUUUU[m
+[1m[31mUUUUUUU                   UUUUUUU[m
+[1m[31mUUUUUUU         A         UUUUUUU[m
+[1m[31mUUUUUUU        A|A        UUUUUUU[m
+[1m[31mUUUUUUU       A | A       UUUUUUU[m
+[1m[31mUUUUUUU      A  |  A      UUUUUUU[m
+[1m[31mUUUUUUU     A|  |  |A     UUUUUUU[m
+[1m[31mUUUUUUU    A |  |  | A    UUUUUUU[m
+[1m[31mUUUUUUU    A |  |  | A    UUUUUUU[m
+[1m[31mUUUUUUU    A |  |  | A    UUUUUUU[m
+[1m[31mUUUUUUU    A |  |  | A    UUUUUUU[m
+[1m[31mUUUUUUU    A |  |  | A    UUUUUUU[m
+[1m[31mUUUUUUU    A |  |  | A    UUUUUUU[m
+[1m[31m UUUUUUU   A |  |  | A   UUUUUUU[m
+[1m[31m  UUUUUUU  A |  |  | A  UUUUUUU[m
+[1m[31m    UUUUUUUAAAAAAAAAAAUUUUUUU[m
+[1m[31m       UUUUUUUUUUUUUUUUUUU[m
+[1m[31m          UUUUUUUUUUUUU[m
+[m

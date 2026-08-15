@@ -1,0 +1,21 @@
+# distro: openKylin
+[m                                   
+
+[1m[31m             /KKK][m
+[1m[31m            KKKKKKK`   ]KKKK\[m
+[1m[31m           KKKKK/  /KKKKKKKKK\[m
+[1m[31m          KKKK/ ,KKKKKKKKKKKK^[m
+[1m[31m  ,]KKK  =KKK` /KKKKKKOOOOOO`[m
+[1m[31m,KKKKKK  =KK  /`    [\OOOOOOO\[m
+[1m[31m \KKKKK  =K            ,OOOOOOO`[m
+[1m[31m ,KKKKK  =^              \OOOOOO[m
+[1m[31m  ,KKKK   ^               OOOOOO^[m
+[1m[31m   *KKK^                  =OOOOO^[m
+[1m[31m    OOKK^                 OOOOOO^[m
+[1m[31m    \OOOK\               /OOOOOO`[m
+[1m[31m     OOOOOO]           ,OOOOOOO^[m
+[1m[31m     ,OOOOOOOO\]   ,[OOOOOOOOO/[m
+[1m[31m       \OOOOOOOOOOOOOOOOOOOOO`[m
+[1m[31m         [OOOOOOOOOOOOOOOO/`[m
+[1m[31m            ,[OOOOOOOOO][m
+[m

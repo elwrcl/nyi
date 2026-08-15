@@ -1,0 +1,22 @@
+# distro: Xferience
+[m                                       
+[1m[31m           ``--:::::::-.`[m
+[1m[31m        .-/+++ooooooooo+++:-`[m
+[1m[31m     `-/+oooooooooooooooooo++:.[m
+[1m[31m    -/+oooooo/+ooooooooo+/ooo++:`[m
+[1m[31m  `/+oo++oo.   .+oooooo+.-: +:-o+-[m
+[1m[31m `/+o/.  -o.    :oooooo+ ```:.+oo+-[m
+[1m[31m`:+oo-    -/`   :oooooo+ .`-`+oooo/.[m
+[1m[31m.+ooo+.    .`   `://///+-+..oooooo+:`[m
+[1m[31m-+ooo:`                ``.-+oooooo+/`[m
+[1m[31m-+oo/`                       :+oooo/.[m
+[1m[31m.+oo:            ..-/. .      -+oo+/`[m
+[1m[31m`/++-         -:::++::/.      -+oo+-[m
+[1m[31m ./o:          `:///+-     `./ooo+:`[m
+[1m[31m  .++-         `` /-`   -:/+oooo+:`[m
+[1m[31m   .:+/:``          `-:ooooooo++-[m
+[1m[31m     ./+o+//:...../+oooooooo++:`[m
+[1m[31m       `:/++ooooooooooooo++/-`[m
+[1m[31m          `.-//++++++//:-.`[m
+[1m[31m               ``````[m
+[m

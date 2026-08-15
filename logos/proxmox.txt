@@ -1,0 +1,23 @@
+# distro: Proxmox
+[m                                              
+[1m[31m[31m         .://:`              `://:.[m
+[1m[31m       `hMMMMMMd/          /dMMMMMMh`[m
+[1m[31m        `sMMMMMMMd:      :mMMMMMMMs`[m
+[1m[31m[32m`-/+oo+/:[31m`.yMMMMMMMh-  -hMMMMMMMy.`[32m:/+oo+/-`[m
+[1m[32m`:oooooooo/[31m`-hMMMMMMMyyMMMMMMMh-`[32m/oooooooo:`[m
+[1m[32m  `/oooooooo:[31m`:mMMMMMMMMMMMMm:`[32m:oooooooo/`[m
+[1m[32m    ./ooooooo+-[31m +NMMMMMMMMN+ [32m-+ooooooo/.[m
+[1m[32m      .+ooooooo+-[31m`oNMMMMNo`[32m-+ooooooo+.[m
+[1m[32m        -+ooooooo/.[31m`sMMs`[32m./ooooooo+-[m
+[1m[32m          :oooooooo/[31m`..`[32m/oooooooo:[m
+[1m[32m          :oooooooo/`[31m..[32m`/oooooooo:[m
+[1m[32m        -+ooooooo/.`[31msMMs[32m`./ooooooo+-[m
+[1m[32m      .+ooooooo+-`[31moNMMMMNo[32m`-+ooooooo+.[m
+[1m[32m    ./ooooooo+-[31m +NMMMMMMMMN+ [32m-+ooooooo/.[m
+[1m[32m  `/oooooooo:`[31m:mMMMMMMMMMMMMm:[32m`:oooooooo/`[m
+[1m[32m`:oooooooo/`[31m-hMMMMMMMyyMMMMMMMh-[32m`/oooooooo:`[m
+[1m[32m`-/+oo+/:`[31m.yMMMMMMMh-  -hMMMMMMMy.[32m`:/+oo+/-`[m
+[1m[32m[31m        `sMMMMMMMm:      :dMMMMMMMs`[m
+[1m[31m       `hMMMMMMd/          /dMMMMMMh`[m
+[1m[31m         `://:`              `://:`[m
+[m

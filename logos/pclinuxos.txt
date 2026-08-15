@@ -1,0 +1,22 @@
+# distro: PCLinuxOS
+[m                                       
+[1m[31m            mhhhyyyyhhhdN[m
+[1m[31m        dyssyhhhhhhhhhhhssyhN[m
+[1m[31m     Nysyhhyo/:-.....-/oyhhhssd[m
+[1m[31m   Nsshhy+.              `/shhysm[m
+[1m[31m  dohhy/                    -shhsy[m
+[1m[31m dohhs`                       /hhys[m
+[1m[31mN+hho   [32m+ssssss+-   .+syhys+   [31m/hhsy[m
+[1m[31mohhh`   [32mymmo++hmm+`smmy/::+y`   [31mshh+[m
+[1m[31m+hho    [32mymm-  /mmy+mms          [31m:hhod[m
+[1m[31m/hh+    [32mymmhhdmmh.smm/          [31m.hhsh[m
+[1m[31m+hhs    [32mymm+::-`  /mmy`    `    [31m/hh+m[m
+[1m[31myyhh-   [32mymm-       /dmdyosyd`  [31m`yhh+[m
+[1m[31m ohhy`  [32m://`         -/+++/-   [31mohhom[m
+[1m[31m N+hhy-                      `shhoh[m
+[1m[31m   sshho.                  `+hhyom[m
+[1m[31m    dsyhhs/.            `:ohhhoy[m
+[1m[31m      dysyhhhso///://+syhhhssh[m
+[1m[31m         dhyssyhhhhhhyssyyhN[m
+[1m[31m              mddhdhdmN[m
+[m

@@ -1,0 +1,21 @@
+# distro: Pardus
+[m                                          
+[1m[31m .smNdy+-    `.:/osyyso+:.`    -+ydmNs.[m
+[1m[31m/Md- -/ymMdmNNdhso/::/oshdNNmdMmy/. :dM/[m
+[1m[31mmN.     oMdyy- -y          `-dMo     .Nm[m
+[1m[31m.mN+`  sMy hN+ -:             yMs  `+Nm.[m
+[1m[31m `yMMddMs.dy `+`               sMddMMy`[m
+[1m[31m   +MMMo  .`  .                 oMMM+[m
+[1m[31m   `NM/    `````.`    `.`````    +MN`[m
+[1m[31m   yM+   `.-:yhomy    ymohy:-.`   +My[m
+[1m[31m   yM:          yo    oy          :My[m
+[1m[31m   +Ms         .N`    `N.      +h sM+[m
+[1m[31m   `MN      -   -::::::-   : :o:+`NM`[m
+[1m[31m    yM/    sh   -dMMMMd-   ho  +y+My[m
+[1m[31m    .dNhsohMh-//: /mm/ ://-yMyoshNd`[m
+[1m[31m      `-ommNMm+:/. oo ./:+mMNmmo:`[m
+[1m[31m     `/o+.-somNh- :yy: -hNmos-.+o/`[m
+[1m[31m    ./` .s/`s+sMdd+``+ddMs+s`/s. `/.[m
+[1m[31m        : -y.  -hNmddmNy.  .y- :[m
+[1m[31m         -+       `..`       +-[m
+[m

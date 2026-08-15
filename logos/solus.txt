@@ -1,0 +1,23 @@
+# distro: Solus
+[m                                         
+[1m[31m[32m            -```````````[m
+[1m[32m          `-+/------------.`[m
+[1m[32m       .---:mNo---------------.[m
+[1m[32m     .-----yMMMy:---------------.[m
+[1m[32m   `------oMMMMMm/----------------`[m
+[1m[32m  .------/MMMMMMMN+----------------.[m
+[1m[32m .------/NMMMMMMMMm-+/--------------.[m
+[1m[32m`------/NMMMMMMMMMN-:mh/-------------`[m
+[1m[32m.-----/NMMMMMMMMMMM:-+MMd//oso/:-----.[m
+[1m[32m-----/NMMMMMMMMMMMM+--mMMMh::smMmyo:--[m
+[1m[32m----+NMMMMMMMMMMMMMo--yMMMMNo-:yMMMMd/.[m
+[1m[32m.--oMMMMMMMMMMMMMMMy--yMMMMMMh:-yMMMy-`[m
+[1m[32m`-sMMMMMMMMMMMMMMMMh--dMMMMMMMd:/Ny+y.[m
+[1m[32m`-/+osyhhdmmNNMMMMMm-/MMMMMMMmh+/ohm+[m
+[1m[32m  .------------:://+-/++++++[31moshddys:[m
+[1m[31m   -hhhhyyyyyyyyyyyhhhhddddhysssso-[m
+[1m[31m    `:ossssssyysssssssssssssssso:`[m
+[1m[31m      `:+ssssssssssssssssssss+-[m
+[1m[31m         `-/+ssssssssssso+/-`[m
+[1m[31m              `.-----..`[m
+[m

@@ -1,0 +1,21 @@
+# distro: aster
+[m                                 
+[1m[31m                ...''...[m
+[1m[31m           .;oOXWMWNXXXNMMN0d:.[m
+[1m[31m        .oXMWOo;..       ..:oO;[m
+[1m[31m      ;KMWx,       co,[m
+[1m[31m    'KMNl         dMMW.[m
+[1m[31m   oMMx          xMMMMk[m
+[1m[31m  xMM:          dMMMMMM;[m
+[1m[31m cMMl          dMMMMMMMW[m
+[1m[31m NMK          xMMMx::dXMx[m
+[1m[31m,MMl         xMMN'     .o.[m
+[1m[31mcMM;        dMMW'[m
+[1m[31m;MMc       oMMW,[m
+[1m[31m WMK      dMMW,  ccccccc.[m
+[1m[31m lMMl    oMMM;   ooooooo.[m
+[1m[31m  OMMc   ...[m
+[1m[31m   xMMx[m
+[1m[31m    ;XMN:[m
+[1m[31m      ,.[m
+[m

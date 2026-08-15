@@ -1,0 +1,25 @@
+# distro: Slackel
+[m                                          
+[1m[31m              _aawmmmmmwwaaaaas,,,_.[m
+[1m[31m           .ammmmm###mmmmmmm###BQmm##mws[m
+[1m[31m         .am###mmBmBmBmBmBmBmmmmm#mmmm#2[m
+[1m[31m        <q###mmBmBmBmBmBmBmBmBmBmBmmBmZ`[m
+[1m[31m       um#mmmBmBm##U##mmBmBmBmWmmBmWm#([m
+[1m[31m     .wm#mmBBmm#Y~   ~XmBmBmWmmmmmBm#e[m
+[1m[31m    .dm#mmWmm#Z'      ]#mBmBmmBZ!""""`[m
+[1m[31m   .dm#mmBmm#2`       ]mmmBmBm#2[m
+[1m[31m   jm#mmWmm#2`        dmmBmBmB#([m
+[1m[31m  )m##mBmmWZ`        )##mBmBmmZ[m
+[1m[31m :dmmmBmBm#'        .d#mBmBmWZ([m
+[1m[31m j#mmBmBmme         jmmmBmBm#2[m
+[1m[31m_m#mBmWmmm'        )mmmBmBmmZ`[m
+[1m[31m]##mBmmm#2        <m#mBmBmB#^[m
+[1m[31mdmmmBmWm#C       <m#mBmBmB#([m
+[1m[31mZmmBmBmmmh.    _jm#mmBmBm#([m
+[1m[31mXBmBmBmBmm6s_aum##mmBmBm&^[m
+[1m[31m3$mBmBmBmmm#mmmmmmBmBm#2'[m
+[1m[31m+ZmBmBmWmBmBmWmmBmBm##![m
+[1m[31m )ZmBmBmmmBmBmmBmB##!`[m
+[1m[31m  -4U#mBmWmBmBm##2"[m
+[1m[31m    -!!XU##US*?"-[m
+[m

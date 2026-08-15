@@ -1,0 +1,30 @@
+# distro: PCBSD
+[m                                          
+[1m[31m                       ..[m
+[1m[31m                        s.[m
+[1m[31m                        +y[m
+[1m[31m                        yN[m
+[1m[31m                       -MN  `.[m
+[1m[31m                      :NMs `m[m
+[1m[31m                    .yMMm` `No[m
+[1m[31m            `-/+++sdMMMNs+-`+Ms[m
+[1m[31m        `:oo+-` .yMMMMy` `-+oNMh[m
+[1m[31m      -oo-     +NMMMM/       oMMh-[m
+[1m[31m    .s+` `    oMMMMM/     -  oMMMhy.[m
+[1m[31m   +s`- ::   :MMMMMd     -o `mMMMy`s+[m
+[1m[31m  y+  h .Ny+oNMMMMMN/    sh+NMMMMo  +y[m
+[1m[31m s+ .ds  -NMMMMMMMMMMNdhdNMMMMMMh`   +s[m
+[1m[31m-h .NM`   `hMMMMMMMMMMMMMMNMMNy:      h-[m
+[1m[31my- hMN`     hMMmMMMMMMMMMNsdMNs.      -y[m
+[1m[31mm` mMMy`    oMMNoNMMMMMMo`  sMMMo     `m[m
+[1m[31mm` :NMMMdyydMMMMo+MdMMMs     sMMMd`   `m[m
+[1m[31mh-  `+ymMMMMMMMM--M+hMMN/    +MMMMy   -h[m
+[1m[31m:y     `.sMMMMM/ oMM+.yMMNddNMMMMMm   y:[m
+[1m[31m y:   `s  dMMN- .MMMM/ :MMMMMMMMMMh  :y[m
+[1m[31m `h:  `mdmMMM/  yMMMMs  sMMMMMMMMN- :h`[m
+[1m[31m   so  -NMMMN   /mmd+  `dMMMMMMMm- os[m
+[1m[31m    :y: `yMMM`       `+NMMMMMMNo`:y:[m
+[1m[31m      /s+`.omy      /NMMMMMNh/.+s:[m
+[1m[31m        .+oo:-.     /mdhs+::oo+.[m
+[1m[31m            -/o+++++++++++/-[m
+[m

@@ -1,0 +1,12 @@
+# distro: opensuse-tumbleweed_small
+[m                  
+[1m[31m .oooo.[m
+[1m[31mo   o  o[m
+[1m[31mooooo  oo[m
+[1m[31mo      oo[m
+[1m[31m 'oooooooooooo.[m
+[1m[31m       oo      o[m
+[1m[31m       oo  ooooo[m
+[1m[31m        o  o   o[m
+[1m[31m         'oooo'[m
+[m

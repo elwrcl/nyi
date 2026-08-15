@@ -1,0 +1,10 @@
+# distro: Chimera_small
+[m               
+[1m[31m[33mXXXXX [31mI:[m
+[1m[31m[33mXXX' [31m,I;[m
+[1m[31m[33mXX [31m,f""'.,,,,[m
+[1m[31m[32m,, [31mI:   ;P"""[m
+[1m[31m[32mXX [31m`t...f' [34mjj[m
+[1m[34m[32mXXX. [31m`"' [34m.XXX[m
+[1m[34m[32mOOOOOC [34mlXXXXX[m
+[m

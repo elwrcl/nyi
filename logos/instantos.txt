@@ -1,0 +1,23 @@
+# distro: InstantOS
+[m                                          
+[1m[31m     'cx0XWWMMWNKOd:'.[m
+[1m[31m  .;kNMMMMMMMMMMMMMWNKd'[m
+[1m[31m 'kNMMMMMMWNNNWMMMMMMMMXo.[m
+[1m[31m,0MMMMMW0o;'..,:dKWMMMMMWx.[m
+[1m[31mOMMMMMXl.        .xNMMMMMNo[m
+[1m[31mWMMMMNl           .kWWMMMMO'[m
+[1m[31mMMMMMX;            oNWMMMMK,[m
+[1m[31mNMMMMWo           .OWMMMMMK,[m
+[1m[31mkWMMMMNd.        ,kWMMMMMMK,[m
+[1m[31m'kWMMMMWXxl:;;:okNMMMMMMMMK,[m
+[1m[31m .oXMMMMMMMWWWMMMMMMMMMMMMK,[m
+[1m[31m   'oKWMMMMMMMMMMMMMMMMMMMK,[m
+[1m[31m     .;lxOKXXXXXXXXXXXXXXXO;......[m
+[1m[31m          ................,d0000000kd:.[m
+[1m[31m                          .kMMMMMMMMMW0;[m
+[1m[31m                          .kMMMMMMMMMMMX[m
+[1m[31m                          .xMMMMMMMMMMMW[m
+[1m[31m                           cXMMMMMMMMMM0[m
+[1m[31m                            :0WMMMMMMNx,[m
+[1m[31m                             .o0NMWNOc.[m
+[m

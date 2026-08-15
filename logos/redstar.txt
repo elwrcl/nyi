@@ -1,0 +1,21 @@
+# distro: Redstar
+[m                                            
+[1m[31m                    ..[m
+[1m[31m                  .oK0l[m
+[1m[31m                 :0KKKKd.[m
+[1m[31m               .xKO0KKKKd[m
+[1m[31m              ,Od' .d0000l[m
+[1m[31m             .c;.   .'''...           ..'.[m
+[1m[31m.,:cloddxxxkkkkOOOOkkkkkkkkxxxxxxxxxkkkx:[m
+[1m[31m;kOOOOOOOkxOkc'...',;;;;,,,'',;;:cllc:,.[m
+[1m[31m .okkkkd,.lko  .......',;:cllc:;,,'''''.[m
+[1m[31m   .cdo. :xd' cd:.  ..';'',,,'',,;;;,'.[m
+[1m[31m      . .ddl.;doooc'..;oc;'..';::;,'.[m
+[1m[31m        coo;.oooolllllllcccc:'.  .[m
+[1m[31m       .ool''lllllccccccc:::::;.[m
+[1m[31m       ;lll. .':cccc:::::::;;;;'[m
+[1m[31m       :lcc:'',..';::::;;;;;;;,,.[m
+[1m[31m       :cccc::::;...';;;;;,,,,,,.[m
+[1m[31m       ,::::::;;;,'.  ..',,,,'''.[m
+[1m[31m        ........          ......[m
+[m

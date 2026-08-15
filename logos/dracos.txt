@@ -1,0 +1,16 @@
+# distro: DracOS
+[m                                          
+[1m[31m       `-:/-[m
+[1m[31m          -os:[m
+[1m[31m            -os/`[m
+[1m[31m              :sy+-`[m
+[1m[31m               `/yyyy+.[m
+[1m[31m                 `+yyyyo-[m
+[1m[31m                   `/yyyys:[m
+[1m[31m`:osssoooo++-        +yyyyyy/`[m
+[1m[31m   ./yyyyyyo         yo`:syyyy+.[m
+[1m[31m      -oyyy+         +-   :yyyyyo-[m
+[1m[31m        `:sy:        `.    `/yyyyys:[m
+[1m[31m           ./o/.`           .oyyso+oo:`[m
+[1m[31m              :+oo+//::::///:-.`     `.`[m
+[m

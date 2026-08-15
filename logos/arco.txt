@@ -1,0 +1,23 @@
+# distro: arco
+[m                                          
+[1m[31m                   /-[m
+[1m[31m                  ooo:[m
+[1m[31m                 yoooo/[m
+[1m[31m                yooooooo[m
+[1m[31m               yooooooooo[m
+[1m[31m              yooooooooooo[m
+[1m[31m            .yooooooooooooo[m
+[1m[31m           .oooooooooooooooo[m
+[1m[31m          .oooooooarcoooooooo[m
+[1m[31m         .ooooooooo-oooooooooo[m
+[1m[31m        .ooooooooo-  oooooooooo[m
+[1m[31m       :ooooooooo.    :ooooooooo[m
+[1m[31m      :ooooooooo.      :ooooooooo[m
+[1m[31m     :oooarcooo         .oooarcooo[m
+[1m[31m    :ooooooooy           .ooooooooo[m
+[1m[31m   [31m:ooooooooo   [32m/ooooooooooooooooooo[m
+[1m[32m  [31m:ooooooooo      [32m.-ooooooooooooooooo.[m
+[1m[32m  [31mooooooooo-            [32m-ooooooooooooo.[m
+[1m[32m [31mooooooooo-                [32m.-oooooooooo.[m
+[1m[32m[31mooooooooo.                    [32m-ooooooooo[m
+[m

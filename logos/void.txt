@@ -1,0 +1,21 @@
+# distro: void
+[m                                               
+[1m[31m                __.;=====;.__[m
+[1m[31m            _.=+==++=++=+=+===;.[m
+[1m[31m             -=+++=+===+=+=+++++=_[m
+[1m[31m        .     -=:``     `--==+=++==.[m
+[1m[31m       _vi,    `            --+=++++:[m
+[1m[31m      .uvnvi.       _._       -==+==+.[m
+[1m[31m     .vvnvnI`    .;==|==;.     :|=||=|.[m
+[1m[31m[32m+QmQQm[31mpvvnv;[32m _yYsyQQWUUQQQm #QmQ#[31m:[32mQQQWUV$QQm.[m
+[1m[32m [32m-QQWQW[31mpvvo[32mwZ?.wQQQE[31m==<[32mQWWQ/QWQW.QQWW[31m(:[32m jQWQE[m
+[1m[32m  [32m-$QQQQmmU'  jQQQ[31m@+=<[32mQWQQ)mQQQ.mQQQC[31m+;[32mjWQQ@'[m
+[1m[32m   [32m-$WQ8Y[31mnI:[32m   QWQQwgQQWV[31m`[32mmWQQ.jQWQQgyyWW@![m
+[1m[32m     [31m-1vvnvv.     `~+++`        ++|+++[m
+[1m[31m      +vnvnnv,                 `-|===[m
+[1m[31m       +vnvnvns.           .      :=-[m
+[1m[31m        -Invnvvnsi..___..=sv=.     `[m
+[1m[31m          +Invnvnvnnnnnnnnvvnn;.[m
+[1m[31m            ~|Invnvnvvnvvvnnv}+`[m
+[1m[31m               -~|{*l}*|~[m
+[m

@@ -1,0 +1,18 @@
+# distro: SharkLinux
+[m                                     
+[1m[31m                             `:shd/[m
+[1m[31m                         `:yNMMMMs[m
+[1m[31m                      `-smMMMMMMN.[m
+[1m[31m                    .+dNMMMMMMMMs[m
+[1m[31m                  .smNNMMMMMMMMm`[m
+[1m[31m                .sNNNNNNNMMMMMM/[m
+[1m[31m              `omNNNNNNNMMMMMMm[m
+[1m[31m             /dNNNNNNNNMMMMMMM+[m
+[1m[31m           .yNNNNNNNNNMMMMMMMN`[m
+[1m[31m          +mNNNNNNNNNMMMMMMMMh[m
+[1m[31m        .hNNNNNNNNNNMMMMMMMMMs[m
+[1m[31m       +mMNNNNNNNNMMMMMMMMMMMs[m
+[1m[31m     .hNMMNNNNMMMMMMMMMMMMMMMd[m
+[1m[31m   .oNNNNNNNNNNMMMMMMMMMMMMMMMo[m
+[1m[31m`:+syyssoo++++ooooossssssssssso:[m
+[m

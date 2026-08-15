@@ -1,0 +1,20 @@
+# distro: Haiku2
+[m                                   
+[1m[31m[32m          :dc'[m
+[1m[32m       'l:;'[31m,[32m'ck.    .;dc:.[m
+[1m[32m       co    [31m..[32mk.  .;;   ':o.[m
+[1m[32m       co    [31m..[32mk. ol      [31m.[32m0.[m
+[1m[32m       co    [31m..[32mk. oc     [31m..[32m0.[m
+[1m[32m       co    [31m..[32mk. oc     [31m..[32m0.[m
+[1m[32m.Ol,.  co [31m...''[32mOc;kkodxOdddOoc,.[m
+[1m[32m ';lxxlxOdxkxk0kd[31moooll[32mdl[31mccc:[32mclxd;[m
+[1m[32m     ..[31moOolllllccccccc:::::[32mod;[m
+[1m[32m       cx:ooc[31m:::::::;[32mcooolcX.[m
+[1m[32m       cd[31m.[32m''cloxdoollc' [31m...[32m0.[m
+[1m[32m       cd[31m......[32mk;[31m.[32mxl[31m....  .[32m0.[m
+[1m[32m       .::c[31m;..[32mcx;[31m.[32mxo[31m..... .[32m0.[m
+[1m[32m          '::c'[31m...[32mdo[31m..... .[32mK,[m
+[1m[32m                  cd,.[31m....:[32mO,[31m[m
+[1m[31m                    ':clod:'[31m[m
+[1m[31m                        [31m[m
+[m

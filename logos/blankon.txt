@@ -1,0 +1,20 @@
+# distro: BlankOn
+[m                                          
+[1m[31m[32m        `./ohdNMMMMNmho+.` [31m       .+oo:`[m
+[1m[31m[32m      -smMMMMMMMMMMMMMMMMmy-`    [31m`yyyyy+[m
+[1m[31m[32m   `:dMMMMMMMMMMMMMMMMMMMMMMd/`  [31m`yyyyys[m
+[1m[31m[32m  .hMMMMMMMNmhso/++symNMMMMMMMh- [31m`yyyyys[m
+[1m[31m[32m -mMMMMMMms-`         -omMMMMMMN-[31m.yyyyys[m
+[1m[31m[32m.mMMMMMMy.              .yMMMMMMm:[31myyyyys[m
+[1m[31m[32msMMMMMMy                 `sMMMMMMh[31myyyyys[m
+[1m[31m[32mNMMMMMN:                  .NMMMMMN[31myyyyys[m
+[1m[31m[32mMMMMMMm.                   NMMMMMN[31myyyyys[m
+[1m[31m[32mhMMMMMM+                  /MMMMMMN[31myyyyys[m
+[1m[31m[32m:NMMMMMN:                :mMMMMMM+[31myyyyys[m
+[1m[31m[32m oMMMMMMNs-            .sNMMMMMMs.[31myyyyys[m
+[1m[31m[32m  +MMMMMMMNho:.`  `.:ohNMMMMMMNo [31m`yyyyys[m
+[1m[31m[32m   -hMMMMMMMMNNNmmNNNMMMMMMMMh-  [31m`yyyyys[m
+[1m[31m[32m     :yNMMMMMMMMMMMMMMMMMMNy:`   [31m`yyyyys[m
+[1m[31m[32m       .:sdNMMMMMMMMMMNds/.      [31m`yyyyyo[m
+[1m[31m[32m           `.:/++++/:.`           [31m:oys+.[m
+[m

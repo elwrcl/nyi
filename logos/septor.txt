@@ -1,0 +1,23 @@
+# distro: Septor
+[m                                          
+[1m[31mssssssssssssssssssssssssssssssssssssssss[m
+[1m[31mssssssssssssssssssssssssssssssssssssssss[m
+[1m[31mssssssssssssssssssssssssssssssssssssssss[m
+[1m[31mssssssssssssssssssssssssssssssssssssssss[m
+[1m[31mssssssssss[32m;okOOOOOOOOOOOOOOko;[31mssssssssss[m
+[1m[31msssssssss[32moNWWWWWWWWWWWWWWWWWWNo[31msssssssss[m
+[1m[31mssssssss[32m:WWWWWWWWWWWWWWWWWWWWWW:[31mssssssss[m
+[1m[31mssssssss[32mlWWWWWk[31mssssssssss[32mlddddd:[31mssssssss[m
+[1m[31mssssssss[32mcWWWWWNKKKKKKKKKKKKOx:[31mssssssssss[m
+[1m[31m[33myy[31msssssss[32mOWWWWWWWWWWWWWWWWWWWWx[31msssssss[33myy[m
+[1m[33myyyyyyyyyy[32m:kKNNNNNNNNNNNNWWWWWW:[33myyyyyyyy[m
+[1m[33myyyyyyyy[32msccccc;[33myyyyyyyyyy[32mkWWWWW:[33myyyyyyyy[m
+[1m[33myyyyyyyy[32m:WWWWWWNNNNNNNNNNWWWWWW;[33myyyyyyyy[m
+[1m[33myyyyyyyy[32m.dWWWWWWWWWWWWWWWWWWWNd[33myyyyyyyyy[m
+[1m[33myyyyyyyyyy[32msdO0KKKKKKKKKKKK0Od;[33myyyyyyyyyy[m
+[1m[33myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[33myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[33myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[33myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[33myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[m

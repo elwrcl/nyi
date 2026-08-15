@@ -1,0 +1,24 @@
+# distro: OpenMamba
+[m                                          
+[1m[31m                 `````[m
+[1m[31m           .-/+ooooooooo+/:-`[m
+[1m[31m        ./ooooooooooooooooooo+:.[m
+[1m[31m      -+oooooooooooooooooooooooo+-[m
+[1m[31m    .+ooooooooo+/:---::/+ooooooooo+.[m
+[1m[31m   :oooooooo/-`          `-/oo[32ms´[31moooo.[32ms´[31m[m
+[1m[31m  :ooooooo/`                `[32msNds[31mooo[32msNds[31m[m
+[1m[31m -ooooooo-                   [32m:dmy[31mooo[32m:dmy[31m[m
+[1m[31m +oooooo:                      :oooooo-[m
+[1m[31m.ooooooo                        .://:`[m
+[1m[31m:oooooo+                        ./+o+:`[m
+[1m[31m-ooooooo`                      `oooooo+[m
+[1m[31m`ooooooo:                      /oooooo+[m
+[1m[31m -ooooooo:                    :ooooooo.[m
+[1m[31m  :ooooooo+.                .+ooooooo:[m
+[1m[31m   :oooooooo+-`          `-+oooooooo:[m
+[1m[31m    .+ooooooooo+/::::://oooooooooo+.[m
+[1m[31m      -+oooooooooooooooooooooooo+-[m
+[1m[31m        .:ooooooooooooooooooo+:.[m
+[1m[31m           `-:/ooooooooo+/:.`[m
+[1m[31m                 ``````[m
+[m

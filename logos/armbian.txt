@@ -1,0 +1,25 @@
+# distro: Armbian
+[m                                     
+[1m[31m                ..[m
+[1m[31m            `:]x**j-,'[m
+[1m[31m       .,+t***********z\<"[m
+[1m[31m       ?******************;[m
+[1m[31m      '*n` .'`^,;;,^`'. ,cc.[m
+[1m[31m      -<.                .[l[m
+[1m[31m     //     ^^      ^^    \\[m
+[1m[31m     !^         [32m^^[31m         ":[m
+[1m[31m    'tt}`     [32m!~]rj_[31m     ")t/.[m
+[1m[31m    Itttt?'   [32m~~]rr][31m   `{tttt,[m
+[1m[31m    \tttttt!""I[32m_]r([31m"""~tttttt1[m
+[1m[31m  '_tttttttttttt[32m)f[31mtttttttttttti.[m
+[1m[31m \*ztttttttttttttttttttttttttf**[[m
+[1m[31ml**c)tttttttttttttttttttttttt(z**,[m
+[1m[31m.z*x.`tttttttttttttttttttttttt.`u*n[m
+[1m[31m>`   (tttttttttttttttttttttt]   "I[m
+[1m[31m     ,tttttttttttttttttttttt`[m
+[1m[31m     ./ttttt[32mf[31mtttttttt[32mf[31mttttt([m
+[1m[31m      'I)[32m))(\()([31mtt[32m))|\()([31m{;'[m
+[1m[31m        [32m.~~~~~~~|)~~~~~~~<[31m[m
+[1m[31m        '[32m[)))))1[31m|([32m)))))))[31m?[m
+[1m[31m          [32m",,,"    ",,,^[m
+[m

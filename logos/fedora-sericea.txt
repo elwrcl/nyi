@@ -1,0 +1,20 @@
+# distro: Fedora-Sericea
+[m                                     
+[1m[31m              :oooo,  .','[m
+[1m[31m      .';;;.;oooooooolooooo'[m
+[1m[31m     coooooooooooooooooooooooolc'[m
+[1m[31m  .':oooooooooooo[32mll[31mooooooooooooool[m
+[1m[31m.oooooooooooooooo[32mll[31moooooooooooo[32ml[31mool[m
+[1m[31mooooooooooooooooo[32mll[31mooooooooooo[32mll[31moo'[m
+[1m[31m oooo[32ml[31moooooooooo[32mlll[31mooooooooo[32mlll[31moo[m
+[1m[31m .ooooo[32mlll[31mooooo[32mlll[31mooooooooo[32mlll[31mool[m
+[1m[31m .ooooooo[32mlll[31moo[32mllll[31moooo[32mlllll[31mooooo:[m
+[1m[31m  'oooooooo[32mllllllllllll[31moooooooo'[m
+[1m[31m     .c,.oo[32mlllll[31moooooooo.[32m[m
+[1m[32m           'll;[m
+[1m[32m           'll.[m
+[1m[32m           lll[m
+[1m[32m           lll[m
+[1m[32m          ;ll,[m
+[1m[32m          .l:[m
+[m

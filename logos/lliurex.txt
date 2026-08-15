@@ -1,0 +1,19 @@
+# distro: LliureX
+[m                                            
+[1m[31m                    ~.       ........[m
+[1m[31m               ::~~ +=:    ~:========:~[m
+[1m[31m           ..~:+oo===oo:.~+oooooooooooo+~[m
+[1m[31m        .:+==ooooooooooo==ooooooooooooooo:[m
+[1m[31m      .:=oooooooooooooooooooooooooooooooo=[m
+[1m[31m..   .=oooooooooooooooooooooooooooooooooo=[m
+[1m[31m==. .+ooooooooooooooooooooooooooooooooooo=[m
+[1m[31m~+:~:oooooooooooooooooooooooooooooooooooo:[m
+[1m[31m ~ooooooooooooooooooooooooooooooooooooo=:[m
+[1m[31m ~oooooooooooooooooooooooooooooooooo==:.[m
+[1m[31m .+oooooooooooooooooooooooooo=~::::~..[m
+[1m[31m  ~+oooooooooooooooooooooooo=:[m
+[1m[31m   .:=ooooooooooooooooooooo=:[m
+[1m[31m     .:==ooooooooooooooo==:.[m
+[1m[31m        ~~:===oooooo==+:~[m
+[1m[31m           ...~~:~::..[m
+[m

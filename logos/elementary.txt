@@ -1,0 +1,20 @@
+# distro: Elementary
+[m                                     
+[1m[31m         eeeeeeeeeeeeeeeee[m
+[1m[31m      eeeeeeeeeeeeeeeeeeeeeee[m
+[1m[31m    eeeee  eeeeeeeeeeee   eeeee[m
+[1m[31m  eeee   eeeee       eee     eeee[m
+[1m[31m eeee   eeee          eee     eeee[m
+[1m[31meee    eee            eee       eee[m
+[1m[31meee   eee            eee        eee[m
+[1m[31mee    eee           eeee       eeee[m
+[1m[31mee    eee         eeeee      eeeeee[m
+[1m[31mee    eee       eeeee      eeeee ee[m
+[1m[31meee   eeee   eeeeee      eeeee  eee[m
+[1m[31meee    eeeeeeeeee     eeeeee    eee[m
+[1m[31m eeeeeeeeeeeeeeeeeeeeeeee    eeeee[m
+[1m[31m  eeeeeeee eeeeeeeeeeee      eeee[m
+[1m[31m    eeeee                 eeeee[m
+[1m[31m      eeeeeee         eeeeeee[m
+[1m[31m         eeeeeeeeeeeeeeeee[m
+[m

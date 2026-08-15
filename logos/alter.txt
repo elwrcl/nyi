@@ -1,0 +1,23 @@
+# distro: Alter
+[m                                             
+[1m[31m                      %,[m
+[1m[31m                    ^WWWw[m
+[1m[31m                   'wwwwww[m
+[1m[31m                  !wwwwwwww[m
+[1m[31m                 #`wwwwwwwww[m
+[1m[31m                @wwwwwwwwwwww[m
+[1m[31m               wwwwwwwwwwwwwww[m
+[1m[31m              wwwwwwwwwwwwwwwww[m
+[1m[31m             wwwwwwwwwwwwwwwwwww[m
+[1m[31m            wwwwwwwwwwwwwwwwwwww,[m
+[1m[31m           w~1i.wwwwwwwwwwwwwwwww,[m
+[1m[31m         3~:~1lli.wwwwwwwwwwwwwwww.[m
+[1m[31m        :~~:~?ttttzwwwwwwwwwwwwwwww[m
+[1m[31m       #<~:~~~~?llllltO-.wwwwwwwwwww[m
+[1m[31m      #~:~~:~:~~?ltlltlttO-.wwwwwwwww[m
+[1m[31m     @~:~~:~:~:~~(zttlltltlOda.wwwwwww[m
+[1m[31m    @~:~~: ~:~~:~:(zltlltlO    a,wwwwww[m
+[1m[31m   8~~:~~:~~~~:~~~~_1ltltu          ,www[m
+[1m[31m  5~~:~~:~~:~~:~~:~~~_1ltq             N,,[m
+[1m[31m g~:~~:~~~:~~:~~:~:~~~~1q                N,[m
+[m

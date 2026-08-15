@@ -1,0 +1,22 @@
+# distro: ShastraOS
+[m                            
+[1m[31m               ..,;;,'.[m
+[1m[31m            ':oo.     ;o:[m
+[1m[31m          :o,           ol[m
+[1m[31m        .oo        ..';co:[m
+[1m[31m        ooo',;:looo;[m
+[1m[31m    .;lddl[m
+[1m[31m  cx   .xl     .c:'[m
+[1m[31m dd     xx     xx ,d;[m
+[1m[31m.xd     cx.    xx   dd.[m
+[1m[31m cx:    .xo    xx    ,x:[m
+[1m[31m  'xl    xx    cx'    .xl[m
+[1m[31m    xd,  xx    .xd     dx.[m
+[1m[31m     .xo:xx     xx    .xx[m
+[1m[31m        'c      xx:.'lx:[m
+[1m[31m           ..,;cxxxo[m
+[1m[31m  .';:codxxl   lxo[m
+[1m[31mcd.           'xo[m
+[1m[31m:o,         'ld[m
+[1m[31m .oc'...';lo[m
+[m

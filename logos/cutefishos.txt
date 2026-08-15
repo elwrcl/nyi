@@ -1,0 +1,12 @@
+# distro: CutefishOS
+[m                                          
+[1m[31m                     ___ww___[m
+[1m[31m_              _wwMMM@M^^^^MMMMww_[m
+[1m[31mM0w_       _wMMM~~             ~~MMm_[m
+[1m[31m  ~MMy _ww0M~                      ~MMy[m
+[1m[31m    ~MMMM~                      o    "MM[m
+[1m[31m[33m  jw0M~~MMMw_                      _wMM'[m
+[1m[33mwMM~      ~~MMmw__             __w0M~[m
+[1m[33m~             ~~MM0MmwwwwwwwwwMMM~[m
+[1m[33m                    ~~~~^^~~~[m
+[m

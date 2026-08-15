@@ -1,0 +1,14 @@
+# distro: Cosmic
+[m                              
+[1m[31m .xMMMMMMMMMMMMMMMMMMMMMMx.[m
+[1m[31mJDMMMMMMMMMMMMMMMMMMMMMMMMOL[m
+[1m[31mIMMMY'                'YMMMI[m
+[1m[31mMMMM                    MMMM[m
+[1m[31mMMMM                    MMMM[m
+[1m[31mIMMMb                  dMMMI[m
+[1m[31m'YMMMMMMMMb.    .dMMMMMMMMK'[m
+[1m[31m 'OMMMMMMMP'    'YMMMMMMMP'[m
+
+[1m[31m  [32m.x76767[33m6767676[34m76767[35m676x.[m
+[1m[35m  [32m'*76767[33m6767676[34m76767[35m676*'[m
+[m

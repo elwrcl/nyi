@@ -1,0 +1,20 @@
+# distro: Condres
+[m                                          
+[1m[31m[31msyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy+[33m.+.[m
+[1m[33m[31m`oyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy+[33m:++.[m
+[1m[33m[32m/o[31m+oyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/[33moo++.[m
+[1m[33m[32m/y+[31msyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[33m+ooo++.[m
+[1m[33m[32m/hy+[31moyyyhhhhhhhhhhhhhhyyyyyyyyy[33m+oo+++++.[m
+[1m[33m[32m/hhh+[31mshhhhhdddddhhhhhhhyyyyyyy[33m+oo++++++.[m
+[1m[33m[32m/hhdd+[31moddddddddddddhhhhhyyyys[33m+oo+++++++.[m
+[1m[33m[32m/hhddd+[31modmmmdddddddhhhhyyyy[33m+ooo++++++++.[m
+[1m[33m[32m/hhdddmo[31modmmmdddddhhhhhyyy[33m+oooo++++++++.[m
+[1m[33m[32m/hdddmmms[31m/dmdddddhhhhyyys[33m+oooo+++++++++.[m
+[1m[33m[32m/hddddmmmy[31m/hdddhhhhyyyyo[33m+oooo++++++++++:[m
+[1m[33m[32m/hhdddmmmmy[31m:yhhhhyyyyy+[33m+oooo+++++++++++:[m
+[1m[33m[32m/hhddddddddy[31m-syyyyyys+[33mooooo++++++++++++:[m
+[1m[33m[32m/hhhddddddddy[31m-+yyyy+[33m/ooooo+++++++++++++:[m
+[1m[33m[32m/hhhhhdddddhhy[31m./yo:[33m+oooooo+++++++++++++/[m
+[1m[33m[32m/hhhhhhhhhhhhhy[31m:-.[33m+sooooo+++++++++++///:[m
+[1m[33m[32m:sssssssssssso++[31m[33m`:/:--------.````````[m
+[m

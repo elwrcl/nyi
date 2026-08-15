@@ -1,0 +1,22 @@
+# distro: YiffOS
+[m                                       
+[1m[31m           NK[m
+[1m[31m            NxKXW[m
+[1m[31m            WOlcoXW[m
+[1m[31m            0olccloxNW[m
+[1m[31m            XxllllllloxOKNW[m
+[1m[31m            Nklllllllllllodk0XWW[m
+[1m[31m           N0dllllllllllllllodxOKNW[m
+[1m[31m         WKxlllllllllllllllllllooxOKN[m
+[1m[31m       WKdllllllllllllllooooooooooooo[m
+[1m[31m      Nxllllllllllllllloooooooooo[32moooo[m
+[1m[32m[31m    XXNOolllllllllllloooooooooo[32moooooo[m
+[1m[32m[31m  WX0xolllllllllllooooooooooo[32moooooooo[m
+[1m[32m[31mXWN0xolllllllllloooooooo[32mooooooooooooo[m
+[1m[32m[31m  Kkdolllllllooooddddd[32mdoooooooooooddo[m
+[1m[32m[31m       K00XNW[32m      WX0xdooooooddddddd[m
+[1m[32m                      WXOxdoooooodddd[m
+[1m[32m                         WXOxdddddddd[m
+[1m[32m                               NX0ddd[m
+[1m[32m                                 WN0d[m
+[m

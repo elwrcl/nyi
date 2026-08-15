@@ -1,0 +1,22 @@
+# distro: linuxmint
+[m                                          
+[1m[31m            [32m_.-ppOOOOOOqq-._[m
+[1m[32m         .oOOOOPPPPPPPPPPOOOOo.[m
+[1m[32m      .oOOOO[31m.=oOOOOOOOOOOo=.[32mOOOOo.[m
+[1m[32m    .:OOO[31m.=oOOOOOOOOOOOOOOOOo=.[32mOOO:.[m
+[1m[32m   .OOO[31m.OOOOOOOOOOOOOOOOOOOOOOOO.[32mOOO.[m
+[1m[32m  .OOO[31m.OO    OOO:´   `::´    `:OOO.[32mOO:[m
+[1m[32m .OOO[31m.OOO    OO                OOO.[32mOOO:[m
+[1m[32m OOO[31m.OOOO    OO    oo    oo    OOOO.[32mOOO[m
+[1m[32m:OOO[31m:OOOO    OO    OO    OO    OOOO:[32mOOO:[m
+[1m[32m:OOO[31m:OOOO    OO    OO    OO    OOOO:[32mOOO:[m
+[1m[32m'OOO[31m'OOOO    OO    OO    OO    OOOO'[32mOOO'[m
+[1m[32m OOO[31m'OOOO    OO____OO____OO    OOOO'[32mOOO'[m
+[1m[32m 'OOO[31m'OOO    'OOOOOOOOOOOO'    OOOO'[32mOOO[m
+[1m[32m  'OOO[31m'OOO                    .OOO'[32mOOO'[m
+[1m[32m   'OOO[31m'OOOO:ooooooooooooooo:OOOO'[32mOOO'[m
+[1m[32m    ':OOOo[31m'=OOOOOOOOOOOOOOOOO='[32moOOO:'[m
+[1m[32m      ':OOOOo[31m'=OOOOOOOOOOO='[32moOOOO:'[m
+[1m[32m         ``-OOOOooooooooooOOOO-´´[m
+[1m[32m             ```-=:OOOO:=-´´´[m
+[m

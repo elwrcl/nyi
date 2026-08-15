@@ -1,0 +1,22 @@
+# distro: Antergos
+[m                                          
+[1m[31m[32m              `.-/::/-``[m
+[1m[32m            .-/osssssssso/.[m
+[1m[32m           :osyysssssssyyys+-[m
+[1m[32m        `.+yyyysssssssssyyyyy+.[m
+[1m[32m       `/syyyyyssssssssssyyyyys-`[m
+[1m[32m      `/yhyyyyysss[31m++[32mssosyyyyhhy/`[m
+[1m[32m     .ohhhyyyys[31mo++/+o[32mso[31m+[32msyy[31m+[32mshhhho.[m
+[1m[32m    .shhhhys[31moo++//+[32msss[31m+++[32myyy[31m+s[32mhhhhs.[m
+[1m[32m   -yhhhhs[31m+++++++o[32mssso[31m+++[32myyy[31ms+o[32mhhddy:[m
+[1m[32m  -yddhhy[31mo+++++o[32msyyss[31m++++[32myyy[31myooy[32mhdddy-[m
+[1m[32m .yddddhs[31mo++o[32msyyyyys[31m+++++[32myyhh[31msos[32mhddddy`[m
+[1m[32m`odddddhyosyhyyyyyy[31m++++++[32myhhhyosddddddo[m
+[1m[32m.dmdddddhhhhhhhyyyo[31m+++++[32mshhhhhohddddmmh.[m
+[1m[32mddmmdddddhhhhhhhso[31m++++++[32myhhhhhhdddddmmdy[m
+[1m[32mdmmmdddddddhhhyso[31m++++++[32mshhhhhddddddmmmmh[m
+[1m[32m-dmmmdddddddhhys[31mo++++o[32mshhhhdddddddmmmmd-[m
+[1m[32m.smmmmddddddddhhhhhhhhhdddddddddmmmms.[m
+[1m[32m   `+ydmmmdddddddddddddddddddmmmmdy/.[m
+[1m[32m      `.:+ooyyddddddddddddyyso+:.`[m
+[m

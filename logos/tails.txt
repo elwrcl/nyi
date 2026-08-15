@@ -1,0 +1,22 @@
+# distro: Tails
+[m                               
+[1m[31m      ``[m
+[1m[31m  ./yhNh[m
+[1m[31msyy/Nshh         `:o/[m
+[1m[31mN:dsNshh  █   `ohNMMd[m
+[1m[31mN-/+Nshh      `yMMMMd[m
+[1m[31mN-yhMshh       yMMMMd[m
+[1m[31mN-s:hshh  █    yMMMMd so//.[m
+[1m[31mN-oyNsyh       yMMMMd d  Mms.[m
+[1m[31mN:hohhhd:.     yMMMMd  syMMM+[m
+[1m[31mNsyh+-..+y+-   yMMMMd   :mMM+[m
+[1m[31m+hy-      -ss/`yMMMM     `+d+[m
+[1m[31m  :sy/.     ./yNMMMMm      ``[m
+[1m[31m    .+ys- `:+hNMMMMMMy/`[m
+[1m[31m      `hNmmMMMMMMMMMMMMdo.[m
+[1m[31m       dMMMMMMMMMMMMMMMMMNh:[m
+[1m[31m       +hMMMMMMMMMMMMMMMMMmy.[m
+[1m[31m         -oNMMMMMMMMMMmy+.`[m
+[1m[31m           `:yNMMMds/.`[m
+[1m[31m              .//`[m
+[m

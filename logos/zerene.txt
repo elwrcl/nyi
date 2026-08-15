@@ -1,0 +1,21 @@
+# distro: Zerene
+[m                                        
+[1m[31m           MMM[m
+[1m[31m           MMMM[m
+[1m[31m           MMMMM[m
+[1m[31m           MMMMMM[m
+[1m[31m           MMMMMMa[m
+[1m[31m           MMMMMMMa[m
+[1m[31m           MMMMMMM[m
+[1m[31m            MMMMMM[m
+[1m[31m             MMMM[m
+[1m[31m                M[m
+[1m[31m               oxdo aMa[m
+[1m[31m           aMd     aMMMMMMMMM[m
+[1m[31m         aMMMMM     MMMMMMMMMMMMMMa[m
+[1m[31m       MMMMMMMa       MMMMMMMMMMMMMMMa[m
+[1m[31m     MMMMMMMMa[m
+[1m[31m   MMMMMMMMa[m
+[1m[31m MMMMMMM[m
+[1m[31mMMMM[m
+[m

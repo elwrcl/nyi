@@ -1,0 +1,16 @@
+# distro: artix_small
+[m                           
+[1m[31m            '[m
+[1m[31m           'A'[m
+[1m[31m          'ooo'[m
+[1m[31m         'ookxo'[m
+[1m[31m         `ookxxo'[m
+[1m[31m       '.   `ooko'[m
+[1m[31m      'ooo`.   `oo'[m
+[1m[31m     'ooxxxoo`.   `'[m
+[1m[31m    'ookxxxkooo.`   .[m
+[1m[31m   'ookxxkoo'`   .'oo'[m
+[1m[31m  'ooxoo'`     .:ooxxo'[m
+[1m[31m 'io'`             `'oo'[m
+[1m[31m'`                     `'[m
+[m

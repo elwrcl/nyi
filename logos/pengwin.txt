@@ -1,0 +1,18 @@
+# distro: Pengwin
+[m                              
+[1m[31m[33m              ...`[m
+[1m[33m[33m              `-///:-`[m
+[1m[33m[33m                .+[32mssys[33m/[m
+[1m[33m[33m                 +[32myyyyy[33mo    [32m[m
+[1m[32m[32m                 -yyyyyy:[m
+[1m[32m[32m    `.:/+ooo+/:` -yyyyyy+[m
+[1m[32m[32m  `:oyyyyyys+:-.`syyyyyy:[m
+[1m[32m[32m .syyyyyyo-`   .oyyyyyyo[m
+[1m[32m[32m`syyyyyy   `-+yyyyyyy/`[m
+[1m[32m[32m/yyyyyy+ -/osyyyyyyo/.[m
+[1m[32m[32m+yyyyyy-  `.-:::-.`[m
+[1m[32m[32m.yyyyyy-[m
+[1m[32m[33m :[32myyyyy[33mo[m
+[1m[33m[33m  .+[32mooo[33m+[m
+[1m[33m[33m    `.::/:.[m
+[m

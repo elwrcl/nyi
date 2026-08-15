@@ -1,0 +1,24 @@
+# distro: ARCHlabs
+[m                                              
+[1m[31m                     'c'[m
+[1m[31m                    'kKk,[m
+[1m[31m                   .dKKKx.[m
+[1m[31m                  .oKXKXKd.[m
+[1m[31m                 .l0XXXXKKo.[m
+[1m[31m                 c0KXXXXKX0l.[m
+[1m[31m                :0XKKOxxOKX0l.[m
+[1m[31m               :OXKOc. .c0XX0l.[m
+[1m[31m              :OK0o. [32m...[31m'dKKX0l.[m
+[1m[31m             :OX0c  [32m;xOx'[31m'dKXX0l.[m
+[1m[31m            :0KKo.[32m.o0XXKd'.[31mlKXX0l.[m
+[1m[31m           c0XKd.[32m.oKXXXXKd..[31moKKX0l.[m
+[1m[31m         .c0XKk;[32m.l0K0OO0XKd..[31moKXXKo.[m
+[1m[31m        .l0XXXk:[32m,dKx,.'l0XKo.[31m.kXXXKo.[m
+[1m[31m       .o0XXXX0d,[32m:x;   .oKKx'[31m.dXKXXKd.[m
+[1m[31m      .oKXXXXKK0c.[32m;.    :00c'[31mcOXXXXXKd.[m
+[1m[31m     .dKXXXXXXXXk,[32m.     cKx'[31m'xKXXXXXXKx'[m
+[1m[31m    'xKXXXXK0kdl:.     [32m.ok; [31m.cdk0KKXXXKx'[m
+[1m[31m   'xKK0koc,..         [32m'c, [31m    ..,cok0KKk,[m
+[1m[31m  ,xko:'.             [32m.. [31m           .':okx;[m
+[1m[31m .,'.                                   .',.[m
+[m

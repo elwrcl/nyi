@@ -1,0 +1,23 @@
+# distro: Vzlinux
+[m                                       
+[1m[31m             [31m.::::::::.[32m[m
+[1m[32m`/////`      [31m:zzzzzzzz[32m        ://///-[m
+[1m[32m VVVVVu`         [31m-zzz`[32m       /VVVVV.[m
+[1m[32m `dVVVVV        [31m.zzz`[32m       :VVVVV:[m
+[1m[32m  `VVVVVo       [31mzzz[32m        -VVVVV/[m
+[1m[32m   .VVVVV\     [31mzzz/[32m       .VVVVV+[m
+[1m[32m    -VVVVV:   [31mzzzzzzzzz[32m  .dVVVVs[m
+[1m[32m     \VVVVV-  [31m`````````[32m  VVVVVV[m
+[1m[32m      +VVVVV.           sVVVVu`[m
+[1m[32m       oVVVVd`         +VVVVd`[m
+[1m[32m        VVVVVV        /VVVVV.[m
+[1m[32m        `uVVVVs      -VVVVV-[m
+[1m[32m         `dVVVV+    .VVVVV/[m
+[1m[32m          .VVVVV\  `dVVVV+[m
+[1m[32m           -VVVVV-`uVVVVo[m
+[1m[32m            :VVVVVVVVVVV[m
+[1m[32m             \VVVVVVVVu[m
+[1m[32m              oVVVVVVd`[m
+[1m[32m               sVVVVV.[m
+[1m[32m                ----.[m
+[m

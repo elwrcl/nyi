@@ -1,0 +1,27 @@
+# distro: PacBSD
+[m                                             
+[1m[31m      :+sMs.[m
+[1m[31m  `:ddNMd-                         -o--`[m
+[1m[31m -sMMMMh:                          `+N+``[m
+[1m[31m yMMMMMs`     .....-/-...           `mNh/[m
+[1m[31m yMMMMMmh+-`:sdmmmmmmMmmmmddy+-``./ddNMMm[m
+[1m[31m yNMMNMMMMNdyyNNMMMMMMMMMMMMMMMhyshNmMMMm[m
+[1m[31m :yMMMMMMMMMNdooNMMMMMMMMMMMMMMMMNmy:mMMd[m
+[1m[31m  +MMMMMMMMMmy:sNMMMMMMMMMMMMMMMMMMMmshs-[m
+[1m[31m  :hNMMMMMMN+-+MMMMMMMMMMMMMMMMMMMMMMMs.[m
+[1m[31m .omysmNNhy/+yNMMMMMMMMMMNMMMMMMMMMNdNNy-[m
+[1m[31m /hMM:::::/hNMMMMMMMMMMMm/-yNMMMMMMN.mMNh`[m
+[1m[31m.hMMMMdhdMMMMMMMMMMMMMMmo  `sMMMMMMN mMMm-[m
+[1m[31m:dMMMMMMMMMMMMMMMMMMMMMdo+  oMMMMMMN`smMNo`[m
+[1m[31m/dMMMMMMMMMMMMMMMMMMMMMNd/` :yMMMMMN:-hMMM.[m
+[1m[31m:dMMMMMMMMMMMMMMMMMMMMMNh`  oMMMMMMNo/dMNN`[m
+[1m[31m:hMMMMMMMMMMMMMMMMMMMMMMNs--sMMMMMMMNNmy++`[m
+[1m[31m sNMMMMMMMMMMMMMMMMMMMMMMMmmNMMMMMMNho::o.[m
+[1m[31m :yMMMMMMMMMMMMMNho+sydNNNNNNNmysso/` -//[m
+[1m[31m  /dMMMMMMMMMMMMMs-  ````````..``[m
+[1m[31m   .oMMMMMMMMMMMMNs`               ./y:`[m
+[1m[31m     +dNMMNMMMMMMMmy`          ``./ys.[m
+[1m[31m      `/hMMMMMMMMMMMNo-``    `.+yy+-`[m
+[1m[31m        `-/hmNMNMMMMMMmmddddhhy/-`[m
+[1m[31m            `-+oooyMMMdsoo+/:.[m
+[m

@@ -1,0 +1,20 @@
+# distro: Apple
+[m                                
+[1m[31m                     ..'[m
+[1m[31m                 ,xNMM.[m
+[1m[31m               .OMMMMo[m
+[1m[31m               lMM"[m
+[1m[31m     .;loddo:.  .olloddol;.[m
+[1m[31m   cKMMMMMMMMMMNWMMMMMMMMMM0:[m
+[1m[31m [32m.KMMMMMMMMMMMMMMMMMMMMMMMWd.[m
+[1m[32m XMMMMMMMMMMMMMMMMMMMMMMMX.[m
+[1m[32m[33m;MMMMMMMMMMMMMMMMMMMMMMMM:[m
+[1m[33m:MMMMMMMMMMMMMMMMMMMMMMMM:[m
+[1m[33m[34m.MMMMMMMMMMMMMMMMMMMMMMMMX.[m
+[1m[34m kMMMMMMMMMMMMMMMMMMMMMMMMWd.[m
+[1m[34m [35m'XMMMMMMMMMMMMMMMMMMMMMMMMMMk[m
+[1m[35m  'XMMMMMMMMMMMMMMMMMMMMMMMMK.[m
+[1m[35m    [36mkMMMMMMMMMMMMMMMMMMMMMMd[m
+[1m[36m     ;KMMMMMMMWXXWMMMMMMMk.[m
+[1m[36m       "cooc*"    "*coo'"[m
+[m

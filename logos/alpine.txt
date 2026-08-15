@@ -1,0 +1,23 @@
+# distro: Alpine
+[m                                          
+[1m[31m       .hddddddddddddddddddddddh.[m
+[1m[31m      :dddddddddddddddddddddddddd:[m
+[1m[31m     /dddddddddddddddddddddddddddd/[m
+[1m[31m    +dddddddddddddddddddddddddddddd+[m
+[1m[31m  `sdddddddddddddddddddddddddddddddds`[m
+[1m[31m `ydddddddddddd++hdddddddddddddddddddy`[m
+[1m[31m.hddddddddddd+`  `+ddddh:-sdddddddddddh.[m
+[1m[31mhdddddddddd+`      `+y:    .sddddddddddh[m
+[1m[31mddddddddh+`   `//`   `.`     -sddddddddd[m
+[1m[31mddddddh+`   `/hddh/`   `:s-    -sddddddd[m
+[1m[31mddddh+`   `/+/dddddh/`   `+s-    -sddddd[m
+[1m[31mddd+`   `/o` :dddddddh/`   `oy-    .yddd[m
+[1m[31mhdddyo+ohddyosdddddddddho+oydddy++ohdddh[m
+[1m[31m.hddddddddddddddddddddddddddddddddddddh.[m
+[1m[31m `yddddddddddddddddddddddddddddddddddy`[m
+[1m[31m  `sdddddddddddddddddddddddddddddddds`[m
+[1m[31m    +dddddddddddddddddddddddddddddd+[m
+[1m[31m     /dddddddddddddddddddddddddddd/[m
+[1m[31m      :dddddddddddddddddddddddddd:[m
+[1m[31m       .hddddddddddddddddddddddh.[m
+[m

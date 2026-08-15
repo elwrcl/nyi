@@ -1,0 +1,20 @@
+# distro: SmartOS
+[m                                     
+[1m[31myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[31myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[31myyyys             oyyyyyyyyyyyyyyyy[m
+[1m[31myyyys  yyyyyyyyy  oyyyyyyyyyyyyyyyy[m
+[1m[31myyyys  yyyyyyyyy  oyyyyyyyyyyyyyyyy[m
+[1m[31myyyys  yyyyyyyyy  oyyyyyyyyyyyyyyyy[m
+[1m[31myyyys  yyyyyyyyy  oyyyyyyyyyyyyyyyy[m
+[1m[31myyyys  yyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[31myyyyy                         syyyy[m
+[1m[31myyyyyyyyyyyyyyyyyyyyyyyyyyyy  syyyy[m
+[1m[31myyyyyyyyyyyyyyyy  syyyyyyyyy  syyyy[m
+[1m[31myyyyyyyyyyyyyyyy  oyyyyyyyyy  syyyy[m
+[1m[31myyyyyyyyyyyyyyyy  oyyyyyyyyy  syyyy[m
+[1m[31myyyyyyyyyyyyyyyy  syyyyyyyyy  syyyy[m
+[1m[31myyyyyyyyyyyyyyyy              yyyyy[m
+[1m[31myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[1m[31myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy[m
+[m

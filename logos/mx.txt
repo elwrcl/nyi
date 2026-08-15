@@ -1,0 +1,20 @@
+# distro: MX
+[m                                          
+[1m[31mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMM[m
+[1m[31mMMMMMMMMMMNs..yMMMMMMMMMMMMMm: +NMMMMMMM[m
+[1m[31mMMMMMMMMMN+    :mMMMMMMMMMNo` -dMMMMMMMM[m
+[1m[31mMMMMMMMMMMMs.   `oNMMMMMMh- `sNMMMMMMMMM[m
+[1m[31mMMMMMMMMMMMMN/    -hMMMN+  :dMMMMMMMMMMM[m
+[1m[31mMMMMMMMMMMMMMMh-    +ms. .sMMMMMMMMMMMMM[m
+[1m[31mMMMMMMMMMMMMMMMN+`   `  +NMMMMMMMMMMMMMM[m
+[1m[31mMMMMMMMMMMMMMMNMMd:    .dMMMMMMMMMMMMMMM[m
+[1m[31mMMMMMMMMMMMMm/-hMd-     `sNMMMMMMMMMMMMM[m
+[1m[31mMMMMMMMMMMNo`   -` :h/    -dMMMMMMMMMMMM[m
+[1m[31mMMMMMMMMMd:       /NMMh-   `+NMMMMMMMMMM[m
+[1m[31mMMMMMMMNo`         :mMMN+`   `-hMMMMMMMM[m
+[1m[31mMMMMMMh.            `oNMMd:    `/mMMMMMM[m
+[1m[31mMMMMm/                -hMd-      `sNMMMM[m
+[1m[31mMMNs`                   -          :dMMM[m
+[1m[31mMm:                                 `oMM[m
+[1m[31mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[m

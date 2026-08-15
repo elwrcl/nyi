@@ -1,0 +1,19 @@
+# distro: Hyperbola
+[m                                        
+[1m[31m                     WW[m
+[1m[31m                     KX              W[m
+[1m[31m                    WO0W          NX0O[m
+[1m[31m                    NOO0NW  WNXK0OOKW[m
+[1m[31m                    W0OOOOOOOOOOOOKN[m
+[1m[31m                     N0OOOOOOO0KXW[m
+[1m[31m                       WNXXXNW[m
+[1m[31m                 NXK00000KN[m
+[1m[31m             WNK0OOOOOOOOOO0W[m
+[1m[31m           NK0OOOOOOOOOOOOOO0W[m
+[1m[31m         X0OOOOOOO00KK00OOOOOK[m
+[1m[31m       X0OOOO0KNWW      WX0OO0W[m
+[1m[31m     X0OO0XNW              KOOW[m
+[1m[31m   N00KNW                   KOW[m
+[1m[31m NKXN                       W0W[m
+[1m[31mWW                           W[m
+[m

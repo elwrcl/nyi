@@ -1,0 +1,23 @@
+# distro: aix
+[m                                          
+[1m[31m           `:+ssssossossss+-`[m
+[1m[31m        .oys///oyhddddhyo///sy+.[m
+[1m[31m      /yo:+hNNNNNNNNNNNNNNNNh+:oy/[m
+[1m[31m    :h/:yNNNNNNNNNNNNNNNNNNNNNNy-+h:[m
+[1m[31m  `ys.yNNNNNNNNNNNNNNNNNNNNNNNNNNy.ys[m
+[1m[31m `h+-mNNNNNNNNNNNNNNNNNNNNNNNNNNNNm-oh[m
+[1m[31m h+-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN.oy[m
+[1m[31m/d`mNNNNNNN/::mNNNd::m+:/dNNNo::dNNNd`m:[m
+[1m[31mh//NNNNNNN: . .NNNh  mNo  od. -dNNNNN:+y[m
+[1m[31mN.sNNNNNN+ -N/ -NNh  mNNd.   sNNNNNNNo-m[m
+[1m[31mN.sNNNNNs  +oo  /Nh  mNNs` ` /mNNNNNNo-m[m
+[1m[31mh//NNNNh  ossss` +h  md- .hm/ `sNNNNN:+y[m
+[1m[31m:d`mNNN+/yNNNNNd//y//h//oNNNNy//sNNNd`m-[m
+[1m[31m yo-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNm.ss[m
+[1m[31m `h+-mNNNNNNNNNNNNNNNNNNNNNNNNNNNNm-oy[m
+[1m[31m   sy.yNNNNNNNNNNNNNNNNNNNNNNNNNNs.yo[m
+[1m[31m    :h+-yNNNNNNNNNNNNNNNNNNNNNNs-oh-[m
+[1m[31m      :ys:/yNNNNNNNNNNNNNNNmy/:sy:[m
+[1m[31m        .+ys///osyhhhhys+///sy+.[m
+[1m[31m            -/osssossossso/-[m
+[m

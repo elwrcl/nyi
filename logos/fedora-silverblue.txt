@@ -1,0 +1,20 @@
+# distro: Fedora-Silverblue
+[m                                     
+[1m[31m    .;ooooooooooooooooooooooooooo.[m
+[1m[31m  ,dddddddddddddddddddddddddddddd'[33m;[m
+[1m[33m[31m lddddddddddddddddddddddddddddd'[33m;;;[m
+[1m[33m[31mddddd[32m,XXX.[31mddddd[32m,XXX.[31mdddd'[32m,XXX.[33m;;;;;[m
+[1m[33m[31mddddd[32mXX[31mx[32mXX[31mddddd[32mXX[31mx[32mXX[31mddd'[32m,XX[33mx[32mXX[33m;;;;;[m
+[1m[33m[31mddddd[32m'XXX'[31mddddd[32m'XXX'[31mdd'[32mXXXXXX'[33m;;;;;[m
+[1m[33m[31mdddddd[32m;X;[31mddddddd[32m;X:[31md'[32mXXX[33m;;;;;;;;;;;[m
+[1m[33m[31mdddddd[32m;X;[31mddddddd[32m;X:[32mXXX[33m;;;;;;;;;;;;;[m
+[1m[33m[31mdddddd[32m;X;[31mdddddd'[32m;XXX,,,,,,XXX.[33m;;;;;[m
+[1m[33m[31mdddddd[32m;X;[31mdddd'[32mXXXX[32mXXXXXXXXX[33mx[32mXX[33m;;;;;[m
+[1m[33m[31mdddddd[32m;X;[31mdd'[32mXXX[33m;;;;;;;;;;;[32mXXX[33m;;;;;;[m
+[1m[33m[31mdddddd[32m;X;[31m'[32mXXX[33m;;;;;;;;;;;;;;;;;;;;;;[m
+[1m[33m[31mdddddd[32m;XXXXX,,,,,,,,,,,,,;XXX:[33m;;;;;[m
+[1m[33m[31mdddddd[32m:XXXXXXXXXXXXXXXXXXXX[33mx[32mXX[33m;;;;;[m
+[1m[33m[31mddddd'[33m;;;;;;;;;;;;;;;;;;;[32m'XXX'[33m;;;;'[m
+[1m[33m[31mddd'[33m;;;;;;;;;;;;;;;;;;;;;;;;;;;;;[m
+[1m[33m[31mo'[33m;;;;;;;;;;;;;;;;;;;;;;;;;;;;'[m
+[m

@@ -1,0 +1,21 @@
+# distro: Chakra
+[m                                      
+[1m[31m     _ _ _        "kkkkkkkk.[m
+[1m[31m   ,kkkkkkkk.,    'kkkkkkkkk,[m
+[1m[31m   ,kkkkkkkkkkkk., 'kkkkkkkkk.[m
+[1m[31m  ,kkkkkkkkkkkkkkkk,'kkkkkkkk,[m
+[1m[31m ,kkkkkkkkkkkkkkkkkkk'kkkkkkk.[m
+[1m[31m  "''"''',;::,,"''kkk''kkkkk;   __[m
+[1m[31m      ,kkkkkkkkkk, "k''kkkkk' ,kkkk[m
+[1m[31m    ,kkkkkkk' ., ' .: 'kkkk',kkkkkk[m
+[1m[31m  ,kkkkkkkk'.k'   ,  ,kkkk;kkkkkkkkk[m
+[1m[31m ,kkkkkkkk';kk 'k  "'k',kkkkkkkkkkkk[m
+[1m[31m.kkkkkkkkk.kkkk.'kkkkkkkkkkkkkkkkkk'[m
+[1m[31m;kkkkkkkk''kkkkkk;'kkkkkkkkkkkkk''[m
+[1m[31m'kkkkkkk; 'kkkkkkkk.,""''"''""[m
+[1m[31m  ''kkkk;  'kkkkkkkkkk.,[m
+[1m[31m     ';'    'kkkkkkkkkkkk.,[m
+[1m[31m             ';kkkkkkkkkk'[m
+[1m[31m               ';kkkkkk'[m
+[1m[31m                  "''"[m
+[m

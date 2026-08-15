@@ -1,0 +1,19 @@
+# distro: macOS3
+[m                                
+[1m[31m                -:+:.[m
+[1m[31m               :++++.[m
+[1m[31m              /+++/.[m
+[1m[31m      .:-::- .+/:-\`\`.::-[m
+[1m[31m   .:/++++++/::::/++++++/::`[m
+[1m[31m [32m.:///////////////////////::`[m
+[1m[32m /////////////////////////`[m
+[1m[32m[33m+++++++++++++++++++++++++`[m
+[1m[33m++++++++++++++++++++++++[m
+[1m[33m[34mssssssssssssssssssssssss.[m
+[1m[34m:ssssssssssssssssssssssss-[m
+[1m[34m [35mosssssssssssssssssssssssss`[m
+[1m[35m `syyyyyyyyyyyyyyyyyyyyyyyyys`[m
+[1m[35m  [36m`ossssssssssssssssssssssss[m
+[1m[36m    :ooooooooooooooooooo+.[m
+[1m[36m     `:++oo+/:-  -:/+o+/-[m
+[m

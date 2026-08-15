@@ -1,0 +1,19 @@
+# distro: rhel_old
+[m                                          
+[1m[31m             `.-..........`[m
+[1m[31m            `////////::.`-/.[m
+[1m[31m            -: ....-////////.[m
+[1m[31m            //:-::///////////`[m
+[1m[31m     `--::: `-://////////////:[m
+[1m[31m     //////-    ``.-:///////// .`[m
+[1m[31m     `://////:-.`    :///////::///:`[m
+[1m[31m       .-/////////:---/////////////:[m
+[1m[31m          .-://////////////////////.[m
+[1m[31m[32m         yMN+`.-[31m::///////////////-`[m
+[1m[31m[32m      .-`:NMMNMs`  `..-------..`[m
+[1m[32m       MN+/mMMMMMhoooyysshsss[m
+[1m[32mMMM    MMMMMMMMMMMMMMyyddMMM+[m
+[1m[32m MMMM   MMMMMMMMMMMMMNdyNMMh`     hyhMMM[m
+[1m[32m  MMMMMMMMMMMMMMMMyoNNNMMM+.   MMMMMMMM[m
+[1m[32m   MMNMMMNNMMMMMNM+ mhsMNyyyyMNMMMMsMM[m
+[m

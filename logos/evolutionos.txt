@@ -1,0 +1,24 @@
+# distro: EvolutionOS
+[m                                            
+[1m[31m               [32m.':ldxxxxdo:,.[m
+[1m[32m           .lXMMMMMMMMMMMMMMMMNo'[m
+[1m[32m         dWMMMMMMMMMMMMMMMMMMMMMMWk[m
+[1m[32m      .OMMMMWWWWWWWWWWWWWWWWWWWMMMMM0;[m
+[1m[32m     kMMMMM[31mXxxxxkkkkkkkkkkkkkkkK[32mWMMMMMK.[m
+[1m[32m   .kMMMMMM[31mXddd0KKKKKKKKKKKKKKKN[32mMMMMMMMN.[m
+[1m[32m   KMMMMMMM[31mXdddX[32mMMMMMMMMMMMMMMMMMMMMMMMMX.[m
+[1m[32m  cMMMMMMMM[31mXdddX[32mMMMMMMMMMMMMMMMMMMMMMMMMMo[m
+[1m[32m  KMMMMMMMM[31mXdddX[32mMMMMMMMMMMMMMMMMMMMMMMMMMN[m
+[1m[32m  XMMMMMMMM[31mXdddX[32mWO[31mkkkkkkkK[32mWK[31mOOOX[32mMMMMMMMMMW[m
+[1m[32m  XMMMMMMMM[31mXdddX[32mWO[31mkkkkkkkK[32mWK[31mOOOX[32mMMMMMMMMMW[m
+[1m[32m  0MMMMMMMM[31mXdddX[32mMWWWWWWWWWMWWWWWMMMMMMMMMN[m
+[1m[32m  cMMMMMMMM[31mXdddX[32mMMMMMMMMMMMMMMMMMMMMMMMMMd[m
+[1m[32m  .kMMMMMMM[31mXdddX[32mMMMMMMMMMMMMMMMMMMMMMMMM0.[m
+[1m[32m   .kMMMMMM[31mXxxxN[32mW0[31mOOOOOOOOOOOOOK[32mMMMMMMMK.[m
+[1m[32m     oMMMMM[31mXxxxN[32mW0[31mOOOOOOOOOOOOOK[32mWMMMMMk.[m
+[1m[32m      '0MMMWNNNWMWWWWWWWWWWWWWWWMMMMX;[m
+[1m[32m         cWMMMMMMMMMMMMMMMMMMMMMMWd[m
+[1m[32m            :KWMMMMMMMMMMMMMMWXo.[m
+[1m[32m                .cdO0KK00xl'[m
+[1m[32m                     ..[m
+[m

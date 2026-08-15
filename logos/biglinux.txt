@@ -1,0 +1,22 @@
+# distro: BigLinux
+[m                                             
+[1m[31m                                 ...[m
+[1m[31m                              :OWMMMNd.[m
+[1m[31m                            :NMMMMMMMMWc[m
+[1m[31m                  okkl.    kMMMMMW0xdOWMl[m
+[1m[31m  :             xMMMMMW.  kMMMMNc      lW.[m
+[1m[31m :x             NMMMMMO  ,MMMM0.        'l[m
+[1m[31m Xx              "lkk"   kMMMX      .okx,[m
+[1m[31m[32m.MX      .cc;.    .xXKx. KMMM:    .OMMMMMl[m
+[1m[32m:MM'   'KMMMMWK:  0MMMMk xMMM.   lWMMMMMMM'[m
+[1m[32mcMMN:;xMMMMk::MMO oMMMMX .XMM. .KMMMWOOMMMd[m
+[1m[32m'MMMMMMMMN,   NMMx OMMMMl .kM0OMMMMk.  ;MMd[m
+[1m[32m xMMMMMMd    .MMMW  :NMMMd  .ckKKx'     KMc[m
+[1m[32m  dWMNd.     oMMMN    lkNMX,            oM.[m
+[1m[32m ;.         ;MMMMx      "MM:.           cO[m
+[1m[32m[33m .X.       oMMMMW.                      l.[m
+[1m[33m  dMk:..;xWMMMMW,[m
+[1m[33m   kMMMMMMMMMMX.[m
+[1m[33m    :XMMMMMMK:[m
+[1m[33m      ':MM:"      Made in Brazil[m
+[m

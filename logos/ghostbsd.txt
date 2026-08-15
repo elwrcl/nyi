@@ -1,0 +1,16 @@
+# distro: GhostBSD
+[m                      
+[1m[31m           ,gggggg.[m
+[1m[31m        ,agg9*   .g)[m
+[1m[31m      .agg* ._.,gg*[m
+[1m[31m    ,gga*  (ggg*'[m
+[1m[31m   ,ga*       ,ga*[m
+[1m[31m  ,ga'     .ag*[m
+[1m[31m ,ga'   .agga'[m
+[1m[31m 9g' .agg'g*,a[m
+[1m[31m 'gggg*',gga'[m
+[1m[31m      .gg*'[m
+[1m[31m    .gga*[m
+[1m[31m  .gga*[m
+[1m[31m (ga*[m
+[m

@@ -1,0 +1,19 @@
+# distro: RedCore
+[m                                         
+[1m[31m                 RRRRRRRRR[m
+[1m[31m               RRRRRRRRRRRRR[m
+[1m[31m        RRRRRRRRRR      RRRRR[m
+[1m[31m   RRRRRRRRRRRRRRRRRRRRRRRRRRR[m
+[1m[31m RRRRRRR  RRR         RRR RRRRRRRR[m
+[1m[31mRRRRR    RR                 RRRRRRRRR[m
+[1m[31mRRRR    RR     RRRRRRRR      RR RRRRRR[m
+[1m[31mRRRR   R    RRRRRRRRRRRRRR   RR   RRRRR[m
+[1m[31mRRRR   R  RRRRRRRRRRRRRRRRRR  R   RRRRR[m
+[1m[31mRRRR     RRRRRRRRRRRRRRRRRRR  R   RRRR[m
+[1m[31m RRR     RRRRRRRRRRRRRRRRRRRR R   RRRR[m
+[1m[31m  RRR    RRRRRRRRRRRRRRRRRRRR    RRRR[m
+[1m[31m    RR   RRRRRRRRRRRRRRRRRRR    RRR[m
+[1m[31m     RR   RRRRRRRRRRRRRRRRR    RRR[m
+[1m[31m       RR   RRRRRRRRRRRRRR   RR[m
+[1m[31m         R       RRRR      RR[m
+[m

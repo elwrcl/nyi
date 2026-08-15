@@ -1,0 +1,23 @@
+# distro: LibreELEC
+[m                                          
+[1m[31m[31m          :+ooo/.      [32m./ooo+:[m
+[1m[32m[31m        :+ooooooo/.  [32m./ooooooo+:[m
+[1m[32m[31m      :+ooooooooooo:[32m:ooooooooooo+:[m
+[1m[32m[31m    :+ooooooooooo+-  [32m-+ooooooooooo+:[m
+[1m[32m[31m  :+ooooooooooo+-  [33m--  [32m-+ooooooooooo+:[m
+[1m[32m[31m.+ooooooooooo+-  [33m:+oo+:  [32m-+ooooooooooo+-[m
+[1m[32m[31m-+ooooooooo+-  [33m:+oooooo+:  [32m-+oooooooooo-[m
+[1m[32m[31m  :+ooooo+-  [33m:+oooooooooo+:  [32m-+oooooo:[m
+[1m[32m[31m    :+o+-  [33m:+oooooooooooooo+:  [32m-+oo:[m
+[1m[32m[34m     ./   [33m:oooooooooooooooooo:   [35m/.[m
+[1m[35m[34m   ./oo+:  [33m-+oooooooooooooo+-  [35m:+oo/.[m
+[1m[35m[34m ./oooooo+:  [33m-+oooooooooo+-  [35m:+oooooo/.[m
+[1m[35m[34m-oooooooooo+:  [33m-+oooooo+-  [35m:+oooooooooo-[m
+[1m[35m[34m.+ooooooooooo+:  [33m-+oo+-  [35m:+ooooooooooo+.[m
+[1m[35m[34m  -+ooooooooooo+:  [33m..  [35m:+ooooooooooo+-[m
+[1m[35m[34m    -+ooooooooooo+:  [35m:+ooooooooooo+-[m
+[1m[35m[34m      -+oooooooooo+:[35m:+oooooooooo+-[m
+[1m[35m[34m        -+oooooo+:    [35m:+oooooo+-[m
+[1m[35m[34m          -+oo+:        [35m:+oo+-[m
+[1m[35m[34m            ..            [35m..[m
+[m

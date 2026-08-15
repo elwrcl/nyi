@@ -1,0 +1,20 @@
+# distro: Minix
+[m                                          
+[1m[31m[32m   -sdhyo+:-`                -/syymm:[m
+[1m[32m   sdyooymmNNy.     ``    .smNmmdysNd[m
+[1m[32m   odyoso+syNNmysoyhhdhsoomNmm+/osdm/[m
+[1m[32m    :hhy+-/syNNmddhddddddmNMNo:sdNd:[m
+[1m[32m     `smNNdNmmNmddddddddddmmmmmmmy`[m
+[1m[32m   `ohhhhdddddmmNNdmddNmNNmdddddmdh-[m
+[1m[32m   odNNNmdyo/:/-/hNddNy-`..-+ydNNNmd:[m
+[1m[32m `+mNho:`   smmd/ sNNh :dmms`   -+ymmo.[m
+[1m[32m-od/       -m[31mmm[32mmo -NN+ +m[31mmm[32mm-       yms:[m
+[1m[32m+sms -.`    :so:  .NN+  :os/     .-`mNh:[m
+[1m[32m.-hyh+:////-     -sNNd:`    .--://ohNs-[m
+[1m[32m `:hNNNNNNNMMd/sNMmhsdMMh/ymmNNNmmNNy/[m
+[1m[32m  -+sNNNNMMNNNsmNMo: :NNmymNNNNMMMms:[m
+[1m[32m    //oydNMMMMydMMNysNMMmsMMMMMNyo/`[m
+[1m[32m       ../-yNMMy--/::/-.sMMmos+.`[m
+[1m[32m           -+oyhNsooo+omy/```[m
+[1m[32m              `::ohdmds-`[m
+[m

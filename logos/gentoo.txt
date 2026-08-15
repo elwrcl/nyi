@@ -1,0 +1,21 @@
+# distro: Gentoo
+[m                                     
+[1m[31m         -/oyddmdhs+:.[m
+[1m[31m     -o[32mdNMMMMMMMMNNmhy+[31m-`[m
+[1m[31m   -y[32mNMMMMMMMMMMMNNNmmdhy[31m+-[m
+[1m[31m `o[32mmMMMMMMMMMMMMNmdmmmmddhhy[31m/`[m
+[1m[31m om[32mMMMMMMMMMMMN[31mhhyyyo[32mhmdddhhhd[31mo`[m
+[1m[31m.y[32mdMMMMMMMMMMd[31mhs++so/s[32mmdddhhhhdm[31m+`[m
+[1m[31m oy[32mhdmNMMMMMMMN[31mdyooy[32mdmddddhhhhyhN[31md.[m
+[1m[31m  :o[32myhhdNNMMMMMMMNNNmmdddhhhhhyym[31mMh[m
+[1m[31m    .:[32m+sydNMMMMMNNNmmmdddhhhhhhmM[31mmy[m
+[1m[31m       /m[32mMMMMMMNNNmmmdddhhhhhmMNh[31ms:[m
+[1m[31m    `o[32mNMMMMMMMNNNmmmddddhhdmMNhs[31m+`[m
+[1m[31m  `s[32mNMMMMMMMMNNNmmmdddddmNMmhs[31m/.[m
+[1m[31m /N[32mMMMMMMMMNNNNmmmdddmNMNdso[31m:`[m
+[1m[31m+M[32mMMMMMMNNNNNmmmmdmNMNdso[31m/-[m
+[1m[31myM[32mMNNNNNNNmmmmmNNMmhs+/[31m-`[m
+[1m[31m/h[32mMMNNNNNNNNMNdhs++/[31m-`[m
+[1m[31m`/[32mohdmmddhys+++/:[31m.`[m
+[1m[31m  `-//////:--.[m
+[m

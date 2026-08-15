@@ -1,0 +1,23 @@
+# distro: Pentoo
+[m                                        
+[1m[31m[32m           `:oydNNMMMMNNdyo:`[m
+[1m[32m        :yNMMMMMMMMMMMMMMMMNy:[m
+[1m[32m      :dMMMMMMMMMMMMMMMMMMMMMMd:[m
+[1m[32m     oMMMMMMMho/-....-/ohMMMMMMMo[m
+[1m[32m    oMMMMMMy.            .yMMMMMMo[m
+[1m[32m   .MMMMMMo                oMMMMMM.[m
+[1m[32m   +MMMMMm                  mMMMMM+[m
+[1m[32m   oMMMMMh                  hMMMMMo[m
+[1m[32m //hMMMMMm//[31m`[32m          [31m`[32m////mMMMMMh//[m
+[1m[32mMMMMMMMMMMM[31m/[32m      [31m/o/`[32m  [31m.[32msmMMMMMMMMMMM[m
+[1m[32mMMMMMMMMMMm      [31m`NMN:[32m    [31m.[32myMMMMMMMMMM[m
+[1m[32mMMMMMMMMMMMh[31m:.[32m              dMMMMMMMMM[m
+[1m[32mMMMMMMMMMMMMMy[31m.[32m            [31m-[32mNMMMMMMMMM[m
+[1m[32mMMMMMMMMMMMd:[31m`[32m           [31m-[32myNMMMMMMMMMM[m
+[1m[32mMMMMMMMMMMh[31m`[32m          [31m./[32mhNMMMMMMMMMMMM[m
+[1m[32mMMMMMMMMMM[31ms[32m        [31m.:[32mymMMMMMMMMMMMMMMM[m
+[1m[32mMMMMMMMMMMN[31ms:..-/[32mohNMMMMMMMMMMMMMMMMMM[m
+[1m[32mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[32mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[1m[32m MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM[m
+[m

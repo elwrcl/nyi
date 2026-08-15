@@ -1,0 +1,14 @@
+# distro: ol
+[m                                     
+[1m[31m      `-/+++++++++++++++++/-.`[m
+[1m[31m   `/syyyyyyyyyyyyyyyyyyyyyyys/.[m
+[1m[31m  :yyyyo/-...............-/oyyyy/[m
+[1m[31m /yyys-                     .oyyy+[m
+[1m[31m.yyyy`                       `syyy-[m
+[1m[31m:yyyo                         /yyy/[m
+[1m[31m.yyyy`                       `syyy-[m
+[1m[31m /yyys.                     .oyyyo[m
+[1m[31m  /yyyyo:-...............-:oyyyy/`[m
+[1m[31m   `/syyyyyyyyyyyyyyyyyyyyyyys+.[m
+[1m[31m     `.:/+ooooooooooooooo+/:.`[m
+[m

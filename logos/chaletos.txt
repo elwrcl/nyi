@@ -1,0 +1,23 @@
+# distro: ChaletOS
+[m                                          
+[1m[31m             `.//+osso+/:``[m
+[1m[31m         `/sdNNmhyssssydmNNdo:`[m
+[1m[31m       :hNmy+-`          .-+hNNs-[m
+[1m[31m     /mMh/`       `+:`       `+dMd:[m
+[1m[31m   .hMd-        -sNNMNo.  /yyy  /mMs`[m
+[1m[31m  -NM+       `/dMd/--omNh::dMM   `yMd`[m
+[1m[31m .NN+      .sNNs:/dMNy:/hNmo/s     yMd`[m
+[1m[31m hMs    `/hNd+-smMMMMMMd+:omNy-    `dMo[m
+[1m[31m:NM.  .omMy:/hNMMMMMMMMMMNy:/hMd+`  :Md`[m
+[1m[31m/Md` `sm+.omMMMMMMMMMMMMMMMMd/-sm+  .MN:[m
+[1m[31m/Md`      MMMMMMMMMMMMMMMMMMMN      .MN:[m
+[1m[31m:NN.      MMMMMMm....--NMMMMMN      -Mm.[m
+[1m[31m`dMo      MMMMMMd      mMMMMMN      hMs[m
+[1m[31m -MN:     MMMMMMd      mMMMMMN     oMm`[m
+[1m[31m  :NM:    MMMMMMd      mMMMMMN    +Mm-[m
+[1m[31m   -mMy.  mmmmmmh      dmmmmmh  -hMh.[m
+[1m[31m     oNNs-                    :yMm/[m
+[1m[31m      .+mMdo:`            `:smMd/`[m
+[1m[31m         -ohNNmhsoo++osshmNNh+.[m
+[1m[31m            `./+syyhhyys+:``[m
+[m

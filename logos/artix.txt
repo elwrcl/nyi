@@ -1,0 +1,23 @@
+# distro: artix
+[m                                         
+[1m[31m                   '[m
+[1m[31m                  'o'[m
+[1m[31m                 'ooo'[m
+[1m[31m                'ooxoo'[m
+[1m[31m               'ooxxxoo'[m
+[1m[31m              'oookkxxoo'[m
+[1m[31m             'oiioxkkxxoo'[m
+[1m[31m            ':;:iiiioxxxoo'[m
+[1m[31m               `'.;::ioxxoo'[m
+[1m[31m          '-.      `':;jiooo'[m
+[1m[31m         'oooio-..     `'i:io'[m
+[1m[31m        'ooooxxxxoio:,.   `'-;'[m
+[1m[31m       'ooooxxxxxkkxoooIi:-.  `'[m
+[1m[31m      'ooooxxxxxkkkkxoiiiiiji'[m
+[1m[31m     'ooooxxxxxkxxoiiii:'`     .i'[m
+[1m[31m    'ooooxxxxxoi:::'`       .;ioxo'[m
+[1m[31m   'ooooxooi::'`         .:iiixkxxo'[m
+[1m[31m  'ooooi:'`                `'';ioxxo'[m
+[1m[31m 'i:'`                          '':io'[m
+[1m[31m'`                                   `'[m
+[m

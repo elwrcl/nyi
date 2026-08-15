@@ -1,0 +1,26 @@
+# distro: Frugalware
+[m                                                  
+[1m[31m          `++/::-.`[m
+[1m[31m         /o+++++++++/::-.`[m
+[1m[31m        `o+++++++++++++++o++/::-.`[m
+[1m[31m        /+++++++++++++++++++++++oo++/:-.``[m
+[1m[31m       .o+ooooooooooooooooooosssssssso++oo++/:-`[m
+[1m[31m       ++osoooooooooooosssssssssssssyyo+++++++o:[m
+[1m[31m      -o+ssoooooooooooosssssssssssssyyo+++++++s`[m
+[1m[31m      o++ssoooooo++++++++++++++sssyyyyo++++++o:[m
+[1m[31m     :o++ssoooooo[32m/-------------[31m+syyyyyo+++++oo[m
+[1m[31m    `o+++ssoooooo[32m/-----[31m+++++ooosyyyyyyo++++os:[m
+[1m[31m    /o+++ssoooooo[32m/-----[31mooooooosyyyyyyyo+oooss[m
+[1m[31m   .o++++ssooooos[32m/------------[31msyyyyyyhsosssy-[m
+[1m[31m   ++++++ssooooss[32m/-----[31m+++++ooyyhhhhhdssssso[m
+[1m[31m  -s+++++syssssss[32m/-----[31myyhhhhhhhhhhhddssssy.[m
+[1m[31m  sooooooyhyyyyyh[32m/-----[31mhhhhhhhhhhhddddyssy+[m
+[1m[31m :yooooooyhyyyhhhyyyyyyhhhhhhhhhhdddddyssy`[m
+[1m[31m yoooooooyhyyhhhhhhhhhhhhhhhhhhhddddddysy/[m
+[1m[31m-ysooooooydhhhhhhhhhhhddddddddddddddddssy[m
+[1m[31m .-:/+osssyyyysyyyyyyyyyyyyyyyyyyyyyyssy:[m
+[1m[31m       ``.-/+oosysssssssssssssssssssssss[m
+[1m[31m               ``.:/+osyysssssssssssssh.[m
+[1m[31m                        `-:/+osyyssssyo[m
+[1m[31m                                .-:+++`[m
+[m

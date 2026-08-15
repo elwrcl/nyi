@@ -1,0 +1,18 @@
+# distro: EndeavourOS
+[m                                          
+[1m[31m                     [32m./[31mo[33m.[m
+[1m[33m                   [32m./[31msssso[33m-[m
+[1m[33m                 [32m`:[31mosssssss+[33m-[m
+[1m[33m               [32m`:+[31msssssssssso[33m/.[m
+[1m[33m             [32m`-/o[31mssssssssssssso[33m/.[m
+[1m[33m           [32m`-/+[31msssssssssssssssso[33m+:`[m
+[1m[33m         [32m`-:/+[31msssssssssssssssssso[33m+/.[m
+[1m[33m       [32m`.://o[31msssssssssssssssssssso[33m++-[m
+[1m[33m      [32m.://+[31mssssssssssssssssssssssso[33m++:[m
+[1m[33m    [32m.:///o[31mssssssssssssssssssssssssso[33m++:[m
+[1m[33m  [32m`:////[31mssssssssssssssssssssssssssso[33m+++.[m
+[1m[33m[32m`-////+[31mssssssssssssssssssssssssssso[33m++++-[m
+[1m[33m [32m`..-+[31moosssssssssssssssssssssssso[33m+++++/`[m
+[1m[33m   [33m./++++++++++++++++++++++++++++++/:.[m
+[1m[33m  `:::::::::::::::::::::::::------``[m
+[m

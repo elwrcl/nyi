@@ -1,0 +1,21 @@
+# distro: Garuda
+[m                                                
+[1m[31m                   .%;888:8898898:[m
+[1m[31m                 x;XxXB%89b8:b8%b88:[m
+[1m[31m              .8Xxd                8X:.[m
+[1m[31m            .8Xx;                    8x:.[m
+[1m[31m          .tt8x          .d            x88;[m
+[1m[31m       .@8x8;          .db:              xx@;[m
+[1m[31m     ,tSXX°          .bbbbbbbbbbbbbbbbbbbB8x@;[m
+[1m[31m   .SXxx            bBBBBBBBBBBBBBBBBBBBbSBX8;[m
+[1m[31m ,888S                                     pd![m
+[1m[31m8X88/                                       q[m
+[1m[31m8X88/[m
+[1m[31mGBB.[m
+[1m[31m x%88        d888@8@X@X@X88X@@XX@@X@8@X.[m
+[1m[31m   dxXd    dB8b8b8B8B08bB88b998888b88x.[m
+[1m[31m    dxx8o                      .@@;.[m
+[1m[31m      dx88                   .t@x.[m
+[1m[31m        d:SS@8ba89aa67a853Sxxad.[m
+[1m[31m          .d988999889889899dd.[m
+[m

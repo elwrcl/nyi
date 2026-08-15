@@ -1,0 +1,15 @@
+# distro: Linspire
+[m                                                                 
+[1m[31m[32m                                                   __^[m
+[1m[32m[32m                                                __/    \[m
+[1m[32m[32m   MMy        dMy                            __/        \[m
+[1m[32m[32m  dMMy        MMy                            [31mMM[32m          \[m
+[1m[32m[32m  MMMy            ,,        [31mdMMMMn                        [32m\[m
+[1m[32m[32m dMMy        dMM dMMMMMMy  [31mdMM  MM dMMMMMy  dMM MM.nMMM dMMMMMM[m
+[1m[31m[31mMMM          [32mMMy MMy  MMy [31mdMM      MMy  MMy MMy MMy    dy   dMy[m
+[1m[31m[31mMMM         [32mdMM dMM   MMy  [31mdMMMMy dMM  dMM dMM dMM    dMMMMMMM[m
+[1m[31m[32m dMMy       MMy MMy  MMy     [31mdMMy MM  MMy MMy  MMy    dMM[m
+[1m[31m[32mdMMy       dMM dMM  dMM [31mdMM  MMy dMMMMMy dMM  dMM     MMy   MM[m
+[1m[31m[32mMMMMMMMMMM MMy MMy  MMy [31mdMMMyyy MMy     MMy  MMy      dMMMMMMy[m
+[1m[31m[32m                                [31mdy[m
+[m

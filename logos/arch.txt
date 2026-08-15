@@ -1,0 +1,22 @@
+# distro: arch
+[m                                       
+[1m[31m                  -`[m
+[1m[31m                 .o+`[m
+[1m[31m                `ooo/[m
+[1m[31m               `+oooo:[m
+[1m[31m              `+oooooo:[m
+[1m[31m              -+oooooo+:[m
+[1m[31m            `/:-:++oooo+:[m
+[1m[31m           `/++++/+++++++:[m
+[1m[31m          `/++++++++++++++:[m
+[1m[31m         `/+++o[32moooooooo[31moooo/`[m
+[1m[31m        ./[32mooosssso++osssssso[31m+`[m
+[1m[31m[32m       .oossssso-````/ossssss+`[m
+[1m[32m      -osssssso.      :ssssssso.[m
+[1m[32m     :osssssss/        osssso+++.[m
+[1m[32m    /ossssssss/        +ssssooo/-[m
+[1m[32m  `/ossssso+/:-        -:/+osssso+-[m
+[1m[32m `+sso+:-`                 `.-/+oso:[m
+[1m[32m`++:.                           `-/+/[m
+[1m[32m.`                                 `/[m
+[m

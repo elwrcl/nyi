@@ -1,0 +1,17 @@
+# distro: Qubes_small
+[m                             
+[1m[31m         .,dQb,. [m
+[1m[31m     .,qdQQQQQQQbq,.[m
+[1m[31m .,qdQQQQQQQQQQQQQQQbq,.[m
+[1m[31mdIQQQQQQQQP"'"1QQQQQQQQ^b[m
+[1m[31mttttI%QP'`     `'1Q%^---|[m
+[1m[31mtttttt             |----|[m
+[1m[31mtttttt             |----|[m
+[1m[31mtttttt             |----|[m
+[1m[31mtttttt             |----|[m
+[1m[31mttttttti,       .,;-----|[m
+[1m[31m1ttttttttti, ,----------'[m
+[1m[31m '"^1ttttttt|----------;,[m
+[1m[31m     '"^1ttt|---^-------->,[m
+[1m[31m         '"1|^'`  "^==-:"[m
+[m

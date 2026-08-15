@@ -1,0 +1,19 @@
+# distro: opensuse-leap_old
+[m                                          
+[1m[31m                 .-++:.[m
+[1m[31m               ./oooooo/-[m
+[1m[31m            `:oooooooooooo:.[m
+[1m[31m          -+oooooooooooooooo+-`[m
+[1m[31m       ./oooooooooooooooooooooo/-[m
+[1m[31m      :oooooooooooooooooooooooooo:[m
+[1m[31m    `  `-+oooooooooooooooooooo/-   `[m
+[1m[31m `:oo/-   .:ooooooooooooooo+:`  `-+oo/.[m
+[1m[31m`/oooooo:.   -/oooooooooo/.   ./oooooo/.[m
+[1m[31m  `:+ooooo+-`  `:+oooo+-   `:oooooo+:`[m
+[1m[31m     .:oooooo/.   .::`   -+oooooo/.[m
+[1m[31m        -/oooooo:.    ./oooooo+-[m
+[1m[31m          `:+ooooo+-:+oooooo:`[m
+[1m[31m             ./oooooooooo/.[m
+[1m[31m                -/oooo+:`[m
+[1m[31m                  `:/.[m
+[m

@@ -1,0 +1,21 @@
+# distro: Radix
+[m                           
+[1m[31m                .:oyhdmNo[m
+[1m[31m             `/yhyoosdms`[m
+[1m[31m            -o+/ohmmho-[m
+[1m[31m           ..`.:/:-`[m
+[1m[31m     `.--:::-.``[32m[m
+[1m[32m  .+ydNMMMMMMNmhs:`[m
+[1m[32m`omMMMMMMMMMMMMMMNh-[m
+[1m[32moNMMMNmddhhyyhhhddmy.[m
+[1m[32mmMMMMNmmddhhysoo+/:-`[m
+[1m[32myMMMMMMMMMMMMMMMMNNh.[m
+[1m[32m-dmmmmmNNMMMMMMMMMMs`[m
+[1m[32m -+oossyhmMMMMMMMMd-[m
+[1m[32m `sNMMMMMMMMMMMMMm:[m
+[1m[32m  `yMMMMMMNmdhhhh:[m
+[1m[32m   `sNMMMMMNmmho.[m
+[1m[32m    `+mMMMMMMMy.[m
+[1m[32m      .yNMMMm+`[m
+[1m[32m       `:yd+.[m
+[m

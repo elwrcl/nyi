@@ -1,0 +1,25 @@
+# distro: Furreto
+[m                                          
+[1m[31m           .[32mxOOko      [31m.[32modd,[m
+[1m[32m          oX[31mWW[32mKOOOO. 'ON[31mWW[32m0kkk.[m
+[1m[32m         [31m.[32mk0XKOOOOOOcOON[31mW[32mNOOOOO.[m
+[1m[32m          xOOOOOOOOOkkOOOOOOOOO;[m
+[1m[32m   [31m.[32mO0OkkocxO000000kcdk0OO0OOkx[m
+[1m[32m   k[31mW[31mM[32mXkkkkloxkkkx;  :dxxxxddc...[m
+[1m[32m  'kO0OOOOOkc          .cl:..kk0KK0Okc[m
+[1m[32m  ;kOOO0000xd.  dO00000Oo  .xkO[31mNMM[32mXOOOO[m
+[1m[32m.dddxkOOOkddc.kKN[31mWW[32mN000000l.ddk0000OOOO.[m
+[1m[32m 'dd:;ddddd;.dK[31mMMMW[32mK00KKK0O::ddxkO00Oko[m
+[1m[32m         .okxkOKK0kkOO00KKOxxlodddddddl[m
+[1m[32m       .00OOkkkkkkkkOOO00OOOO0O;  .dddl[m
+[1m[32m      'kkkkkxxkkkkkkkOOkxdxkxxddd.[m
+[1m[32m      cddddddddxxkkkkkxddddddddddo[m
+[1m[32m      'ddddddodddddddddddddddddddc[m
+[1m[32m       [31m.[32mddddddodddddddddodddddddc[m
+[1m[32m                .odddo.[m
+
+[1m[32m               [31m.[32mkOOkkk;[m
+[1m[32m              lkK[31mWN[32mkkkxc[m
+[1m[32m             kkxkkkkkkx.[m
+[1m[32m              ,,..xxx.[m
+[m

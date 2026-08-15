@@ -1,0 +1,26 @@
+# distro: Porteus
+[m                                    
+[1m[31m             `.-:::-.`[m
+[1m[31m         -+ydmNNNNNNNmdy+-[m
+[1m[31m      .+dNmdhs+//////+shdmdo.[m
+[1m[31m    .smmy+-`             ./sdy:[m
+[1m[31m  `omdo.    `.-/+osssso+/-` `+dy.[m
+[1m[31m `yms.   `:shmNmdhsoo++osyyo-``oh.[m
+[1m[31m hm/   .odNmds/.`    ``.....:::-+s[m
+[1m[31m/m:  `+dNmy:`   `./oyhhhhyyooo++so[m
+[1m[31mys  `yNmy-    .+hmmho:-.`     ```[m
+[1m[31ms:  yNm+`   .smNd+.[m
+[1m[31m`` /Nm:    +dNd+`[m
+[1m[31m   yN+   `smNy.[m
+[1m[31m   dm    oNNy`[m
+[1m[31m   hy   -mNm.[m
+[1m[31m   +y   oNNo[m
+[1m[31m   `y`  sNN:[m
+[1m[31m    `:  +NN:[m
+[1m[31m     `  .mNo[m
+[1m[31m         /mm`[m
+[1m[31m          /my`[m
+[1m[31m           .sy`[m
+[1m[31m             .+:[m
+[1m[31m                `[m
+[m

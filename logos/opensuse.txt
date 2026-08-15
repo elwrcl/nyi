@@ -1,0 +1,21 @@
+# distro: opensuse
+[m                                        
+[1m[31m           [32m.;ldkO0000Okdl;.[m
+[1m[32m       .;d00xl:^''''''^:ok00d;.[m
+[1m[32m     .d00l'                'o00d.[m
+[1m[32m   .d0Kd'[31m  Okxol:;,.          [32m:O0d[m
+[1m[32m  .OK[31mKKK0kOKKKKKKKKKKOxo:,      [32mlKO.[m
+[1m[32m ,0K[31mKKKKKKKKKKKKKKK0P^[32m,,,[31m^dx:[32m    ;00,[m
+[1m[32m.OK[31mKKKKKKKKKKKKKKKk'[32m.oOPPb.[31m'0k.[32m   cKO.[m
+[1m[32m:KK[31mKKKKKKKKKKKKKKK: [32mkKx..dd [31mlKd[32m   'OK:[m
+[1m[32mdKK[31mKKKKKKKKKOx0KKKd [32m^0KKKO' [31mkKKc[32m   dKd[m
+[1m[32mdKK[31mKKKKKKKKKK;.;oOKx,..[32m^[31m..;kKKK0.[32m  dKd[m
+[1m[32m:KK[31mKKKKKKKKKK0o;...^cdxxOK0O/^^'  [32m.0K:[m
+[1m[32m kKK[31mKKKKKKKKKKKKK0x;,,......,;od  [32mlKk[m
+[1m[32m '0K[31mKKKKKKKKKKKKKKKKKKKK00KKOo^  [32mc00'[m
+[1m[32m  'kK[31mKKOxddxkOO00000Okxoc;''   [32m.dKk'[m
+[1m[32m    l0Ko.                    .c00l'[m
+[1m[32m     'l0Kk:.              .;xK0l'[m
+[1m[32m        'lkK0xl:;,,,,;:ldO0kl'[m
+[1m[32m            '^:ldxkkkkxdl:^'[m
+[m

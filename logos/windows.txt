@@ -1,0 +1,19 @@
+# distro: Windows
+[m                                      
+[1m[31m[31m        ,.=:!!t3Z3z.,[m
+[1m[31m       :tt:::tt333EE3[m
+[1m[31m[31m       Et:::ztt33EEEL[32m @Ee.,      ..,[m
+[1m[32m[31m      ;tt:::tt333EE7[32m ;EEEEEEttttt33#[m
+[1m[32m[31m     :Et:::zt333EEQ.[32m $EEEEEttttt33QL[m
+[1m[32m[31m     it::::tt333EEF[32m @EEEEEEttttt33F[m
+[1m[32m[31m    ;3=*^```"*4EEV[32m :EEEEEEttttt33@.[m
+[1m[32m[33m    ,.=::::!t=., [31m`[32m @EEEEEEtttz33QF[m
+[1m[32m[33m   ;::::::::zt33)[32m   "4EEEtttji3P*[m
+[1m[32m[33m  :t::::::::tt33.[34m:Z3z..[32m  ``[34m ,..g.[m
+[1m[34m[33m  i::::::::zt33F[34m AEEEtttt::::ztF[m
+[1m[34m[33m ;:::::::::t33V[34m ;EEEttttt::::t3[m
+[1m[34m[33m E::::::::zt33L[34m @EEEtttt::::z3F[m
+[1m[34m[33m{3=*^```"*4E3)[34m ;EEEtttt:::::tZ`[m
+[1m[34m[33m             `[34m :EEEEtttt::::z7[m
+[1m[34m                 "VEzjt:;;z>*`[m
+[m

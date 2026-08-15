@@ -1,0 +1,30 @@
+# distro: Mer
+[m                                               
+[1m[31m                         dMs[m
+[1m[31m                         .-`[m
+[1m[31m                       `y`-o+`[m
+[1m[31m                        ``NMMy[m
+[1m[31m                      .--`:++.[m
+[1m[31m                    .hNNNNs[m
+[1m[31m                    /MMMMMN[m
+[1m[31m                    `ommmd/ +/[m
+[1m[31m                      ````  +/[m
+[1m[31m                     `:+sssso/-`[m
+[1m[31m  .-::. `-::-`     `smNMNmdmNMNd/      .://-`[m
+[1m[31m.ymNMNNdmNMMNm+`  -dMMh:.....+dMMs   `sNNMMNo[m
+[1m[31mdMN+::NMMy::hMM+  mMMo `ohhy/ `dMM+  yMMy::-[m
+[1m[31mMMm   yMM-  :MMs  NMN` `:::::--sMMh  dMM`[m
+[1m[31mMMm   yMM-  -MMs  mMM+ `ymmdsymMMMs  dMM`[m
+[1m[31mNNd   sNN-  -NNs  -mMNs-.--..:dMMh`  dNN[m
+[1m[31m---   .--`  `--.   .smMMmdddmMNdo`   .--[m
+[1m[31m                     ./ohddds+:`[m
+[1m[31m                     +h- `.:-.[m
+[1m[31m                     ./`.dMMMN+[m
+[1m[31m                        +MMMMMd[m
+[1m[31m                        `+dmmy-[m
+[1m[31m                      ``` .+`[m
+[1m[31m                     .dMNo-y.[m
+[1m[31m                     `hmm/[m
+[1m[31m                         .:`[m
+[1m[31m                         dMs[m
+[m

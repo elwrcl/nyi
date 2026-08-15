@@ -1,0 +1,25 @@
+# distro: Astra
+[m                                        
+[1m[31m                  AA[m
+[1m[31m                 AaaA[m
+[1m[31m                Aa[32m/\[31maA[m
+[1m[31m[31m               Aa[32m/[31maa[32m\[31maA[m
+[1m[31m[31m              Aa[32m/[31maAAa[32m\[31maA[m
+[1m[31m[31m             aA[32m/[31maaAAaa[32m\[31mAa[m
+[1m[31m[31m            aA[32m/[31maaAAAAaa[32m\[31mAa[m
+[1m[31m[31m  aaaaaaAAAAa[32m/[31maaAAAAAAaa[32m\[31maAAAAaaaaa[m
+[1m[31m[31maAAa[32m-----[31maaaaaAAAAAAAAAAaaaaa[32m-----[31maAAa[m
+[1m[31m[31m  aAA[32m\ [31maAAAAAAAAAAAAAAAAAAAAAAa[32m /[31mAAa[m
+[1m[31m[31m    aAa[32m\[31maAAA[32m\[31mAAAA[32m\[31mAAAA[32m\[31mAAA[32m\[31mAAa[32m/[31maAa[m
+[1m[31m[31m      aAa[32m\[31maA[32m\\[31mAAA[32m\\[31mAAA[32m\\[31mAA[32m\\/[31maAa[m
+[1m[31m[31m       aAA[32m\[31maA[32m\\[31mAAA[32m\\[31mAAA[32m\\[31mAa[32m/[31mAAa[m
+[1m[31m[31m         aA[32m\[31maA[32m\\[31mAAA[32m\\[31mAAA[32m\\/[31mAa[m
+[1m[31m[31m         aA[32m/[31mAA[32m\\\[31mAA[32m\\\[31mAA[32m\\\[31mAa[m
+[1m[31m[31m        aA[32m/\[31mAAa[32m\\\[31mAa[32m\\\[31mAa[32m\\\[31mAa[m
+[1m[31m[31m        aA[32m/\\[31mAAa[32m\\/\[31ma[32m\\\[31mAa[32m\\[31mAa[m
+[1m[31m[31m       aA[32m/[31ma[32m\\\[31mAa[32m\/[31mAA[32m\\\\\[31mAa[32m\\[31mAa[m
+[1m[31m[31m       aA[32m/[31maA[32m\\/[31maAa  aAa[32m\\\[31mAa[32m\[31mAa[m
+[1m[31m[31m      aA[32m/\[31mA[32m\/[31mAa        aA[32m\\[31mA[32m\\[31mAa[m
+[1m[31m[31m      A[32m|/[31maaAa            aAaa[32m\|[31mA[m
+[1m[31m[31m     aAaa                    aaAa[m
+[m

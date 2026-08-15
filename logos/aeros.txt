@@ -1,0 +1,24 @@
+# distro: aerOS
+[m                                                    
+[1m[31m                 ooo OOO OOO ooo[m
+[1m[31m             oOO                 OOo[m
+[1m[31m         oOO                         OOo[m
+[1m[31m      oOO                               OOo[m
+[1m[31m    oOO                                   OOo[m
+[1m[31m  oOO                                       OOo[m
+[1m[31m oOO                                         OOo[m
+[1m[31m                                              OOo[m
+[1m[31m                                               OOo[m
+[1m[31m                                               OOo[m
+[1m[31m                                               OOo[m
+[1m[31m                                               OOo[m
+[1m[31m                                               OOo[m
+[1m[31moOO                                           OOo[m
+[1m[31m oOO                                         OOo[m
+[1m[31m  oOO                                       OOo[m
+[1m[31m    oOO                                   OOo[m
+[1m[31m      oO                                OOo[m
+[1m[31m         oOO                         OOo[m
+[1m[31m             oOO                 OOo[m
+[1m[31m                 ooo OOO OOO ooo[m
+[m

@@ -1,0 +1,21 @@
+# distro: openwrt
+[m                                
+[1m[31m            ..,,..[m
+[1m[31m      ,;odOMMMMMMMMObo:.[m
+[1m[31m  ,odOMMMMMO""''""OMMMMMObo.[m
+[1m[31m.dMMMM"      .,,.      "OMMMb,[m
+[1m[31m '0"   ,;ddMMMMMMMMbb:.   "0'[m
+[1m[31m     oOMMMMO""''""OMMMMOo[m
+[1m[31m   [32m;. [31m'0"    .,,.    "0' [32m.:[m
+[1m[32m .OMM*   [31m.odMMMMMMbo.   [32m*MMO.[m
+[1m[32m MMMO     [31m"0"````"0"     [32mOMMM[m
+[1m[32miOMM         [31m.oo.         [32mMMMi[m
+[1m[32mOMMl        [31m:MMMM:        [32mlMMO[m
+[1m[32miMMM         [31m'oo'         [32mMMMi[m
+[1m[32m OMMb                    [32mdMMO[m
+[1m[32m 'OMMO.                ,OMMO'[m
+[1m[32m   "MMMb.            ,dMMM"[m
+[1m[32m     "MMMMbgo-,,-ogdMMMM"[m
+[1m[32m        "*MMMMMMMMMM*"[m
+[1m[32m            `'""'`[m
+[m
