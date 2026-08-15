@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="nyi">
+  <title>nyi</title>
+  <defs>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.00" stop-color="#5ef08a"/>
+      <stop offset="0.22" stop-color="#f2e05a"/>
+      <stop offset="0.48" stop-color="#f0603c"/>
+      <stop offset="0.74" stop-color="#c14ee0"/>
+      <stop offset="1.00" stop-color="#4f7ff0"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.00" stop-color="#2f9c58"/>
+      <stop offset="0.22" stop-color="#a08f2a"/>
+      <stop offset="0.48" stop-color="#9c3721"/>
+      <stop offset="0.74" stop-color="#7a2e91"/>
+      <stop offset="1.00" stop-color="#2c4a99"/>
+    </linearGradient>
+  </defs>
+
+  <!-- left face: lit -->
+  <path d="M128 24 L24 216 L128 216 Z" fill="url(#face)"/>
+  <!-- right face: extruded side, in shadow -->
+  <path d="M128 24 L232 216 L128 216 Z" fill="url(#side)"/>
+  <!-- ridge -->
+  <path d="M128 24 L128 216" stroke="#0d0d12" stroke-width="3" stroke-opacity="0.35"/>
+  <!-- scanlines, echoing the ascii ramp -->
+  <g stroke="#0d0d12" stroke-opacity="0.16" stroke-width="2">
+    <path d="M89 96 L167 96"/>
+    <path d="M76 120 L180 120"/>
+    <path d="M63 144 L193 144"/>
+    <path d="M50 168 L206 168"/>
+    <path d="M37 192 L219 192"/>
+  </g>
+  <path d="M128 24 L232 216 L24 216 Z" fill="none" stroke="#0d0d12" stroke-opacity="0.45" stroke-width="4" stroke-linejoin="round"/>
+</svg>
