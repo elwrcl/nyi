@@ -1,7 +1,9 @@
 // nyi — a good fetch.
 
+mod cache;
 mod logos;
 mod mobile;
+mod panel;
 
 use logos::{builtin_logo, default_logo};
 
@@ -42,6 +44,7 @@ const MAX_INFO_LINES: usize = 32;
 const MAX_EXTRA_DISKS: usize = 8;
 const MAX_SHADING: usize = 64;
 const MAX_POINTS: usize = 200_000;
+const GIB: f64 = 1024.0 * 1024.0 * 1024.0;
 
 // default colors
 const DEFAULT_COLOR_INNER: &str = "\x1b[1;37m";
@@ -72,10 +75,16 @@ fn write_fd(fd: i32, buf: &[u8]) -> bool {
         };
         if n <= 0 {
             let err = std::io::Error::last_os_error();
-            if err.raw_os_error() == Some(libc::EINTR) {
-                continue;
+            match err.raw_os_error() {
+                Some(libc::EINTR) => continue,
+                // stdin's O_NONBLOCK reaches stdout too when they share a
+                // tty; a slow terminal is a reason to wait, not to quit
+                Some(e) if e == libc::EAGAIN || e == libc::EWOULDBLOCK => {
+                    sleep_ms(1);
+                    continue;
+                }
+                _ => return false,
             }
-            return false;
         }
         off += n as usize;
     }
@@ -98,7 +107,9 @@ fn cleanup() {
             libc::fcntl(libc::STDIN_FILENO, libc::F_SETFL, flags);
         }
     }
-    out(b"\x1b[?25h");
+    // end a synchronized update a signal may have cut short, drop any color
+    // left on, and give the cursor back
+    out(b"\x1b[0m\x1b[?2026l\x1b[?25h");
 }
 
 extern "C" fn handle_signal(_sig: libc::c_int) {
@@ -226,6 +237,7 @@ fn sleep_ms(ms: i64) {
 struct Uname {
     sysname: String,
     release: String,
+    version: String,
     machine: String,
 }
 
@@ -236,6 +248,7 @@ fn uname() -> Uname {
             return Uname {
                 sysname: String::new(),
                 release: String::new(),
+                version: String::new(),
                 machine: String::new(),
             };
         }
@@ -243,6 +256,7 @@ fn uname() -> Uname {
         Uname {
             sysname: f(&u.sysname),
             release: f(&u.release),
+            version: f(&u.version),
             machine: f(&u.machine),
         }
     }
@@ -343,14 +357,40 @@ fn read_i64(path: &str) -> Option<i64> {
 
 /// run a shell command and capture its stdout.
 fn run(cmd: &str) -> Option<String> {
-    let o = Command::new("sh")
-        .arg("-c")
-        .arg(cmd)
+    run_argv("sh", &["-c", cmd])
+}
+
+/// run a program directly, no shell in between, and capture its stdout. Each
+/// `sh -c` costs a whole extra process, and these add up at startup.
+fn run_argv(bin: &str, args: &[&str]) -> Option<String> {
+    let o = Command::new(bin)
+        .args(args)
         .stdin(Stdio::null())
         .stderr(Stdio::null())
         .output()
         .ok()?;
     Some(String::from_utf8_lossy(&o.stdout).into_owned())
+}
+
+fn is_executable(path: &str) -> bool {
+    use std::os::unix::fs::PermissionsExt;
+    fs::metadata(path).is_ok_and(|m| m.is_file() && m.permissions().mode() & 0o111 != 0)
+}
+
+/// Where `name` resolves on PATH, without spawning anything. Names with a
+/// slash are taken as paths.
+fn which(name: &str) -> Option<String> {
+    if name.is_empty() {
+        return None;
+    }
+    if name.contains('/') {
+        return is_executable(name).then(|| name.to_string());
+    }
+    let path = std::env::var("PATH").unwrap_or_default();
+    path.split(':')
+        .filter(|d| !d.is_empty())
+        .map(|d| format!("{d}/{name}"))
+        .find(|p| is_executable(p))
 }
 
 /// only this charset is allowed anywhere we interpolate into a shell command.
@@ -366,25 +406,43 @@ fn is_pci_id(s: &str) -> bool {
     !s.is_empty() && s.bytes().all(|c| c.is_ascii_hexdigit() || c == b':')
 }
 
-/// runs <bin> --version and returns.
+/// runs <bin> --version and returns the version number in its first line.
+///
+/// Remembered across runs, keyed by the resolved binary and its size and mtime,
+/// so an upgrade (or a new store path) is a miss. A binary that isn't on PATH
+/// answers "" without a process ever being started.
 fn cmd_version(bin: &str) -> String {
     if !is_shell_safe(bin) {
         return String::new();
     }
-    let Some(o) = run(&format!("{bin} --version 2>/dev/null")) else {
+    let Some(path) = which(bin) else {
         return String::new();
     };
-    let Some(first) = o.split('\n').next() else {
-        return String::new();
+    let real = fs::canonicalize(&path)
+        .map(|p| p.to_string_lossy().into_owned())
+        .unwrap_or_else(|_| path.clone());
+    let stamp = {
+        use std::os::unix::fs::MetadataExt;
+        fs::metadata(&real)
+            .map(|m| format!("{}:{}", m.mtime(), m.size()))
+            .unwrap_or_default()
     };
-    let Some(start) = first.find(|c: char| c.is_ascii_digit()) else {
-        return String::new();
-    };
-    first[start..]
-        .chars()
-        .take_while(|&c| c != ' ' && c != '(' && c != '\n')
-        .take(30)
-        .collect()
+    // the invoked path is part of the key: busybox and toybox answer for a
+    // whole set of names from one binary
+    cache::get_or(&format!("ver:{path}=>{real}:{stamp}"), || {
+        let Some(o) = run_argv(&path, &["--version"]) else {
+            return String::new();
+        };
+        let first = o.split('\n').next().unwrap_or("");
+        let Some(start) = first.find(|c: char| c.is_ascii_digit()) else {
+            return String::new();
+        };
+        first[start..]
+            .chars()
+            .take_while(|&c| c != ' ' && c != '(' && c != '\n')
+            .take(30)
+            .collect()
+    })
 }
 
 fn eq_ci(a: &str, b: &str) -> bool {
@@ -822,12 +880,22 @@ fn ff_truncate_line(buf: &mut Vec<u8>) -> bool {
 /// there it quietly draws the local machine's logo instead of the one we asked
 /// for.
 fn load_logo_ff_colored(name: &str) -> Option<Vec<String>> {
-    if !is_shell_safe(name) {
+    if !is_shell_safe(name) || !have_bin("fastfetch") {
         return None;
     }
-    let text = run(&format!(
-        "fastfetch -l {name} --logo-type builtin -s break --pipe false 2>/dev/null"
-    ))?;
+    let text = run_argv(
+        "fastfetch",
+        &[
+            "-l",
+            name,
+            "--logo-type",
+            "builtin",
+            "-s",
+            "break",
+            "--pipe",
+            "false",
+        ],
+    )?;
     let mut rows: Vec<String> = Vec::new();
     for line in text.split('\n') {
         if rows.len() >= MAX_LOGO_ROWS {
@@ -857,7 +925,7 @@ fn load_logo_ff_colored(name: &str) -> Option<Vec<String>> {
 /// and exits 0, so there is no way to tell a hit from a miss after the fact.
 /// The listing is the only honest answer.
 fn ff_knows_logo(name: &str) -> bool {
-    let Some(text) = run("fastfetch --print-logos 2>/dev/null") else {
+    let Some(text) = ff_print_logos() else {
         return false;
     };
     text.split('\n').any(|line| {
@@ -867,8 +935,20 @@ fn ff_knows_logo(name: &str) -> bool {
 }
 
 /// fallback to fastfetch --print-logos if the colored output didn't work.
+/// `fastfetch --print-logos`, run at most once.
+fn ff_print_logos() -> Option<&'static str> {
+    static CACHE: std::sync::OnceLock<Option<String>> = std::sync::OnceLock::new();
+    CACHE
+        .get_or_init(|| {
+            have_bin("fastfetch")
+                .then(|| run_argv("fastfetch", &["--print-logos"]))
+                .flatten()
+        })
+        .as_deref()
+}
+
 fn load_logo_ff_plain(name: &str) -> Option<Vec<String>> {
-    let text = run("fastfetch --print-logos 2>/dev/null")?;
+    let text = ff_print_logos()?;
     let mut rows: Vec<String> = Vec::new();
     let mut found = false;
 
@@ -950,9 +1030,7 @@ fn print_logo_file(name: &str, rows: &[String]) {
 
 /// true if `name` is an executable on PATH.
 fn have_bin(name: &str) -> bool {
-    is_shell_safe(name)
-        && run(&format!("command -v {name} >/dev/null 2>&1 && echo y"))
-            .is_some_and(|o| o.starts_with('y'))
+    is_shell_safe(name) && which(name).is_some()
 }
 
 /// write `name`'s logo to stdout in logo.txt form, from fastfetch or the
@@ -1035,11 +1113,18 @@ fn json_str_after(s: &str) -> Option<String> {
     Some(rest[q1..q2].to_string())
 }
 // detect distro using fastfetch, if available. Returns (id, id_like).
+//
+// Only the OS module: a bare `--json` runs every module fastfetch has, package
+// counts and all, which made this one call the slowest thing nyi did at startup.
 fn detect_distro_fastfetch() -> (Option<String>, Option<String>) {
-    let Some(text) = run("fastfetch --json 2>/dev/null") else {
+    if !have_bin("fastfetch") {
+        return (None, None);
+    }
+    let Some(text) = run_argv("fastfetch", &["-s", "OS", "--format", "json"]) else {
         return (None, None);
     };
     let mut found_os = false;
+    let mut id = None;
     let mut id_like = None;
     for line in text.lines() {
         if line.contains("\"OS\"") {
@@ -1050,7 +1135,7 @@ fn detect_distro_fastfetch() -> (Option<String>, Option<String>) {
         }
         if let Some(p) = line.find("\"id\"") {
             if let Some(v) = json_str_after(&line[p..]) {
-                return (Some(v), id_like);
+                id = Some(v);
             }
         }
         if let Some(p) = line.find("\"idLike\"") {
@@ -1058,8 +1143,12 @@ fn detect_distro_fastfetch() -> (Option<String>, Option<String>) {
                 id_like = Some(v);
             }
         }
+        // "id" comes before "idLike", so read to the end of the object
+        if id.is_some() && line.trim_start().starts_with('}') {
+            break;
+        }
     }
-    (None, id_like)
+    (id, id_like)
 }
 
 /// Strip quotes and trailing newlines off an os-release value.
@@ -1193,10 +1282,11 @@ enum Field {
     Ip,
     Battery,
     Locale,
+    Audio,
     Colors,
 }
 
-const F_COUNT: usize = 22;
+const F_COUNT: usize = 23;
 
 const DEFAULT_ORDER: [Field; F_COUNT] = [
     Field::Os,
@@ -1220,7 +1310,29 @@ const DEFAULT_ORDER: [Field; F_COUNT] = [
     Field::Ip,
     Field::Battery,
     Field::Locale,
+    Field::Audio,
     Field::Colors,
+];
+
+/// the panel style's default: the summary line's fields first (they don't get
+/// rows of their own), then the rows top to bottom.
+const PANEL_ORDER: [Field; 16] = [
+    Field::Os,
+    Field::Kernel,
+    Field::Packages,
+    Field::Wm,
+    Field::Host,
+    Field::Cpu,
+    Field::Gpu,
+    Field::Memory,
+    Field::Disk,
+    Field::Battery,
+    Field::Display,
+    Field::Ip,
+    Field::Audio,
+    Field::Shell,
+    Field::Terminal,
+    Field::Uptime,
 ];
 
 const FIELD_NAMES: [(&str, Field); F_COUNT] = [
@@ -1245,6 +1357,7 @@ const FIELD_NAMES: [(&str, Field); F_COUNT] = [
     ("ip", Field::Ip),
     ("battery", Field::Battery),
     ("locale", Field::Locale),
+    ("audio", Field::Audio),
     ("colors", Field::Colors),
 ];
 
@@ -1339,10 +1452,31 @@ fn light_preset(name: &str) -> Option<(f32, f32, f32)> {
     })
 }
 
+#[derive(Clone, Copy, PartialEq, Eq)]
+enum Style {
+    /// `user@host`, an underline and `Label: value` lines, neofetch-style
+    Classic,
+    /// a header, a `·`-joined summary line, and dim labels over values with
+    /// usage bars
+    Panel,
+}
+
+impl Style {
+    fn from_name(name: &str) -> Option<Style> {
+        match name {
+            "classic" => Some(Style::Classic),
+            "panel" => Some(Style::Panel),
+            _ => None,
+        }
+    }
+}
+
 struct Config {
     order: Vec<Field>,
     enabled: [bool; F_COUNT],
     label_color: String,
+    /// label_color came from the config, not the default
+    label_color_set: bool,
     /// 0 = auto (match info lines)
     height: i32,
     size_scale: f32,
@@ -1360,6 +1494,12 @@ struct Config {
     logo_inner: Option<String>,
     light: (f32, f32, f32),
     extra_disks: Vec<String>,
+    style: Style,
+    /// none = the style's default (on for panel)
+    footer: Option<bool>,
+    /// the config file named fields itself, so the style's default order is
+    /// not used
+    fields_listed: bool,
 }
 
 impl Default for Config {
@@ -1373,6 +1513,7 @@ impl Default for Config {
             order,
             enabled,
             label_color: "35".to_string(), // default magenta
+            label_color_set: false,
             height: 0,
             size_scale: 1.0,
             speed: 0.0,
@@ -1387,6 +1528,9 @@ impl Default for Config {
             logo_inner: None,
             light: (0.4082, 0.8165, -0.4082),
             extra_disks: Vec::new(),
+            style: Style::Panel,
+            footer: None,
+            fields_listed: false,
         }
     }
 }
@@ -1419,6 +1563,7 @@ impl Config {
 
             if let Some(v) = line.strip_prefix("label_color=") {
                 self.label_color = color_code(strip_inline_hint(v));
+                self.label_color_set = true;
             } else if let Some(v) = line.strip_prefix("height=") {
                 self.height = atoi(strip_inline_hint(v)).min(MAX_HEIGHT);
             } else if let Some(v) = line.strip_prefix("size=") {
@@ -1429,8 +1574,13 @@ impl Config {
                 let v = strip_inline_hint(v);
                 self.spin = Some((v.contains(['x', 'X']), v.contains(['y', 'Y'])));
             } else if let Some(v) = line.strip_prefix("box=") {
-                let v = strip_inline_hint(v);
-                self.box_on = v == "1" || eq_ci(v, "y") || eq_ci(v, "yes") || eq_ci(v, "true");
+                self.box_on = is_truthy(strip_inline_hint(v));
+            } else if let Some(v) = line.strip_prefix("footer=") {
+                self.footer = Some(is_truthy(strip_inline_hint(v)));
+            } else if let Some(v) = line.strip_prefix("style=") {
+                if let Some(st) = Style::from_name(strip_inline_hint(v)) {
+                    self.style = st;
+                }
             } else if let Some(v) = line.strip_prefix("shading_mode=") {
                 // an empty value reads as "unset", not as a mode named ""
                 self.shading_mode =
@@ -1461,10 +1611,41 @@ impl Config {
                 self.enable(Field::Disk);
             } else if let Some(f) = Field::from_name(line) {
                 self.enable(f);
+                self.fields_listed = true;
             }
         }
         true
     }
+
+    /// once the file and the flags are both in: a config that only holds
+    /// settings keeps the style's default fields, rather than showing none.
+    fn finalize(&mut self) {
+        if self.fields_listed {
+            return;
+        }
+        let had_disk = self.enabled[Field::Disk.idx()];
+        let defaults: &[Field] = match self.style {
+            Style::Classic => &DEFAULT_ORDER,
+            Style::Panel => &PANEL_ORDER,
+        };
+        self.order.clear();
+        self.enabled = [false; F_COUNT];
+        for f in defaults {
+            self.enable(*f);
+        }
+        // disk= lines ask for the field even when the defaults leave it out
+        if had_disk {
+            self.enable(Field::Disk);
+        }
+    }
+
+    fn footer_on(&self) -> bool {
+        self.footer.unwrap_or(self.style == Style::Panel)
+    }
+}
+
+fn is_truthy(v: &str) -> bool {
+    v == "1" || eq_ci(v, "y") || eq_ci(v, "yes") || eq_ci(v, "true") || eq_ci(v, "on")
 }
 
 // Info lines
@@ -1476,17 +1657,23 @@ struct Info {
     refresh: bool,
     box_width: usize,
     label_color: String,
+    style: Style,
+    /// lines above the fields (title and underline, or the panel header),
+    /// which the box leaves outside
+    header_lines: usize,
 }
 
 impl Info {
-    fn new(label_color: &str) -> Info {
+    fn new(cfg: &Config) -> Info {
         Info {
             lines: Vec::new(),
             field_line: [-1; F_COUNT],
             current: None,
             refresh: false,
             box_width: 0,
-            label_color: label_color.to_string(),
+            label_color: cfg.label_color.clone(),
+            style: cfg.style,
+            header_lines: 0,
         }
     }
 
@@ -1499,7 +1686,10 @@ impl Info {
 
     /// Format a labeled info line using the configured label color.
     fn add_info(&mut self, label: &str, value: &str) {
-        let line = format!("\x1b[1;{}m{}\x1b[0m: {}", self.label_color, label, value);
+        let line = match self.style {
+            Style::Classic => format!("\x1b[1;{}m{}\x1b[0m: {}", self.label_color, label, value),
+            Style::Panel => panel::row(label, value),
+        };
 
         if self.refresh {
             if let Some(f) = self.current {
@@ -1524,22 +1714,22 @@ impl Info {
 
     /// wrap the info lines
     fn box_wrap_lines(&mut self) {
-        const START: usize = 2; // 0 = title, 1 = separator underline
-        if START >= self.lines.len() {
+        let start = self.header_lines;
+        if start >= self.lines.len() {
             return;
         }
 
-        let max_w = self.lines[START..]
+        let max_w = self.lines[start..]
             .iter()
             .map(|l| visible_width(l))
             .max()
             .unwrap_or(0);
         self.box_width = max_w;
 
-        let content: Vec<String> = self.lines[START..].to_vec();
+        let content: Vec<String> = self.lines[start..].to_vec();
         let rule = "─".repeat(max_w + 2);
 
-        self.lines.truncate(START);
+        self.lines.truncate(start);
         self.lines.push(format!("╭{rule}╮"));
         for c in content {
             if self.lines.len() >= MAX_INFO_LINES {
@@ -1553,7 +1743,7 @@ impl Info {
         }
 
         for f in self.field_line.iter_mut() {
-            if *f >= START as i32 {
+            if *f >= start as i32 {
                 *f += 1;
             }
         }
@@ -1814,28 +2004,33 @@ fn gather_kernel(info: &mut Info) {
     info.add_info("Kernel", &format!("{} {}", u.sysname, u.release));
 }
 
-fn gather_uptime(info: &mut Info) {
+/// seconds since boot.
+fn uptime_secs() -> Option<i64> {
     #[cfg(target_os = "macos")]
-    let secs: f64 = {
+    {
         let bt: libc::timeval = sysctl_num("kern.boottime");
         if bt.tv_sec == 0 {
-            return;
+            return None;
         }
         let now = unsafe { libc::time(std::ptr::null_mut()) };
-        (now as i64 - bt.tv_sec as i64) as f64
-    };
+        Some(now as i64 - bt.tv_sec)
+    }
     #[cfg(not(target_os = "macos"))]
-    let secs: f64 = {
-        let Some(text) = read_file("/proc/uptime") else {
-            return;
-        };
-        text.split_ascii_whitespace()
+    {
+        let text = read_file("/proc/uptime")?;
+        let secs = text
+            .split_ascii_whitespace()
             .next()
             .and_then(|v| v.parse::<f64>().ok())
-            .unwrap_or(0.0)
-    };
+            .unwrap_or(0.0);
+        Some(secs as i64)
+    }
+}
 
-    let total = secs as i64;
+fn gather_uptime(info: &mut Info) {
+    let Some(total) = uptime_secs() else {
+        return;
+    };
     let days = total / 86400;
     let hours = (total % 86400) / 3600;
     let mins = (total % 3600) / 60;
@@ -1882,12 +2077,14 @@ fn count_file_lines(path: &str, prefix: Option<&str>) -> usize {
         .count()
 }
 
-fn count_cmd_lines(cmd: &str) -> usize {
-    run(cmd).map(|o| o.lines().count()).unwrap_or(0)
-}
-
-/// nix package counts, on NixOS and on any distro with Nix installed.
-fn count_nix_pkgs() -> Option<String> {
+/// nix package counts, on NixOS and on any distro with Nix installed, as
+/// (system, user).
+///
+/// Asking nix-store costs a few hundred milliseconds, so the answer is cached
+/// under the store paths the profiles resolve to: it only changes when one of
+/// them does, which is a rebuild or a profile switch.
+fn count_nix_pkgs() -> (i64, i64) {
+    let sys_path = fs::canonicalize("/run/current-system/sw").ok();
     let base = home_dir()
         .map(|h| h.rsplit('/').next().unwrap_or("").to_string())
         .filter(|b| {
@@ -1895,45 +2092,87 @@ fn count_nix_pkgs() -> Option<String> {
                 && b.bytes()
                     .all(|c| c.is_ascii_alphanumeric() || matches!(c, b'.' | b'_' | b'-'))
         });
-
-    let cmd = match &base {
-        Some(user) => format!(
-            "sh -c '\
-             sys=$(nix-store -q --references /run/current-system/sw 2>/dev/null | wc -l); \
-             resolved=$(readlink -f /etc/profiles/per-user/{user} 2>/dev/null); \
-             if [ -n \"$resolved\" ]; then \
-               hop1=$(nix-store -q --references \"$resolved\" 2>/dev/null); \
-               if [ -n \"$hop1\" ]; then \
-                 usr=$(nix-store -q --references \"$hop1\" 2>/dev/null | wc -l); \
-               else \
-                 usr=$(nix-store -q --references \"$resolved\" 2>/dev/null | wc -l); \
-               fi; \
-             else \
-               usr=0; \
-             fi; \
-             echo \"$sys $usr\"'"
-        ),
-        None => "sh -c '\
-                 sys=$(nix-store -q --references /run/current-system/sw 2>/dev/null | wc -l); \
-                 echo \"$sys 0\"'"
-            .to_string(),
+    let user_path = base
+        .as_ref()
+        .and_then(|u| fs::canonicalize(format!("/etc/profiles/per-user/{u}")).ok());
+    if sys_path.is_none() && user_path.is_none() {
+        return (0, 0);
+    }
+    if !have_bin("nix-store") {
+        return (0, 0);
+    }
+    let show = |p: &Option<std::path::PathBuf>| {
+        p.as_ref()
+            .map(|p| p.to_string_lossy().into_owned())
+            .unwrap_or_default()
+    };
+    let refs = |path: &str| -> Vec<String> {
+        run_argv("nix-store", &["-q", "--references", path])
+            .map(|o| o.lines().map(str::to_string).collect())
+            .unwrap_or_default()
     };
 
-    let out = run(&cmd)?;
-    let mut it = out.split_ascii_whitespace();
-    let sys: i64 = it.next()?.parse().unwrap_or(0);
-    let usr: i64 = it.next()?.parse().unwrap_or(0);
-
-    match (sys > 0, usr > 0) {
-        (true, true) => Some(format!("{sys} (system), {usr} (user)")),
-        (true, false) => Some(format!("{sys} (system)")),
-        (false, true) => Some(format!("{usr} (user)")),
-        (false, false) => None,
-    }
+    let key = format!("nix2:{}:{}", show(&sys_path), show(&user_path));
+    let val = cache::get_or(&key, || {
+        let sys = sys_path
+            .as_ref()
+            .map_or(0, |p| refs(&p.to_string_lossy()).len());
+        let usr = match &user_path {
+            Some(p) => {
+                // The per-user profile wraps the buildEnv that actually holds
+                // the packages (home-manager-path under home-manager), next
+                // to a few loose files. Without one, its own references are
+                // the packages.
+                let hop1 = refs(&p.to_string_lossy());
+                let env = hop1
+                    .iter()
+                    .find(|r| r.ends_with("-home-manager-path"))
+                    .or_else(|| (hop1.len() == 1).then(|| &hop1[0]));
+                match env {
+                    Some(h) => refs(h).len(),
+                    None => hop1.len(),
+                }
+            }
+            None => 0,
+        };
+        format!("{sys} {usr}")
+    });
+    let mut it = val.split_ascii_whitespace();
+    let sys = it.next().and_then(|n| n.parse().ok()).unwrap_or(0);
+    let usr = it.next().and_then(|n| n.parse().ok()).unwrap_or(0);
+    (sys, usr)
 }
 
-fn gather_packages(info: &mut Info) {
-    let mut val = String::new();
+/// installed flatpak refs, counted off the disk the way `flatpak list` shows
+/// them (no .Locale/.Debug extensions), instead of starting flatpak itself.
+fn count_flatpak_refs() -> i64 {
+    let mut roots = vec!["/var/lib/flatpak".to_string()];
+    if let Some(h) = home_dir() {
+        roots.push(format!("{h}/.local/share/flatpak"));
+    }
+    let mut n = 0i64;
+    for root in &roots {
+        for kind in ["app", "runtime"] {
+            let kdir = format!("{root}/{kind}");
+            for name in dir_entries(&kdir) {
+                if name.ends_with(".Locale") || name.ends_with(".Debug") {
+                    continue;
+                }
+                for arch in dir_entries(&format!("{kdir}/{name}")) {
+                    if arch == "current" {
+                        continue;
+                    }
+                    n += count_entries(&format!("{kdir}/{name}/{arch}")) as i64;
+                }
+            }
+        }
+    }
+    n
+}
+
+/// every package manager that has something installed, as (count, manager).
+fn package_entries() -> Vec<(i64, String)> {
+    let mut v: Vec<(i64, String)> = Vec::new();
 
     #[cfg(target_os = "macos")]
     {
@@ -1943,77 +2182,80 @@ fn gather_packages(info: &mut Info) {
             .map(|p| count_entries(p))
             .sum();
         if total > 0 {
-            val = format!("{total} (brew)");
+            v.push((total as i64, "brew".to_string()));
         }
     }
     #[cfg(not(target_os = "macos"))]
     {
-        if let Some(v) = mobile::package_count() {
-            val = v;
+        // "N (dpkg)" from termux's own database
+        if let Some(m) = mobile::package_count() {
+            let n = atoi(&m) as i64;
+            if n > 0 {
+                v.push((n, "dpkg".to_string()));
+            }
         }
-        // emerge (Gentoo)
-        let n = count_emerge_pkgs();
-        if val.is_empty() && n > 0 {
-            val = format!("{n} (emerge)");
-        }
-        // pacman (Arch)
-        if val.is_empty() {
+        // the distro's native manager; the first one that has anything wins
+        let native = || -> Option<(i64, &str)> {
+            let n = count_emerge_pkgs();
+            if n > 0 {
+                return Some((n as i64, "emerge"));
+            }
+            // -1 for ALPM_DB_VERSION
             let n = count_entries("/var/lib/pacman/local");
             if n > 1 {
-                // -1 for ALPM_DB_VERSION
-                val = format!("{} (pacman)", n - 1);
+                return Some((n as i64 - 1, "pacman"));
             }
-        }
-        // dpkg (Debian/Ubuntu)
-        if val.is_empty() {
             let n = count_file_lines("/var/lib/dpkg/status", Some("Package:"));
             if n > 0 {
-                val = format!("{n} (dpkg)");
+                return Some((n as i64, "dpkg"));
             }
-        }
-        // rpm (Fedora, RHEL, openSUSE, etc.)
-        if val.is_empty() {
-            let n = count_cmd_lines("rpm -qa 2>/dev/null");
-            if n > 0 {
-                val = format!("{n} (rpm)");
-            }
-        }
-        // xbps (Void)
-        if val.is_empty() {
-            if let Some(o) = run("xbps-query -l 2>/dev/null | wc -l") {
-                let n = atoi(o.trim());
+            if have_bin("rpm") {
+                let n = run_argv("rpm", &["-qa"]).map_or(0, |o| o.lines().count());
                 if n > 0 {
-                    val = format!("{n} (xbps)");
+                    return Some((n as i64, "rpm"));
                 }
             }
-        }
-        // apk (Alpine)
-        if val.is_empty() {
+            if have_bin("xbps-query") {
+                let n = run_argv("xbps-query", &["-l"]).map_or(0, |o| o.lines().count());
+                if n > 0 {
+                    return Some((n as i64, "xbps"));
+                }
+            }
             let n = count_file_lines("/lib/apk/db/installed", Some("P:"));
             if n > 0 {
-                val = format!("{n} (apk)");
+                return Some((n as i64, "apk"));
+            }
+            None
+        };
+        if v.is_empty() {
+            if let Some((n, m)) = native() {
+                v.push((n, m.to_string()));
             }
         }
     }
 
     // Nix (NixOS, or the Nix package manager on other distros).
-    if let Some(nix) = count_nix_pkgs() {
-        if val.is_empty() {
-            val = nix;
-        } else {
-            val = format!("{val}, {nix}");
-        }
+    let (sys, usr) = count_nix_pkgs();
+    if sys > 0 {
+        v.push((sys, "system".to_string()));
+    }
+    if usr > 0 {
+        v.push((usr, "user".to_string()));
     }
 
-    let n = count_cmd_lines("flatpak list --columns=ref 2>/dev/null");
+    let n = count_flatpak_refs();
     if n > 0 {
-        if val.is_empty() {
-            val = format!("{n} (flatpak)");
-        } else {
-            val = format!("{val}, {n} (flatpak)");
-        }
+        v.push((n, "flatpak".to_string()));
     }
+    v
+}
 
+fn gather_packages(info: &mut Info) {
+    let val = package_entries()
+        .iter()
+        .map(|(n, m)| format!("{n} ({m})"))
+        .collect::<Vec<_>>()
+        .join(", ");
     if !val.is_empty() {
         info.add_info("Packages", &val);
     }
@@ -2023,22 +2265,24 @@ const KNOWN_SHELLS: [&str; 12] = [
     "bash", "zsh", "fish", "dash", "sh", "nu", "elvish", "tcsh", "csh", "xonsh", "ksh", "ion",
 ];
 
-fn gather_shell(info: &mut Info) {
+/// (name, version) of the shell nyi was started from.
+fn shell_info() -> Option<(String, String)> {
     // Try the actual running shell from the parent process, since $SHELL is
     // the login shell which may differ (e.g. fish launched from bash).
     let ppid = unsafe { libc::getppid() };
     let from_parent = proc_comm(ppid).filter(|c| KNOWN_SHELLS.contains(&c.as_str()));
 
-    let Some(shell) = from_parent.or_else(|| std::env::var("SHELL").ok()) else {
+    let shell = from_parent
+        .or_else(|| std::env::var("SHELL").ok())
+        .filter(|s| !s.is_empty())?;
+    let name = shell.rsplit('/').next().unwrap_or(&shell).to_string();
+    Some((name, cmd_version(&shell)))
+}
+
+fn gather_shell(info: &mut Info) {
+    let Some((name, version)) = shell_info() else {
         return;
     };
-    if shell.is_empty() {
-        return;
-    }
-
-    let name = shell.rsplit('/').next().unwrap_or(&shell).to_string();
-    let version = cmd_version(&shell);
-
     if version.is_empty() {
         info.add_info("Shell", &name);
     } else {
@@ -2401,6 +2645,21 @@ fn parse_sp_displays(text: &str) -> (Vec<String>, Vec<MacDisplay>) {
     (gpus, displays)
 }
 
+struct DisplayInfo {
+    /// EDID or system_profiler name; empty when unknown
+    name: String,
+    /// connector name (eDP-1, HDMI-A-1) on Linux
+    #[cfg_attr(target_os = "macos", allow(dead_code))]
+    conn: String,
+    res: String,
+    /// macOS Retina: the scaled desktop size, when it differs from `res`
+    scaled: String,
+    hz: f32,
+    /// diagonal in inches, 0 when unknown
+    inches: i32,
+    internal: bool,
+}
+
 /// "1366 x 768" -> "1366x768"
 #[cfg(target_os = "macos")]
 fn normalize_res(s: &str) -> String {
@@ -2408,49 +2667,74 @@ fn normalize_res(s: &str) -> String {
 }
 
 #[cfg(target_os = "macos")]
-fn gather_display(info: &mut Info) {
+fn display_list() -> Vec<DisplayInfo> {
     let Some(text) = sp_displays_text() else {
-        return;
+        return Vec::new();
     };
     let (_, displays) = parse_sp_displays(text);
-    let mut generic = 0usize;
+    displays
+        .into_iter()
+        .filter_map(|d| {
+            let res = if d.res.is_empty() { &d.ui } else { &d.res };
+            if res.is_empty() {
+                return None;
+            }
+            // Retina panels report the real mode in Resolution and the scaled
+            // desktop in "UI Looks like". Keep both when they differ.
+            let scaled = if !d.ui.is_empty() && &d.ui != res {
+                d.ui.clone()
+            } else {
+                String::new()
+            };
+            // system_profiler gives the built-in panel the generic heading
+            // "Display"; that is no name at all.
+            let name = if d.name.eq_ignore_ascii_case("Display") {
+                String::new()
+            } else {
+                d.name.clone()
+            };
+            Some(DisplayInfo {
+                name,
+                conn: String::new(),
+                res: res.clone(),
+                scaled,
+                hz: d.hz,
+                inches: 0,
+                internal: d.internal,
+            })
+        })
+        .collect()
+}
 
-    for d in &displays {
-        let res = if d.res.is_empty() { &d.ui } else { &d.res };
-        if res.is_empty() {
-            continue;
-        }
-        // Retina panels report the real mode in Resolution and the scaled
-        // desktop in "UI Looks like". Show both when they differ.
-        let scaled = if !d.ui.is_empty() && &d.ui != res {
-            format!(" (as {})", d.ui)
-        } else {
+#[cfg(target_os = "macos")]
+fn gather_display(info: &mut Info) {
+    let mut generic = 0usize;
+    for d in display_list() {
+        let scaled = if d.scaled.is_empty() {
             String::new()
+        } else {
+            format!(" (as {})", d.scaled)
         };
         let rate = format_hz(d.hz);
         let sep = if rate.is_empty() { "" } else { " @ " };
         let kind = if d.internal { "Built-in" } else { "External" };
-
-        // system_profiler gives the built-in panel the generic heading
-        // "Display"; writing that as "Display (Display)" reads badly.
-        let label = if d.name.is_empty() || d.name.eq_ignore_ascii_case("Display") {
-            if generic == 0 {
-                generic += 1;
+        let label = if d.name.is_empty() {
+            generic += 1;
+            if generic == 1 {
                 "Display".to_string()
             } else {
-                generic += 1;
                 format!("Display {generic}")
             }
         } else {
             format!("Display ({})", d.name)
         };
-        info.add_info(&label, &format!("{res}{scaled}{sep}{rate} [{kind}]"));
+        info.add_info(&label, &format!("{}{scaled}{sep}{rate} [{kind}]", d.res));
     }
 }
 
 #[cfg(not(target_os = "macos"))]
-fn gather_display(info: &mut Info) {
-    let mut emitted = 0;
+fn display_list() -> Vec<DisplayInfo> {
+    let mut out = Vec::new();
 
     for entry in dir_entries("/sys/class/drm") {
         // Pattern: cardN-CONNECTOR (skip bare cardN and renderD*)
@@ -2505,25 +2789,64 @@ fn gather_display(info: &mut Info) {
         } else {
             mode
         };
+        let inches = if m.mm_w > 0 && m.mm_h > 0 {
+            (((m.mm_w * m.mm_w + m.mm_h * m.mm_h) as f32).sqrt() / 25.4).round() as i32
+        } else {
+            0
+        };
 
-        let name = edid.as_deref().map(edid_name).unwrap_or_default();
+        out.push(DisplayInfo {
+            name: edid.as_deref().map(edid_name).unwrap_or_default(),
+            conn: conn.to_string(),
+            res,
+            scaled: String::new(),
+            hz: m.hz,
+            inches,
+            internal: connector_is_internal(conn),
+        });
+    }
+
+    // Fallback: the first mode from any card
+    if out.is_empty() {
+        for entry in dir_entries("/sys/class/drm") {
+            if !entry.starts_with("card") {
+                continue;
+            }
+            if let Some(mode) = read_first_line(&format!("/sys/class/drm/{entry}/modes")) {
+                out.push(DisplayInfo {
+                    name: String::new(),
+                    conn: String::new(),
+                    res: mode,
+                    scaled: String::new(),
+                    hz: 0.0,
+                    inches: 0,
+                    internal: false,
+                });
+                break;
+            }
+        }
+    }
+    out
+}
+
+#[cfg(not(target_os = "macos"))]
+fn gather_display(info: &mut Info) {
+    for d in display_list() {
+        // the fallback entry knows nothing but a mode
+        if d.conn.is_empty() {
+            info.add_info("Display", &d.res);
+            continue;
+        }
         let label = format!(
             "Display ({})",
-            if name.is_empty() { conn } else { name.as_str() }
+            if d.name.is_empty() { &d.conn } else { &d.name }
         );
-
-        let inches = if m.mm_w > 0 && m.mm_h > 0 {
-            let diag = (((m.mm_w * m.mm_w + m.mm_h * m.mm_h) as f32).sqrt() / 25.4).round() as i32;
-            if diag > 0 {
-                format!(" in {diag}\"")
-            } else {
-                String::new()
-            }
+        let inches = if d.inches > 0 {
+            format!(" in {}\"", d.inches)
         } else {
             String::new()
         };
-
-        let rate = format_hz(m.hz);
+        let rate = format_hz(d.hz);
         let sep = if rate.is_empty() {
             ""
         } else if inches.is_empty() {
@@ -2531,27 +2854,8 @@ fn gather_display(info: &mut Info) {
         } else {
             ", "
         };
-        let kind = if connector_is_internal(conn) {
-            "Built-in"
-        } else {
-            "External"
-        };
-
-        info.add_info(&label, &format!("{res}{inches}{sep}{rate} [{kind}]"));
-        emitted += 1;
-    }
-
-    // Fallback: read the first mode from any card
-    if emitted == 0 {
-        for entry in dir_entries("/sys/class/drm") {
-            if !entry.starts_with("card") {
-                continue;
-            }
-            if let Some(mode) = read_first_line(&format!("/sys/class/drm/{entry}/modes")) {
-                info.add_info("Display", &mode);
-                break;
-            }
-        }
+        let kind = if d.internal { "Built-in" } else { "External" };
+        info.add_info(&label, &format!("{}{inches}{sep}{rate} [{kind}]", d.res));
     }
 }
 
@@ -2560,10 +2864,11 @@ const KNOWN_WMS: [&str; 10] = [
     "dwl", "sway", "river", "labwc", "weston", "i3", "bspwm", "openbox", "awesome", "dwm",
 ];
 
-fn gather_wm(info: &mut Info) {
+/// (name, version, wayland) of the running window manager.
+fn wm_info() -> Option<(String, String, bool)> {
     #[cfg(target_os = "macos")]
     {
-        info.add_info("WM", "Aqua");
+        Some(("Aqua".to_string(), String::new(), false))
     }
     #[cfg(not(target_os = "macos"))]
     {
@@ -2635,19 +2940,27 @@ fn gather_wm(info: &mut Info) {
             }
         }
 
-        if !wm.is_empty() {
-            let version = if wm_is_binary {
-                cmd_version(&wm)
-            } else {
-                String::new()
-            };
-            let suffix = if is_wayland { " (Wayland)" } else { "" };
-            if version.is_empty() {
-                info.add_info("WM", &format!("{wm}{suffix}"));
-            } else {
-                info.add_info("WM", &format!("{wm} {version}{suffix}"));
-            }
+        if wm.is_empty() {
+            return None;
         }
+        let version = if wm_is_binary {
+            cmd_version(&wm)
+        } else {
+            String::new()
+        };
+        Some((wm, version, is_wayland))
+    }
+}
+
+fn gather_wm(info: &mut Info) {
+    let Some((wm, version, is_wayland)) = wm_info() else {
+        return;
+    };
+    let suffix = if is_wayland { " (Wayland)" } else { "" };
+    if version.is_empty() {
+        info.add_info("WM", &format!("{wm}{suffix}"));
+    } else {
+        info.add_info("WM", &format!("{wm} {version}{suffix}"));
     }
 }
 
@@ -2667,52 +2980,122 @@ fn devicetree_chip() -> Option<String> {
     }
 }
 
-fn gather_cpu(info: &mut Info) {
+struct CpuInfo {
+    name: String,
+    /// logical CPUs
+    threads: i32,
+    /// physical cores, 0 when unknown
+    cores: i32,
+    max_ghz: f32,
+    temp_c: Option<f32>,
+    /// cpufreq energy_performance_preference, or the governor without one
+    profile: Option<String>,
+}
+
+/// Package temperature from the first hwmon driver that measures the CPU.
+#[cfg(not(target_os = "macos"))]
+fn cpu_temp() -> Option<f32> {
+    const DRIVERS: [&str; 6] = [
+        "coretemp",
+        "k10temp",
+        "zenpower",
+        "cpu_thermal",
+        "soc_thermal",
+        "cpu0_thermal",
+    ];
+    let mons: Vec<(String, String)> = dir_entries("/sys/class/hwmon")
+        .into_iter()
+        .filter_map(|h| {
+            let name = read_first_line(&format!("/sys/class/hwmon/{h}/name"))?;
+            Some((h, name))
+        })
+        .collect();
+    for drv in DRIVERS {
+        let Some((h, _)) = mons.iter().find(|(_, n)| n == drv) else {
+            continue;
+        };
+        let milli = read_i64(&format!("/sys/class/hwmon/{h}/temp1_input")).unwrap_or(0);
+        if milli > 0 {
+            return Some(milli as f32 / 1000.0);
+        }
+    }
+    // x86_pkg_temp from the thermal framework, for machines without hwmon
+    for z in dir_entries("/sys/class/thermal") {
+        if !z.starts_with("thermal_zone") {
+            continue;
+        }
+        if read_first_line(&format!("/sys/class/thermal/{z}/type")).as_deref()
+            == Some("x86_pkg_temp")
+        {
+            let milli = read_i64(&format!("/sys/class/thermal/{z}/temp")).unwrap_or(0);
+            if milli > 0 {
+                return Some(milli as f32 / 1000.0);
+            }
+        }
+    }
+    None
+}
+
+fn cpu_info() -> Option<CpuInfo> {
     #[cfg(target_os = "macos")]
     {
-        let Some(name) = sysctl_str("machdep.cpu.brand_string") else {
-            return;
-        };
+        let name = sysctl_str("machdep.cpu.brand_string")?;
         // Intel's brand string already carries the frequency:
         // "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz". hw.cpufrequency_max adds
-        // it again below, so cut it here. Linux does the same for
-        // /proc/cpuinfo's model name.
+        // it again, so cut it here. Linux does the same for /proc/cpuinfo's
+        // model name.
         let name = match name.find(" @ ") {
             Some(at) => name[..at].trim_end().to_string(),
             None => name,
         };
-        let cores: i32 = sysctl_num("hw.ncpu");
         let freq_hz: i64 = sysctl_num("hw.cpufrequency_max");
-        if freq_hz > 0 {
-            let ghz = freq_hz as f32 / 1e9;
-            info.add_info("CPU", &format!("{name} ({cores}) @ {ghz:.2} GHz"));
-        } else if cores > 0 {
-            info.add_info("CPU", &format!("{name} ({cores})"));
-        } else {
-            info.add_info("CPU", &name);
-        }
+        Some(CpuInfo {
+            name,
+            threads: sysctl_num("hw.logicalcpu"),
+            cores: sysctl_num("hw.physicalcpu"),
+            max_ghz: if freq_hz > 0 {
+                freq_hz as f32 / 1e9
+            } else {
+                0.0
+            },
+            temp_c: None,
+            profile: None,
+        })
     }
     #[cfg(not(target_os = "macos"))]
     {
         let mut name = String::new();
-        let mut cores = 0;
+        let mut threads = 0;
+        // (physical id, core id) pairs; ARM has neither, and there each
+        // logical CPU is a core.
+        let mut core_ids: Vec<(i32, i32)> = Vec::new();
+        let mut phys = 0;
 
         // Try the x86 model name first
         if let Some(text) = read_file("/proc/cpuinfo") {
             for line in text.split('\n') {
+                let val = || {
+                    line.find(':')
+                        .map(|c| strip_eol(&line[c + 1..]).trim().to_string())
+                        .unwrap_or_default()
+                };
                 if name.is_empty() && line.starts_with("model name") {
-                    if let Some(colon) = line.find(':') {
-                        let v = strip_eol(&line[colon + 1..]).trim_start_matches(' ');
-                        if !v.is_empty() {
-                            name = match v.find(" @ ") {
-                                Some(at) => v[..at].to_string(),
-                                None => v.to_string(),
-                            };
-                        }
+                    let v = val();
+                    if !v.is_empty() {
+                        name = match v.find(" @ ") {
+                            Some(at) => v[..at].to_string(),
+                            None => v,
+                        };
                     }
-                }
-                if line.starts_with("processor") {
-                    cores += 1;
+                } else if line.starts_with("processor") {
+                    threads += 1;
+                } else if line.starts_with("physical id") {
+                    phys = atoi(&val());
+                } else if line.starts_with("core id") {
+                    let id = (phys, atoi(&val()));
+                    if !core_ids.contains(&id) {
+                        core_ids.push(id);
+                    }
                 }
             }
         }
@@ -2722,6 +3105,9 @@ fn gather_cpu(info: &mut Info) {
             if let Some(chip) = devicetree_chip() {
                 name = format!("Apple {chip}");
             }
+        }
+        if name.is_empty() {
+            return None;
         }
 
         // Max frequency from cpufreq
@@ -2736,17 +3122,39 @@ fn gather_cpu(info: &mut Info) {
                 max_khz = max_khz.max(khz);
             }
         }
-        let max_ghz = max_khz as f32 / 1_000_000.0;
 
-        if !name.is_empty() {
-            if cores > 0 && max_ghz > 0.0 {
-                info.add_info("CPU", &format!("{name} ({cores}) @ {max_ghz:.2} GHz"));
-            } else if cores > 0 {
-                info.add_info("CPU", &format!("{name} ({cores})"));
+        let freq = "/sys/devices/system/cpu/cpu0/cpufreq";
+        let profile = read_first_line(&format!("{freq}/energy_performance_preference"))
+            .filter(|p| p != "default")
+            .or_else(|| read_first_line(&format!("{freq}/scaling_governor")));
+
+        Some(CpuInfo {
+            name,
+            threads,
+            cores: if core_ids.is_empty() {
+                threads
             } else {
-                info.add_info("CPU", &name);
-            }
-        }
+                core_ids.len() as i32
+            },
+            max_ghz: max_khz as f32 / 1_000_000.0,
+            temp_c: cpu_temp(),
+            profile,
+        })
+    }
+}
+
+fn gather_cpu(info: &mut Info) {
+    let Some(c) = cpu_info() else {
+        return;
+    };
+    let name = &c.name;
+    let n = c.threads;
+    if n > 0 && c.max_ghz > 0.0 {
+        info.add_info("CPU", &format!("{name} ({n}) @ {:.2} GHz", c.max_ghz));
+    } else if n > 0 {
+        info.add_info("CPU", &format!("{name} ({n})"));
+    } else {
+        info.add_info("CPU", name);
     }
 }
 
@@ -2758,7 +3166,22 @@ fn gpu_lookup_lspci(pci_id: &str) -> Option<String> {
     if !is_pci_id(pci_id) {
         return None;
     }
-    let out = run(&format!("lspci -d {pci_id} 2>/dev/null"))?;
+    // a PCI ID names the same product forever, so this is cached for good
+    // without lspci there's nothing to ask, and nothing to remember: the
+    // name should show up once pciutils is installed
+    if !have_bin("lspci") {
+        return None;
+    }
+    let name = cache::get_or(&format!("pci:{pci_id}"), || {
+        run_argv("lspci", &["-d", pci_id])
+            .and_then(|out| lspci_product_name(&out))
+            .unwrap_or_default()
+    });
+    (!name.is_empty()).then_some(name)
+}
+
+#[cfg(not(target_os = "macos"))]
+fn lspci_product_name(out: &str) -> Option<String> {
     let mut line = strip_eol(out.split('\n').next()?).to_string();
     if line.is_empty() {
         return None;
@@ -2832,21 +3255,45 @@ fn amd_name_is_igpu(name: &str) -> bool {
     CODENAMES.iter().any(|c| contains_ci(name, c))
 }
 
+struct Gpu {
+    name: String,
+    /// "Integrated", "Discrete" or ""
+    kind: &'static str,
+    /// "Intel", "AMD", "NVIDIA", or "" when the name already says it
+    vendor: &'static str,
+}
+
+/// every GPU in the machine.
 #[cfg(target_os = "macos")]
-fn gather_gpu(info: &mut Info) {
+fn gpu_list() -> Vec<Gpu> {
     let Some(text) = sp_displays_text() else {
-        return;
+        return Vec::new();
     };
-    let (gpus, _) = parse_sp_displays(text);
-    // Show both on dual-GPU MacBook Pros (Intel + discrete). Linux prints
-    // multiple GPUs under a plain "GPU" label too.
-    for g in &gpus {
-        info.add_info("GPU", g);
+    // Both on dual-GPU MacBook Pros (Intel + discrete).
+    parse_sp_displays(text)
+        .0
+        .into_iter()
+        .map(|name| Gpu {
+            name,
+            kind: "",
+            vendor: "",
+        })
+        .collect()
+}
+
+fn gather_gpu(info: &mut Info) {
+    for g in gpu_list() {
+        if g.kind.is_empty() {
+            info.add_info("GPU", &g.name);
+        } else {
+            info.add_info("GPU", &format!("{} [{}]", g.name, g.kind));
+        }
     }
 }
 
 #[cfg(not(target_os = "macos"))]
-fn gather_gpu(info: &mut Info) {
+fn gpu_list() -> Vec<Gpu> {
+    let mut gpus = Vec::new();
     for entry in dir_entries("/sys/class/drm") {
         let Some(rest) = entry.strip_prefix("card") else {
             continue;
@@ -2918,12 +3365,135 @@ fn gather_gpu(info: &mut Info) {
         if name.is_empty() {
             continue;
         }
-        if kind.is_empty() {
-            info.add_info("GPU", &name);
-        } else {
-            info.add_info("GPU", &format!("{name} [{kind}]"));
-        }
+        let vendor = match driver.as_str() {
+            "i915" | "xe" => "Intel",
+            "amdgpu" | "radeon" => "AMD",
+            "nvidia" | "nouveau" => "NVIDIA",
+            _ => "",
+        };
+        gpus.push(Gpu { name, kind, vendor });
     }
+    gpus
+}
+
+/// What the graphics stack offers the default GPU: ["OpenGL 4.6", "Vulkan
+/// 1.3", "VA-API"]. Only the tools that ship with Mesa and libva can say
+/// (every Mesa install carries the Vulkan ICDs of every driver, so the files
+/// alone don't), and they take a few hundred milliseconds, so the answer is
+/// cached under the driver install it came from.
+#[cfg(not(target_os = "macos"))]
+fn gpu_apis() -> Vec<String> {
+    // NixOS keeps the whole stack behind one symlink; elsewhere, a driver
+    // upgrade rewrites these directories
+    let stamp = {
+        use std::os::unix::fs::MetadataExt;
+        let mut parts: Vec<String> = Vec::new();
+        if let Ok(p) = fs::canonicalize("/run/opengl-driver") {
+            parts.push(p.to_string_lossy().into_owned());
+        }
+        for d in [
+            "/usr/lib/dri",
+            "/usr/lib64/dri",
+            "/usr/lib/x86_64-linux-gnu/dri",
+            "/usr/lib/aarch64-linux-gnu/dri",
+            "/usr/share/vulkan/icd.d",
+        ] {
+            if let Ok(m) = fs::metadata(d) {
+                parts.push(format!("{d}@{}", m.mtime()));
+            }
+        }
+        for t in ["glxinfo", "eglinfo", "vulkaninfo", "vainfo"] {
+            if which(t).is_some() {
+                parts.push(t.to_string());
+            }
+        }
+        parts.join(",")
+    };
+    let val = cache::get_or(&format!("gfx:{stamp}"), || {
+        // first token after the colon of the first line starting with a key
+        let field = |text: &str, keys: &[&str]| -> Option<String> {
+            keys.iter().find_map(|k| {
+                text.lines()
+                    .map(str::trim_start)
+                    .find(|l| l.starts_with(k))
+                    .and_then(|l| l.split_once(':'))
+                    .and_then(|(_, v)| v.split_whitespace().next())
+                    .map(str::to_string)
+            })
+        };
+        let gl = || {
+            let text = have_bin("glxinfo")
+                .then(|| run_argv("glxinfo", &["-B"]))
+                .flatten()
+                .filter(|t| t.contains("OpenGL"))
+                .or_else(|| {
+                    have_bin("eglinfo")
+                        .then(|| run_argv("eglinfo", &["-B"]))
+                        .flatten()
+                })?;
+            field(
+                &text,
+                &["OpenGL core profile version", "OpenGL version string"],
+            )
+            .map(|v| format!("OpenGL {v}"))
+        };
+        let vk = || {
+            let text = have_bin("vulkaninfo")
+                .then(|| run_argv("vulkaninfo", &["--summary"]))
+                .flatten()?;
+            // the first real device: skip llvmpipe and other CPU renderers
+            let mut api = None;
+            for line in text.lines().map(str::trim_start) {
+                if line.starts_with("apiVersion") {
+                    api = line.split_once('=').map(|(_, v)| v.trim().to_string());
+                } else if line.starts_with("deviceType") {
+                    if !line.contains("CPU") {
+                        break;
+                    }
+                    api = None;
+                }
+            }
+            // "1.3.352" -> "Vulkan 1.3"
+            let api = api?;
+            let v: Vec<&str> = api.splitn(3, '.').take(2).collect();
+            Some(format!("Vulkan {}", v.join(".")))
+        };
+        let va = || {
+            let text = have_bin("vainfo")
+                .then(|| run_argv("vainfo", &[]))
+                .flatten()?;
+            text.contains("Driver version")
+                .then(|| "VA-API".to_string())
+        };
+        let found: Vec<String> = std::thread::scope(|s| {
+            let jobs: [&(dyn Fn() -> Option<String> + Sync); 3] = [&gl, &vk, &va];
+            let handles: Vec<_> = jobs
+                .iter()
+                .map(|&j| {
+                    std::thread::Builder::new()
+                        .spawn_scoped(s, j)
+                        .map_err(|_| j)
+                })
+                .collect();
+            handles
+                .into_iter()
+                .filter_map(|h| match h {
+                    Ok(h) => h.join().ok().flatten(),
+                    Err(j) => j(),
+                })
+                .collect()
+        });
+        found.join("|")
+    });
+    val.split('|')
+        .filter(|s| !s.is_empty())
+        .map(str::to_string)
+        .collect()
+}
+
+#[cfg(target_os = "macos")]
+fn gpu_apis() -> Vec<String> {
+    vec!["Metal".to_string()]
 }
 
 /// Value of a `Key:   1234 kB` line in /proc/meminfo.
@@ -3047,14 +3617,17 @@ fn sysinfo_mem() -> Option<(i64, i64)> {
     Some((total, avail.clamp(0, total)))
 }
 
-fn gather_memory(info: &mut Info) {
+/// (used, total) bytes of RAM.
+fn mem_usage() -> Option<(i64, i64)> {
     #[cfg(target_os = "macos")]
     {
         let total: i64 = sysctl_num("hw.memsize");
         if total <= 0 {
-            return;
+            return None;
         }
-        let page_size = match sysctl_num::<i32>("hw.pagesize") {
+        // hw.pagesize is 64-bit on current XNU and 16K on Apple Silicon;
+        // reading it into 32 bits failed and fell back to 4K
+        let page_size = match unsafe { libc::sysconf(libc::_SC_PAGESIZE) } {
             n if n > 0 => n as i64,
             _ => 4096,
         };
@@ -3065,39 +3638,17 @@ fn gather_memory(info: &mut Info) {
             .filter(|&a| a > 0 && a <= total)
             .or_else(|| vm_stat_pages().map(|(f, i, s, ps)| (f + i + s) * ps))
             .unwrap_or(0);
-
-        let used_gib = (total - avail) as f32 / 1073741824.0;
-        let total_gib = total as f32 / 1073741824.0;
-        let pct = (total - avail) * 100 / total;
-        info.add_info(
-            "Memory",
-            &format!(
-                "{used_gib:.2} GiB / {total_gib:.2} GiB (\x1b[{}m{pct}%\x1b[0m)",
-                pct_color(pct)
-            ),
-        );
+        Some((total - avail, total))
     }
     #[cfg(not(target_os = "macos"))]
     {
         // iSH has no /proc/meminfo at all; carry on with the sysinfo(2) syscall.
         let Some(text) = read_file("/proc/meminfo") else {
-            if let Some((total, avail)) = sysinfo_mem() {
-                let used_gib = (total - avail) as f32 / 1073741824.0;
-                let total_gib = total as f32 / 1073741824.0;
-                let pct = (total - avail) * 100 / total;
-                info.add_info(
-                    "Memory",
-                    &format!(
-                        "{used_gib:.2} GiB / {total_gib:.2} GiB (\x1b[{}m{pct}%\x1b[0m)",
-                        pct_color(pct)
-                    ),
-                );
-            }
-            return;
+            return sysinfo_mem().map(|(total, avail)| (total - avail, total));
         };
         let total = meminfo_kb(&text, "MemTotal:");
         if total <= 0 {
-            return;
+            return None;
         }
         // MemAvailable has existed since 3.14, but synthetic /proc's like iSH's
         // don't provide it, and reading 0 made memory look 100% used. This is
@@ -3112,78 +3663,69 @@ fn gather_memory(info: &mut Info) {
             avail = (free + cached + buffers + reclaimable - shmem).max(free);
         }
         let avail = avail.clamp(0, total);
-        let used_gib = (total - avail) as f32 / 1048576.0;
-        let total_gib = total as f32 / 1048576.0;
-        let pct = (total - avail) * 100 / total;
-        info.add_info(
-            "Memory",
-            &format!(
-                "{used_gib:.2} GiB / {total_gib:.2} GiB (\x1b[{}m{pct}%\x1b[0m)",
-                pct_color(pct)
-            ),
-        );
+        Some(((total - avail) * 1024, total * 1024))
+    }
+}
+
+fn gather_memory(info: &mut Info) {
+    let Some((used, total)) = mem_usage() else {
+        return;
+    };
+    let pct = used * 100 / total;
+    info.add_info(
+        "Memory",
+        &format!(
+            "{:.2} GiB / {:.2} GiB (\x1b[{}m{pct}%\x1b[0m)",
+            used as f64 / GIB,
+            total as f64 / GIB,
+            pct_color(pct)
+        ),
+    );
+}
+
+/// (used, total) bytes of swap, None when there is none.
+fn swap_usage() -> Option<(i64, i64)> {
+    #[cfg(target_os = "macos")]
+    {
+        // "total = 2048.00M  used = 512.00M  free = 1536.00M  (encrypted)"
+        let s = sysctl_str("vm.swapusage")?;
+        let mb = |key: &str| -> f64 {
+            s.find(key)
+                .map(|i| atof(s[i + key.len()..].trim_start()) as f64)
+                .unwrap_or(0.0)
+        };
+        let total = (mb("total = ") * 1048576.0) as i64;
+        let used = (mb("used = ") * 1048576.0) as i64;
+        (total > 0).then_some((used, total))
+    }
+    #[cfg(not(target_os = "macos"))]
+    {
+        let text = read_file("/proc/meminfo")?;
+        let total = meminfo_kb(&text, "SwapTotal:");
+        let free = meminfo_kb(&text, "SwapFree:");
+        (total > 0).then_some(((total - free) * 1024, total * 1024))
     }
 }
 
 fn gather_swap(info: &mut Info) {
-    #[cfg(target_os = "macos")]
-    {
-        // "total = 2048.00M  used = 512.00M  free = 1536.00M  (encrypted)"
-        let Some(s) = sysctl_str("vm.swapusage") else {
-            return;
-        };
-        let mb = |key: &str| -> f32 {
-            s.find(key)
-                .map(|i| atof(s[i + key.len()..].trim_start()))
-                .unwrap_or(0.0)
-        };
-        let total_mb = mb("total = ");
-        let used_mb = mb("used = ");
-        if total_mb <= 0.0 {
-            return;
-        }
-        let pct = (used_mb * 100.0 / total_mb) as i64;
-        info.add_info(
-            "Swap",
-            &format!(
-                "{used_mb:.2} MiB / {total_mb:.2} MiB (\x1b[{}m{pct}%\x1b[0m)",
-                pct_color(pct)
-            ),
-        );
-    }
-    #[cfg(not(target_os = "macos"))]
-    {
-        let Some(text) = read_file("/proc/meminfo") else {
-            return;
-        };
-        let total = meminfo_kb(&text, "SwapTotal:");
-        let free_s = meminfo_kb(&text, "SwapFree:");
-        if total <= 0 {
-            return;
-        }
-        let used = total - free_s;
-        let pct = used * 100 / total;
-        let color = pct_color(pct);
-        if total >= 1048576 {
-            info.add_info(
-                "Swap",
-                &format!(
-                    "{:.2} GiB / {:.2} GiB (\x1b[{color}m{pct}%\x1b[0m)",
-                    used as f32 / 1048576.0,
-                    total as f32 / 1048576.0
-                ),
-            );
-        } else {
-            info.add_info(
-                "Swap",
-                &format!(
-                    "{:.2} MiB / {:.2} MiB (\x1b[{color}m{pct}%\x1b[0m)",
-                    used as f32 / 1024.0,
-                    total as f32 / 1024.0
-                ),
-            );
-        }
-    }
+    let Some((used, total)) = swap_usage() else {
+        return;
+    };
+    let pct = used * 100 / total;
+    let color = pct_color(pct);
+    let (div, unit) = if total >= 1 << 30 {
+        (GIB, "GiB")
+    } else {
+        (1048576.0, "MiB")
+    };
+    info.add_info(
+        "Swap",
+        &format!(
+            "{:.2} {unit} / {:.2} {unit} (\x1b[{color}m{pct}%\x1b[0m)",
+            used as f64 / div,
+            total as f64 / div
+        ),
+    );
 }
 
 #[cfg(target_os = "macos")]
@@ -3208,29 +3750,37 @@ fn fstype_of(path: &str) -> String {
     let Some(text) = read_file("/proc/mounts") else {
         return String::new();
     };
+    // The last entry wins: an automount point is listed once as autofs and
+    // again, below it, as what actually got mounted there.
+    let mut found = String::new();
     for line in text.lines() {
         let mut it = line.split_ascii_whitespace();
         let (_dev, mnt, fs) = (it.next(), it.next(), it.next());
         if mnt == Some(path) {
-            return fs.unwrap_or("").to_string();
+            found = fs.unwrap_or("").to_string();
         }
     }
-    String::new()
+    found
+}
+
+/// (used, total) bytes of the filesystem under `path`.
+fn disk_usage(path: &str) -> Option<(f64, f64)> {
+    let st = statvfs_of(path)?;
+    if st.f_blocks == 0 {
+        return None;
+    }
+    let total = st.f_blocks as f64 * st.f_frsize as f64;
+    let free = st.f_bfree as f64 * st.f_frsize as f64;
+    Some((total - free, total))
 }
 
 fn gather_disk_one(info: &mut Info, path: &str) {
-    let Some(st) = statvfs_of(path) else {
+    let Some((used, total)) = disk_usage(path) else {
         return;
     };
-    if st.f_blocks == 0 {
-        return;
-    }
-    const GIB: f32 = 1024.0 * 1024.0 * 1024.0;
-    let total_gib = st.f_blocks as f32 * st.f_frsize as f32 / GIB;
-    let free_gib = st.f_bfree as f32 * st.f_frsize as f32 / GIB;
-    let used_gib = total_gib - free_gib;
-    let pct = (used_gib * 100.0 / total_gib) as i64;
+    let pct = (used * 100.0 / total) as i64;
     let color = pct_color(pct);
+    let (used_gib, total_gib) = (used / GIB, total / GIB);
 
     let label = format!("Disk ({path})");
     let fstype = fstype_of(path);
@@ -3310,14 +3860,23 @@ fn time_remaining(mins_left: i64) -> String {
     }
 }
 
+struct Battery {
+    /// percent
+    capacity: i64,
+    /// "Charging", "Discharging", "Full", ... as the kernel spells it
+    status: String,
+    /// minutes until empty while discharging, until full while charging
+    mins_left: Option<i64>,
+    /// current draw in watts, when the battery reports it
+    watts: Option<f32>,
+    model: Option<String>,
+}
+
 #[cfg(target_os = "macos")]
-fn gather_battery(info: &mut Info) {
-    let Some(b) = mac_battery() else {
-        return;
-    };
-    let (capacity, is_charging, time_to_empty) = b;
+fn battery() -> Option<Battery> {
+    let (capacity, is_charging, time_to_empty) = mac_battery()?;
     if capacity < 0 {
-        return;
+        return None;
     }
     let status = if is_charging {
         "Charging"
@@ -3326,36 +3885,26 @@ fn gather_battery(info: &mut Info) {
     } else {
         ""
     };
-    let time_str = if time_to_empty > 0 && !is_charging {
-        time_remaining(time_to_empty)
-    } else {
-        String::new()
-    };
-    let color = battery_color(capacity);
-    if !time_str.is_empty() && !status.is_empty() {
-        info.add_info(
-            "Battery",
-            &format!("\x1b[{color}m{capacity}%\x1b[0m ({time_str}) [{status}]"),
-        );
-    } else if !status.is_empty() {
-        info.add_info(
-            "Battery",
-            &format!("\x1b[{color}m{capacity}%\x1b[0m [{status}]"),
-        );
-    } else {
-        info.add_info("Battery", &format!("\x1b[{color}m{capacity}%\x1b[0m"));
-    }
+    Some(Battery {
+        capacity,
+        status: status.to_string(),
+        mins_left: (time_to_empty > 0 && !is_charging).then_some(time_to_empty),
+        watts: None,
+        model: None,
+    })
 }
 
 #[cfg(not(target_os = "macos"))]
-fn gather_battery(info: &mut Info) {
-    // Find the first battery in /sys/class/power_supply
-    let bat_name = dir_entries("/sys/class/power_supply")
+fn battery() -> Option<Battery> {
+    // The first battery in /sys/class/power_supply. Peripherals (mice,
+    // headsets) report a capacity too, but say scope=Device.
+    let bat = dir_entries("/sys/class/power_supply")
         .into_iter()
-        .find(|n| fs::metadata(format!("/sys/class/power_supply/{n}/capacity")).is_ok());
-    let Some(bat) = bat_name else {
-        return;
-    };
+        .find(|n| {
+            let d = format!("/sys/class/power_supply/{n}");
+            fs::metadata(format!("{d}/capacity")).is_ok()
+                && read_first_line(&format!("{d}/scope")).as_deref() != Some("Device")
+        })?;
     let attr = |k: &str| format!("/sys/class/power_supply/{bat}/{k}");
 
     let mut capacity: i64 = -1;
@@ -3368,30 +3917,55 @@ fn gather_battery(info: &mut Info) {
     }
 
     // Fall back to charge_now/charge_full
-    if capacity < 0 {
-        let charge_now = read_i64(&attr("charge_now")).unwrap_or(0);
-        let charge_full = read_i64(&attr("charge_full")).unwrap_or(0);
-        if charge_full > 0 {
-            capacity = charge_now * 100 / charge_full;
-        }
+    let charge_now = read_i64(&attr("charge_now")).unwrap_or(0);
+    let charge_full = read_i64(&attr("charge_full")).unwrap_or(0);
+    if capacity < 0 && charge_full > 0 {
+        capacity = charge_now * 100 / charge_full;
     }
 
     // Last resort: the capacity file
     if capacity < 0 {
         capacity = read_i64(&attr("capacity")).unwrap_or(-1);
     }
+    if capacity < 0 {
+        return None;
+    }
+    let capacity = capacity.min(100);
 
     let status = read_first_line(&attr("status")).unwrap_or_default();
 
-    // Time remaining estimate from power_now
-    let mut time_str = String::new();
-    if energy_now > 0 {
-        // power_now is negative when discharging on some systems
-        let power_now = read_i64(&attr("power_now")).unwrap_or(0).abs();
-        if power_now > 0 {
-            time_str = time_remaining((energy_now as f32 / power_now as f32 * 60.0) as i64);
+    // power_now is negative when discharging on some systems. Batteries that
+    // count charge instead of energy give current and voltage.
+    let power_uw = match read_i64(&attr("power_now")) {
+        Some(p) => p.abs(),
+        None => {
+            let ua = read_i64(&attr("current_now")).unwrap_or(0).abs();
+            let uv = read_i64(&attr("voltage_now")).unwrap_or(0).abs();
+            ua * (uv / 1000) / 1000
         }
-    }
+    };
+    let watts = (power_uw > 0).then_some(power_uw as f32 / 1e6);
+
+    // Time from the same units the battery counts in.
+    let mins_left = if power_uw > 0 && energy_full > 0 {
+        let rate = power_uw as f32;
+        match status.as_str() {
+            "Discharging" => Some((energy_now as f32 / rate * 60.0) as i64),
+            "Charging" => Some(((energy_full - energy_now).max(0) as f32 / rate * 60.0) as i64),
+            _ => None,
+        }
+    } else if charge_full > 0 {
+        let ua = read_i64(&attr("current_now")).unwrap_or(0).abs() as f32;
+        match status.as_str() {
+            "Discharging" if ua > 0.0 => Some((charge_now as f32 / ua * 60.0) as i64),
+            "Charging" if ua > 0.0 => {
+                Some(((charge_full - charge_now).max(0) as f32 / ua * 60.0) as i64)
+            }
+            _ => None,
+        }
+    } else {
+        None
+    };
 
     let model = read_first_line(&attr("model_name"))
         .or_else(|| read_first_line(&attr("manufacturer")))
@@ -3399,35 +3973,52 @@ fn gather_battery(info: &mut Info) {
         .map(|m| decode_hex_ascii(&m).unwrap_or(m))
         .filter(|m| !m.is_empty());
 
-    let label = match &model {
+    Some(Battery {
+        capacity,
+        status,
+        mins_left,
+        watts,
+        model,
+    })
+}
+
+fn gather_battery(info: &mut Info) {
+    let Some(b) = battery() else {
+        return;
+    };
+    let label = match &b.model {
         Some(m) => format!("Battery ({m})"),
         None => "Battery".to_string(),
     };
-
-    if capacity >= 0 {
-        let color = battery_color(capacity);
-        if !time_str.is_empty() && !status.is_empty() {
-            info.add_info(
-                &label,
-                &format!("\x1b[{color}m{capacity}%\x1b[0m ({time_str}) [{status}]"),
-            );
-        } else if !status.is_empty() {
-            info.add_info(
-                &label,
-                &format!("\x1b[{color}m{capacity}%\x1b[0m [{status}]"),
-            );
-        } else {
-            info.add_info(&label, &format!("\x1b[{color}m{capacity}%\x1b[0m"));
-        }
+    let color = battery_color(b.capacity);
+    let capacity = b.capacity;
+    let time_str = match b.mins_left {
+        Some(m) if b.status == "Discharging" => time_remaining(m),
+        _ => String::new(),
+    };
+    let status = &b.status;
+    if !time_str.is_empty() && !status.is_empty() {
+        info.add_info(
+            &label,
+            &format!("\x1b[{color}m{capacity}%\x1b[0m ({time_str}) [{status}]"),
+        );
+    } else if !status.is_empty() {
+        info.add_info(
+            &label,
+            &format!("\x1b[{color}m{capacity}%\x1b[0m [{status}]"),
+        );
+    } else {
+        info.add_info(&label, &format!("\x1b[{color}m{capacity}%\x1b[0m"));
     }
 }
 
-fn gather_terminal(info: &mut Info) {
+/// (name, version) of the terminal emulator. Termux reports its name and
+/// version as one string, in `name`.
+fn terminal_info() -> Option<(String, String)> {
     let mut term = String::new();
 
     if let Some(t) = mobile::terminal() {
-        info.add_info("Terminal", &t);
-        return;
+        return Some((t, String::new()));
     }
 
     // Try TERM_PROGRAM first, then the well-known per-terminal env vars
@@ -3462,13 +4053,21 @@ fn gather_terminal(info: &mut Info) {
         }
     }
 
-    if !term.is_empty() {
-        let version = cmd_version(&term);
-        if version.is_empty() {
-            info.add_info("Terminal", &term);
-        } else {
-            info.add_info("Terminal", &format!("{term} {version}"));
-        }
+    if term.is_empty() {
+        return None;
+    }
+    let version = cmd_version(&term);
+    Some((term, version))
+}
+
+fn gather_terminal(info: &mut Info) {
+    let Some((term, version)) = terminal_info() else {
+        return;
+    };
+    if version.is_empty() {
+        info.add_info("Terminal", &term);
+    } else {
+        info.add_info("Terminal", &format!("{term} {version}"));
     }
 }
 
@@ -3607,7 +4206,9 @@ fn get_default_route_iface() -> Option<String> {
     best.map(|(_, iface)| iface)
 }
 
-fn gather_ip(info: &mut Info) {
+/// IPv4 addresses as (interface, address, prefix bits, carries the default
+/// route), loopback left out.
+fn ipv4_list() -> Vec<(String, String, u32, bool)> {
     let default_iface = get_default_route_iface().unwrap_or_default();
     let loopback = if cfg!(target_os = "macos") {
         "lo0"
@@ -3615,11 +4216,11 @@ fn gather_ip(info: &mut Info) {
         "lo"
     };
 
-    let mut entries: Vec<(String, String, bool)> = Vec::new();
+    let mut entries: Vec<(String, String, u32, bool)> = Vec::new();
     unsafe {
         let mut list: *mut libc::ifaddrs = std::ptr::null_mut();
         if libc::getifaddrs(&mut list) != 0 {
-            return;
+            return entries;
         }
         let mut cur = list;
         while !cur.is_null() && entries.len() < 16 {
@@ -3648,26 +4249,112 @@ fn gather_ip(info: &mut Info) {
             }
 
             let is_default = !default_iface.is_empty() && name == default_iface;
-            let shown = if bits > 0 {
-                format!("{addr}/{bits}")
-            } else {
-                addr
-            };
-            entries.push((name, shown, is_default));
+            entries.push((name, addr, bits, is_default));
         }
         libc::freeifaddrs(list);
     }
-
     // Default route first, everything else after.
-    for pass in [true, false] {
-        for (name, addr, is_def) in &entries {
-            if *is_def != pass {
-                continue;
+    entries.sort_by_key(|e| !e.3);
+    entries
+}
+
+fn gather_ip(info: &mut Info) {
+    for (name, addr, bits, is_def) in ipv4_list() {
+        let shown = if bits > 0 {
+            format!("{addr}/{bits}")
+        } else {
+            addr
+        };
+        info.add_info(&iface_label(&name, is_def), &shown);
+    }
+}
+
+/// sound devices by name, HDMI/DisplayPort outputs left out. HDA cards are
+/// named after their codec ("Realtek ALC287"), which says more than the
+/// controller ("HDA Intel PCH") does.
+#[cfg(not(target_os = "macos"))]
+fn audio_devices() -> Vec<String> {
+    let mut out: Vec<String> = Vec::new();
+    let Some(cards) = read_file("/proc/asound/cards") else {
+        return out;
+    };
+    let is_hdmi = |n: &str| contains_ci(n, "HDMI") || contains_ci(n, "DisplayPort");
+    for line in cards.lines() {
+        // " 0 [PCH            ]: HDA-Intel - HDA Intel PCH"
+        let t = line.trim_start();
+        let Some(num) = t
+            .split(' ')
+            .next()
+            .filter(|n| n.bytes().all(|c| c.is_ascii_digit()))
+        else {
+            continue;
+        };
+        if num.is_empty() {
+            continue;
+        }
+        let dir = format!("/proc/asound/card{num}");
+        let mut codecs: Vec<String> = dir_entries(&dir)
+            .into_iter()
+            .filter(|e| e.starts_with("codec#"))
+            .filter_map(|e| read_first_line(&format!("{dir}/{e}")))
+            .filter_map(|l| l.strip_prefix("Codec: ").map(str::to_string))
+            .collect();
+        codecs.sort();
+        let names: Vec<String> = if codecs.is_empty() {
+            t.split_once(" - ")
+                .map(|(_, n)| vec![n.trim().to_string()])
+                .unwrap_or_default()
+        } else {
+            codecs
+        };
+        for n in names {
+            if !n.is_empty() && !is_hdmi(&n) && !out.contains(&n) {
+                out.push(n);
             }
-            let label = iface_label(name, *is_def);
-            info.add_info(&label, addr);
         }
     }
+    out
+}
+
+#[cfg(target_os = "macos")]
+fn audio_devices() -> Vec<String> {
+    Vec::new()
+}
+
+/// default output volume in percent and whether it is muted, from
+/// PipeWire's wpctl or PulseAudio's pactl.
+fn audio_volume() -> Option<(i64, bool)> {
+    if have_bin("wpctl") {
+        // "Volume: 0.40" or "Volume: 0.40 [MUTED]"
+        let o = run_argv("wpctl", &["get-volume", "@DEFAULT_AUDIO_SINK@"])?;
+        let v = o.strip_prefix("Volume:")?.trim();
+        let vol = (atof(v) * 100.0).round() as i64;
+        return Some((vol, o.contains("MUTED")));
+    }
+    if have_bin("pactl") {
+        // "Volume: front-left: 26214 /  40% / -23.88 dB,   front-right: ..."
+        let o = run_argv("pactl", &["get-sink-volume", "@DEFAULT_SINK@"])?;
+        let pct = o.find('%')?;
+        let start = o[..pct].rfind(|c: char| !c.is_ascii_digit())? + 1;
+        let vol = o[start..pct].parse().ok()?;
+        let muted = run_argv("pactl", &["get-sink-mute", "@DEFAULT_SINK@"])
+            .is_some_and(|m| m.contains("yes"));
+        return Some((vol, muted));
+    }
+    None
+}
+
+fn gather_audio(info: &mut Info) {
+    let devs = audio_devices();
+    if devs.is_empty() {
+        return;
+    }
+    let vol = match audio_volume() {
+        Some((_, true)) => " (muted)".to_string(),
+        Some((v, false)) => format!(" ({v}%)"),
+        None => String::new(),
+    };
+    info.add_info("Audio", &format!("{}{vol}", devs.join(", ")));
 }
 
 fn gather_locale(info: &mut Info) {
@@ -4373,6 +5060,8 @@ fn cell_glyph<'a>(
 }
 
 struct Layout {
+    /// terminal width, 0 when unknown
+    cols: i32,
     render_height: i32,
     /// Rows the logo may span (<= render_height).
     logo_height: i32,
@@ -4384,11 +5073,41 @@ struct Layout {
     info_clip_cols: i32,
     /// Info lines shown in the stacked layout.
     stacked_info_rows: i32,
+    /// canvas row the info column starts on, side by side
+    info_top: i32,
 }
 
-fn apply_layout(cfg: &Config, info: &Info, show_info: bool) -> Layout {
+/// How many rows the spinning logo can reach, per row of logo_height. The
+/// projection is y·k1/(z+K2) with k1 = 37/36 · logo_height; y stays within the
+/// cloud's radius around the x axis and z within its full radius, whichever
+/// way it turns.
+fn logo_extent(points: &[Point], k2: f32) -> f32 {
+    let (mut ry, mut r) = (0f32, 0f32);
+    for p in points {
+        ry = ry.max(p.py * p.py + p.pz * p.pz);
+        r = r.max(p.px * p.px + p.py * p.py + p.pz * p.pz);
+    }
+    if points.is_empty() {
+        return 0.8;
+    }
+    let (ry, r) = (ry.sqrt(), r.sqrt().min(k2 - 0.5));
+    2.0 * (37.0 / 36.0) * ry / (k2 - r)
+}
+
+fn apply_layout(
+    cfg: &Config,
+    info: &Info,
+    show_info: bool,
+    footer: bool,
+    logo_extent: f32,
+) -> Layout {
     let (mut rows, cols) = get_term_size();
+    // the last row stays free for the cursor, and the footer takes the one
+    // above it
     if rows > 1 {
+        rows -= 1;
+    }
+    if footer && rows > 1 {
         rows -= 1;
     }
     let line_count = info.lines.len() as i32;
@@ -4402,12 +5121,14 @@ fn apply_layout(cfg: &Config, info: &Info, show_info: bool) -> Layout {
     ideal = ideal.clamp(20, MAX_HEIGHT);
 
     let mut l = Layout {
+        cols,
         render_height: ideal,
         logo_height: ideal,
         anim_width: ANIM_WIDTH,
         stacked: false,
         info_clip_cols: -1,
         stacked_info_rows: 0,
+        info_top: 1,
     };
 
     if cols <= 0 {
@@ -4420,9 +5141,16 @@ fn apply_layout(cfg: &Config, info: &Info, show_info: bool) -> Layout {
 
     let info_cols = if show_info { info.widest() as i32 } else { 0 };
 
+    // Side by side is the layout; stacking is the last resort. When both
+    // don't fit, the logo shrinks first, and then the info lines get clipped
+    // before the logo is moved above them.
+    const MIN_ANIM: i32 = 24;
+    const MIN_INFO: i32 = 60;
     if show_info && cols < ANIM_WIDTH + GAP as i32 + info_cols {
         l.anim_width = cols - GAP as i32 - info_cols;
-        if l.anim_width < 20 {
+        if l.anim_width < MIN_ANIM && cols - GAP as i32 - MIN_ANIM >= MIN_INFO {
+            l.anim_width = MIN_ANIM;
+        } else if l.anim_width < 20 {
             l.stacked = true;
             l.anim_width = cols.min(ANIM_WIDTH);
         }
@@ -4456,10 +5184,12 @@ fn apply_layout(cfg: &Config, info: &Info, show_info: bool) -> Layout {
             }
         }
         l.logo_height = l.render_height;
-        l.info_clip_cols = cols;
+        // one column short: the \x1b[K that ends the row would erase a
+        // character sitting in the last one
+        l.info_clip_cols = cols - 1;
     } else {
         if show_info {
-            l.info_clip_cols = cols - l.anim_width - GAP as i32;
+            l.info_clip_cols = cols - l.anim_width - GAP as i32 - 1;
         }
         if rows > 0 && l.render_height > rows {
             l.render_height = rows;
@@ -4467,9 +5197,137 @@ fn apply_layout(cfg: &Config, info: &Info, show_info: bool) -> Layout {
         l.logo_height = l.render_height.min(wcap);
         if !show_info {
             l.render_height = l.logo_height;
+        } else {
+            // The canvas only has to be as tall as the taller column: a fixed
+            // 36-row floor left a band of blank rows under a short panel.
+            if cfg.height <= 0 {
+                let logo_rows = (l.logo_height as f32 * logo_extent).ceil() as i32 + 1;
+                l.render_height = l.render_height.min((line_count + 2).max(logo_rows));
+            }
+            // center the info on the logo, or leave one row above it when
+            // it's the taller of the two
+            l.info_top = if line_count + 2 <= l.render_height {
+                (l.render_height - line_count) / 2
+            } else {
+                1
+            };
         }
     }
     l
+}
+
+/// `n` blank cells. A long run goes out as erase-characters plus a cursor
+/// move, a dozen bytes however wide it is, instead of one space per cell —
+/// the logo's canvas is mostly empty.
+fn push_blanks(out: &mut Vec<u8>, n: &mut usize) {
+    use std::io::Write;
+    if *n >= 8 {
+        let _ = write!(out, "\x1b[{n}X\x1b[{n}C", n = *n);
+    } else {
+        out.extend(std::iter::repeat(b' ').take(*n));
+    }
+    *n = 0;
+}
+
+/// One screen row in two parts: the logo, always exactly `anim_width`
+/// cells, and whatever follows it (the info line, or a whole row of its own).
+#[derive(Default)]
+struct Row {
+    logo: Vec<u8>,
+    rest: Vec<u8>,
+    /// 1-based column `rest` starts at
+    rest_col: usize,
+}
+
+/// What was drawn last frame. Only the parts that changed are sent: the info
+/// column mostly sits still while the logo spins next to it, so most frames
+/// carry the logo and nothing else.
+struct Screen {
+    prev: Vec<Row>,
+    prev_n: usize,
+    cur: Vec<Row>,
+    n: usize,
+}
+
+impl Screen {
+    fn new() -> Screen {
+        Screen {
+            prev: Vec::new(),
+            prev_n: 0,
+            cur: Vec::new(),
+            n: 0,
+        }
+    }
+
+    fn begin(&mut self) {
+        self.n = 0;
+    }
+
+    /// the next row, emptied, to draw into
+    fn next_row(&mut self) -> &mut Row {
+        if self.n == self.cur.len() {
+            self.cur.push(Row::default());
+        }
+        let r = &mut self.cur[self.n];
+        r.logo.clear();
+        r.rest.clear();
+        r.rest_col = 1;
+        self.n += 1;
+        r
+    }
+
+    /// forget what's on screen, after it was cleared
+    fn invalidate(&mut self) {
+        self.prev_n = 0;
+    }
+
+    /// The escapes that bring the terminal from last frame to this one, in
+    /// one synchronized update (DEC mode 2026) so no frame shows half-drawn.
+    /// Leaves the cursor under the last row, which is where the shell prompt
+    /// should land however nyi exits.
+    fn flush(&mut self, out: &mut Vec<u8>) {
+        use std::io::Write;
+        let mut changed = false;
+        let mut begin = |out: &mut Vec<u8>| {
+            if !changed {
+                out.extend_from_slice(b"\x1b[?2026h");
+                changed = true;
+            }
+        };
+        for i in 0..self.n.max(self.prev_n) {
+            let old = (i < self.prev_n).then(|| &self.prev[i]);
+            let Some(new) = (i < self.n).then(|| &self.cur[i]) else {
+                // the frame got shorter
+                begin(out);
+                let _ = write!(out, "\x1b[{};1H\x1b[K", i + 1);
+                continue;
+            };
+            // The logo part is fixed-width, so it can be redrawn on its own
+            // without touching what comes after it.
+            let logo_same = old.is_some_and(|o| o.logo == new.logo);
+            let rest_same = old.is_some_and(|o| o.rest == new.rest && o.rest_col == new.rest_col);
+            let wrote_logo = !logo_same && !new.logo.is_empty();
+            if wrote_logo {
+                begin(out);
+                let _ = write!(out, "\x1b[{};1H", i + 1);
+                out.extend_from_slice(&new.logo);
+            }
+            if !rest_same || (!logo_same && new.logo.is_empty()) {
+                begin(out);
+                // the logo leaves the cursor right where the rest begins
+                if !wrote_logo {
+                    let _ = write!(out, "\x1b[{};{}H", i + 1, new.rest_col);
+                }
+                out.extend_from_slice(&new.rest);
+                out.extend_from_slice(b"\x1b[K");
+            }
+        }
+        if changed {
+            let _ = write!(out, "\x1b[{};1H\x1b[?2026l", self.n + 1);
+        }
+        std::mem::swap(&mut self.prev, &mut self.cur);
+        self.prev_n = self.n;
+    }
 }
 
 // CLI
@@ -4500,6 +5358,10 @@ Options:
                             sub-cell blocks: sextants (2x3) or blocks (2x2)
   --shading-chars <str>     Custom shading ramp, supports UTF-8
   --box                     Draw a border box around the info block
+  --style <style>           panel (the default): a header, a summary line
+                            and usage bars; or classic: user@host and
+                            Label: value lines
+  --no-footer               Leave out the status bar under the panel
   --config <path>           Use this config file instead of the default
   --dump-logo <name>        Print a logo in logo.txt form, taken from
                             fastfetch. Run it where fastfetch is installed:
@@ -4517,7 +5379,9 @@ Config: $XDG_CONFIG_HOME/nyi/config (default ~/.config/nyi/config)
   Available fields:
     os, host, kernel, uptime, packages, shell, display, wm,
     theme, icons, font, cursor, terminal, cpu, gpu, memory, swap,
-    disk, ip, battery, locale, colors
+    disk, ip, battery, locale, audio, colors
+  With style=panel, os, kernel, packages and wm make up the summary
+  line under the header instead of rows of their own.
 
   Extra disks:
     disk=/home               Show additional mount point
@@ -4539,6 +5403,9 @@ Config: $XDG_CONFIG_HOME/nyi/config (default ~/.config/nyi/config)
     depth=<float>            3D extrusion depth
     height=<n>               Render height in rows
     box=<0/1>                Draw a border box around the info block
+    style=<style>            panel (default) or classic
+    footer=<0/1>             Live status bar under the panel (default
+                             on for panel, off for classic)
 
 Logo: $XDG_CONFIG_HOME/nyi/logo.txt
   Custom ASCII/Unicode logo. Add '# distro: <name>' as the
@@ -4559,6 +5426,8 @@ struct Args {
     shading_mode: Option<String>,
     box_flag: bool,
     config_path: Option<String>,
+    style: Option<Style>,
+    no_footer: bool,
 }
 
 impl Default for Args {
@@ -4577,6 +5446,8 @@ impl Default for Args {
             shading_mode: None,
             box_flag: false,
             config_path: None,
+            style: None,
+            no_footer: false,
         }
     }
 }
@@ -4634,6 +5505,13 @@ fn parse_args() -> Result<Option<Args>, String> {
             "--size" => a.size = Some(atof(&next(&mut i)?)),
             "--depth" => a.depth = Some(atof(&next(&mut i)?)),
             "--box" => a.box_flag = true,
+            "--style" => {
+                let v = next(&mut i)?;
+                a.style = Some(Style::from_name(&v).ok_or_else(|| {
+                    format!("unknown style: {v} (classic or panel)\nTry 'nyi --help'")
+                })?);
+            }
+            "--no-footer" => a.no_footer = true,
             "--config" => a.config_path = Some(next(&mut i)?),
             other => {
                 return Err(format!("unknown option: {other}\nTry 'nyi --help'"));
@@ -4645,6 +5523,10 @@ fn parse_args() -> Result<Option<Args>, String> {
 }
 
 fn gather_field(f: Field, info: &mut Info, cfg: &Config) {
+    if info.style == Style::Panel {
+        panel::gather_field(f, info, cfg);
+        return;
+    }
     match f {
         Field::Os => gather_os(info),
         Field::Host => gather_host(info),
@@ -4667,8 +5549,79 @@ fn gather_field(f: Field, info: &mut Info, cfg: &Config) {
         Field::Ip => gather_ip(info),
         Field::Battery => gather_battery(info),
         Field::Locale => gather_locale(info),
-        Field::Colors => {}
+        Field::Audio => gather_audio(info),
+        Field::Colors => gather_colors(info),
     }
+}
+
+fn gather_colors(info: &mut Info) {
+    info.add_line("");
+    info.add_line(
+        "\x1b[40m   \x1b[41m   \x1b[42m   \x1b[43m   \
+         \x1b[44m   \x1b[45m   \x1b[46m   \x1b[47m   \x1b[0m",
+    );
+    info.add_line(
+        "\x1b[100m   \x1b[101m   \x1b[102m   \x1b[103m   \
+         \x1b[104m   \x1b[105m   \x1b[106m   \x1b[107m   \x1b[0m",
+    );
+}
+
+/// one job's worth of lines: the header for None, a field otherwise.
+fn gather_job(job: Option<Field>, cfg: &Config) -> Vec<String> {
+    let mut info = Info::new(cfg);
+    match job {
+        None => match cfg.style {
+            Style::Classic => gather_title(&mut info, cfg),
+            Style::Panel => panel::gather_header(&mut info, cfg),
+        },
+        Some(f) => {
+            info.current = Some(f);
+            gather_field(f, &mut info, cfg);
+        }
+    }
+    info.lines
+}
+
+/// Every field at once, one thread each. Nearly all of the startup time is
+/// spent waiting on files and subprocesses (`--version`s, nix-store, lspci),
+/// and none of them depend on each other.
+fn gather_all(cfg: &Config) -> Info {
+    let jobs: Vec<Option<Field>> = std::iter::once(None)
+        .chain(cfg.order.iter().map(|f| Some(*f)))
+        .collect();
+
+    let results: Vec<Vec<String>> = std::thread::scope(|scope| {
+        let handles: Vec<_> = jobs
+            .iter()
+            .map(|&job| {
+                std::thread::Builder::new()
+                    .spawn_scoped(scope, move || gather_job(job, cfg))
+                    .map_err(|_| job)
+            })
+            .collect();
+        handles
+            .into_iter()
+            .map(|h| match h {
+                Ok(h) => h.join().unwrap_or_default(),
+                // no threads to be had (a tight ulimit, an odd emulator): do
+                // it here instead
+                Err(job) => gather_job(job, cfg),
+            })
+            .collect()
+    });
+
+    let mut info = Info::new(cfg);
+    for (job, lines) in jobs.into_iter().zip(results) {
+        match job {
+            None => info.header_lines = lines.len(),
+            Some(f) if !lines.is_empty() => info.field_line[f.idx()] = info.lines.len() as i32,
+            Some(_) => {}
+        }
+        for l in &lines {
+            info.add_line(l);
+        }
+    }
+    info
 }
 
 // Main
@@ -4714,6 +5667,20 @@ fn main() {
     if args.box_flag {
         cfg.box_on = true;
     }
+    if let Some(st) = args.style {
+        cfg.style = st;
+    }
+    if args.no_footer {
+        cfg.footer = Some(false);
+    }
+    cfg.finalize();
+    let cfg = std::sync::Arc::new(cfg);
+
+    // Info runs alongside the logo lookup, which may be waiting on fastfetch.
+    let info_thread = args.show_info.then(|| {
+        let cfg = cfg.clone();
+        std::thread::Builder::new().spawn(move || gather_all(&cfg))
+    });
 
     let shading_mode = args
         .shading_mode
@@ -4835,41 +5802,27 @@ fn main() {
         .unwrap_or_else(|| inner.to_string())
         .into_bytes();
 
-    // Info
-    let mut info = Info::new(&cfg.label_color);
-    if show_info {
-        gather_title(&mut info, &cfg);
-        for f in cfg.order.clone() {
-            if matches!(f, Field::Colors) {
-                info.add_line("");
-                info.add_line(
-                    "\x1b[40m   \x1b[41m   \x1b[42m   \x1b[43m   \
-                     \x1b[44m   \x1b[45m   \x1b[46m   \x1b[47m   \x1b[0m",
-                );
-                info.add_line(
-                    "\x1b[100m   \x1b[101m   \x1b[102m   \x1b[103m   \
-                     \x1b[104m   \x1b[105m   \x1b[106m   \x1b[107m   \x1b[0m",
-                );
-            } else {
-                info.current = Some(f);
-                gather_field(f, &mut info, &cfg);
-            }
-        }
-        info.current = None;
-    }
+    let mut info = match info_thread {
+        Some(Ok(h)) => h.join().unwrap_or_else(|_| Info::new(&cfg)),
+        Some(Err(_)) => gather_all(&cfg),
+        None => Info::new(&cfg),
+    };
     if cfg.box_on {
         info.box_wrap_lines();
     }
+    cache::save();
 
-    let mut layout = apply_layout(&cfg, &info, show_info);
+    let footer = (show_info && cfg.footer_on()).then(panel::Footer::new);
+    const K2: f32 = 5.5;
     let points = build_points(&logo, &cfg, shading.sub_rows);
+    let logo_extent = logo_extent(&points, K2);
+    let mut layout = apply_layout(&cfg, &info, show_info, footer.is_some(), logo_extent);
 
     // Render
     let mut a_angle = 0.0f32;
     let mut b_angle = 0.0f32;
     let mut k1 = 37.0 * layout.logo_height as f32 / 36.0;
-
-    const K2: f32 = 5.5;
+    const FRAME_MS: u64 = 50;
 
     let (lx, ly, lz) = cfg.light;
     let (hx0, hy0, hz0) = (lx, ly, lz - 1.0);
@@ -4884,34 +5837,36 @@ fn main() {
     enter_raw_mode();
     unsafe { libc::atexit(cleanup_at_exit) };
 
-    let info_start = i32::from(show_info);
     let mut buf: Vec<u8> = Vec::with_capacity(64 * 1024);
     let mut bufs = Buffers::new();
+    let mut screen = Screen::new();
 
     out(b"\x1b[?25l\x1b[2J");
 
+    let start = std::time::Instant::now();
+    let mut next_frame = std::time::Duration::ZERO;
     let mut frame: i64 = 0;
     while args.max_frames == 0 || frame < args.max_frames as i64 {
         // The key check comes AFTER the frame: --frames 1 must draw a frame in
         // every case, and one leftover byte must not exit before drawing.
         if TERM_RESIZED.swap(false, Ordering::Relaxed) {
-            let new_layout = apply_layout(&cfg, &info, show_info);
-            if new_layout.render_height != layout.render_height
-                || new_layout.anim_width != layout.anim_width
-                || new_layout.stacked != layout.stacked
-                || new_layout.info_clip_cols != layout.info_clip_cols
-            {
-                layout = new_layout;
-                k1 = 37.0 * layout.logo_height as f32 / 36.0;
-                out(b"\x1b[2J");
-            } else {
-                layout = new_layout;
-            }
+            // Always a full redraw: terminals reflow or scroll their contents
+            // on resize, and the diff only knows what it last drew.
+            layout = apply_layout(&cfg, &info, show_info, footer.is_some(), logo_extent);
+            k1 = 37.0 * layout.logo_height as f32 / 36.0;
+            out(b"\x1b[2J");
+            screen.invalidate();
         }
 
         if show_info && frame > 0 && frame % 20 == 0 {
             info.refresh = true;
-            for f in [Field::Uptime, Field::Memory, Field::Swap] {
+            for f in [
+                Field::Uptime,
+                Field::Memory,
+                Field::Swap,
+                Field::Battery,
+                Field::Cpu,
+            ] {
                 if info.field_line[f.idx()] >= 0 {
                     info.current = Some(f);
                     gather_field(f, &mut info, &cfg);
@@ -4927,13 +5882,7 @@ fn main() {
         let (ca, sa) = (a_angle.cos(), a_angle.sin());
         let (cb, sb) = (b_angle.cos(), b_angle.sin());
 
-        let line_count = info.lines.len() as i32;
-        let y_center =
-            if !layout.stacked && line_count > 0 && line_count + 2 <= layout.render_height {
-                info_start as f32 + line_count as f32 * 0.5
-            } else {
-                layout.render_height as f32 * 0.5
-            };
+        let y_center = layout.render_height as f32 * 0.5;
         let half_aw = layout.anim_width as f32 * 0.5;
         let k1x2 = k1 * 2.0;
         let aw = layout.anim_width.max(0) as usize;
@@ -4949,12 +5898,6 @@ fn main() {
             let z2 = -p.px * sb + z1 * cb;
             let y2 = y1;
 
-            let ny1 = p.ny * ca - p.nz * sa;
-            let nz1 = p.ny * sa + p.nz * ca;
-            let nx2 = p.nx * cb + nz1 * sb;
-            let nz2 = -p.nx * sb + nz1 * cb;
-            let ny2 = ny1;
-
             let zc = z2 + K2;
             if zc < 0.1 {
                 continue;
@@ -4968,6 +5911,15 @@ fn main() {
 
             let idx = ys as usize * SUB_W + xs as usize;
             if ooz > bufs.z[idx] {
+                // Only points that win the depth test get lit: most of the
+                // cloud is hidden behind the front face, and rotating their
+                // normals was wasted work.
+                let ny1 = p.ny * ca - p.nz * sa;
+                let nz1 = p.ny * sa + p.nz * ca;
+                let nx2 = p.nx * cb + nz1 * sb;
+                let nz2 = -p.nx * sb + nz1 * cb;
+                let ny2 = ny1;
+
                 let diff = (nx2 * lx + ny2 * ly + nz2 * lz).max(0.0);
                 let spec_dot = (nx2 * hlx + ny2 * hly + nz2 * hlz).max(0.0);
                 let mut spec = spec_dot * spec_dot;
@@ -4981,16 +5933,22 @@ fn main() {
                 bufs.color[idx] = p.color;
             }
         }
-        buf.clear();
-        buf.extend_from_slice(b"\x1b[H");
 
+        screen.begin();
         for i in 0..layout.render_height.max(0) {
             let row = i as usize;
+            let r = screen.next_row();
+            r.rest_col = aw + 1;
+            let line = &mut r.logo;
+            let mut blanks = 0usize;
             if !use_color {
                 for j in 0..aw {
                     match cell_glyph(&bufs, &shading, row, j) {
-                        None => buf.push(b' '),
-                        Some((g, _)) => buf.extend_from_slice(g.as_bytes()),
+                        None => blanks += 1,
+                        Some((g, _)) => {
+                            push_blanks(line, &mut blanks);
+                            line.extend_from_slice(g.as_bytes());
+                        }
                     }
                 }
             } else {
@@ -4999,58 +5957,76 @@ fn main() {
                     match cell_glyph(&bufs, &shading, row, j) {
                         None => {
                             if prev_color != -1 {
-                                buf.extend_from_slice(b"\x1b[0m");
+                                line.extend_from_slice(b"\x1b[0m");
                                 prev_color = -1;
                             }
-                            buf.push(b' ');
+                            blanks += 1;
                         }
                         Some((g, c)) => {
+                            push_blanks(line, &mut blanks);
                             if c != prev_color {
                                 if logo.has_ansi && c > 0 && c < 128 {
-                                    buf.extend_from_slice(&ansi_tbl[c as usize]);
+                                    line.extend_from_slice(&ansi_tbl[c as usize]);
                                 } else if c == 1 {
-                                    buf.extend_from_slice(&color_inner);
+                                    line.extend_from_slice(&color_inner);
                                 } else {
-                                    buf.extend_from_slice(&color_outer);
+                                    line.extend_from_slice(&color_outer);
                                 }
                                 prev_color = c;
                             }
-                            buf.extend_from_slice(g.as_bytes());
+                            line.extend_from_slice(g.as_bytes());
                         }
                     }
                 }
                 if prev_color != -1 {
-                    buf.extend_from_slice(b"\x1b[0m");
+                    line.extend_from_slice(b"\x1b[0m");
                 }
             }
+            push_blanks(line, &mut blanks);
 
-            let fi = i - info_start;
-            if !layout.stacked && fi >= 0 && (fi as usize) < info.lines.len() {
-                buf.extend_from_slice(&[b' '; GAP]);
-                emit_clipped(&mut buf, &info.lines[fi as usize], layout.info_clip_cols);
+            let fi = i - layout.info_top;
+            if show_info && !layout.stacked && fi >= 0 && (fi as usize) < info.lines.len() {
+                r.rest.extend_from_slice(&[b' '; GAP]);
+                emit_clipped(&mut r.rest, &info.lines[fi as usize], layout.info_clip_cols);
             }
-
-            buf.extend_from_slice(b"\x1b[K\n");
         }
 
         if layout.stacked && layout.stacked_info_rows > 0 {
             if layout.render_height > 0 {
-                buf.extend_from_slice(b"\x1b[K\n");
+                screen.next_row();
             }
-            for i in 0..layout.stacked_info_rows.max(0) as usize {
-                if i >= info.lines.len() {
-                    break;
-                }
-                emit_clipped(&mut buf, &info.lines[i], layout.info_clip_cols);
-                buf.extend_from_slice(b"\x1b[K\n");
+            for l in info
+                .lines
+                .iter()
+                .take(layout.stacked_info_rows.max(0) as usize)
+            {
+                emit_clipped(&mut screen.next_row().rest, l, layout.info_clip_cols);
             }
         }
 
-        if !write_fd(libc::STDOUT_FILENO, &buf) {
+        if let Some(f) = &footer {
+            f.render(layout.cols, &mut screen.next_row().rest);
+        }
+
+        buf.clear();
+        screen.flush(&mut buf);
+        if !buf.is_empty() && !write_fd(libc::STDOUT_FILENO, &buf) {
             break;
         }
-        sleep_ms(50);
         frame += 1;
+
+        // Pace against the clock rather than sleeping a fixed 50 ms after
+        // the work, so the speed doesn't depend on how long a frame took. A
+        // frame that runs long (a stalled terminal) resets the schedule
+        // instead of being chased with a burst of catch-up frames.
+        next_frame += std::time::Duration::from_millis(FRAME_MS);
+        let now = start.elapsed();
+        if next_frame > now {
+            let wait = next_frame - now;
+            sleep_ms(wait.as_millis() as i64);
+        } else {
+            next_frame = now;
+        }
         if key_pressed() {
             break;
         }

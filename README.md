@@ -18,27 +18,19 @@ info renders next to it.
 
 ---
 
-## it runs where you run
-
-<table>
-<tr>
-<td width="33%" align="center"><img src="assets/demo-desktop.gif" alt="Linux desktop"><br><sub><b>Linux</b> · desktop</sub></td>
-<td width="33%" align="center"><img src="assets/demo-laptop.gif" alt="Linux laptop"><br><sub><b>Linux</b> · laptop</sub></td>
-<td width="33%" align="center"><img src="assets/demo-macos.gif" alt="macOS"><br><sub><b>macOS</b></sub></td>
-</tr>
-<tr>
-<td align="center"><img src="assets/demo-android.gif" alt="Android / Termux"><br><sub><b>Android</b> · Termux</sub></td>
-<td align="center"><img src="assets/demo-ios.gif" alt="iOS / iSH"><br><sub><b>iOS</b> · iSH / NewTerm</sub></td>
-<td align="center"><sub>same binary, no runtime deps</sub></td>
-</tr>
-</table>
-
 ## what it does
 
 - **real 3D.** the logo is extruded into a solid and shaded per-pixel from a
   configurable light direction — not a pre-rendered animation.
 - **native info.** everything comes straight out of `/proc`, `/sys`, sysctl,
   DRM/EDID and your GTK config. no runtime dependencies.
+- **a panel, live.** a header, a one-line summary, dim labels with usage bars
+  for memory, storage and power, and a status bar with a ticking clock.
+  memory, battery, CPU temperature and uptime update while it spins. the
+  neofetch-style `Label: value` list is still there as `style=classic`.
+- **fast.** fields are gathered in parallel, slow answers (`--version`s, nix
+  package counts, `lspci`) are cached, and only the parts of the screen that
+  changed are redrawn.
 - **any logo.** ships with its own pyramid, and borrows any logo `fastfetch`
   knows (`nixos`, `arch`, `gentoo`, `debian`, `void`, …) when it's installed.
   drop in your own ASCII art too.
@@ -140,25 +132,27 @@ nyi --infinite --speed 2   # run until you hit a key
 nyi --no-info --size 2     # just the shape, twice as big
 ```
 
-| flag | what it does |
-| --- | --- |
-| `-l, --logo <name>` | use a logo by name. `triangle` (aka `pyramid`, `nyi`) is built in; anything `fastfetch --list-logos` prints also works |
-| `--rotate-x` / `--rotate-y` | lock rotation to one axis |
-| `-s, --speed <float>` | rotation speed multiplier (default `1.0`) |
-| `--size <float>` | logo scale, `0.5`–`5.0` |
-| `--depth <float>` | extrusion depth, `0.1`–`10.0`. unset, it's derived from the logo's character variance so flat art doesn't look paper-thin |
-| `--height <n>` | render height in rows. unset, it matches the info block |
-| `--no-info` | logo only |
-| `--no-color` | drop the logo coloring |
-| `--frames <n>` | stop after `n` frames (default `2000`) |
-| `--infinite` | run forever — any key or `Ctrl-C` exits |
-| `--shading-mode <mode>` | `ascii` (default), `blocks` (2×2) or `sextants` (2×3) |
-| `--shading-chars <str>` | custom ramp, dimmest first. UTF-8 is fine |
-| `--box` | draw a border around the info block |
-| `--config <path>` | use this config instead of the default |
-| `--dump-logo <name>` | print a logo in `logo.txt` form, taken from fastfetch |
-| `--fetch-logo <name>` | the same, downloaded — for machines without fastfetch |
-| `-V, --version` · `-h, --help` | version / help |
+| flag                           | what it does                                                                                                              |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `-l, --logo <name>`            | use a logo by name. `triangle` (aka `pyramid`, `nyi`) is built in; anything `fastfetch --list-logos` prints also works    |
+| `--rotate-x` / `--rotate-y`    | lock rotation to one axis                                                                                                 |
+| `-s, --speed <float>`          | rotation speed multiplier (default `1.0`)                                                                                 |
+| `--size <float>`               | logo scale, `0.5`–`5.0`                                                                                                   |
+| `--depth <float>`              | extrusion depth, `0.1`–`10.0`. unset, it's derived from the logo's character variance so flat art doesn't look paper-thin |
+| `--height <n>`                 | render height in rows. unset, it matches the info block                                                                   |
+| `--no-info`                    | logo only                                                                                                                 |
+| `--no-color`                   | drop the logo coloring                                                                                                    |
+| `--frames <n>`                 | stop after `n` frames (default `2000`)                                                                                    |
+| `--infinite`                   | run forever — any key or `Ctrl-C` exits                                                                                   |
+| `--shading-mode <mode>`        | `ascii` (default), `blocks` (2×2) or `sextants` (2×3)                                                                     |
+| `--shading-chars <str>`        | custom ramp, dimmest first. UTF-8 is fine                                                                                 |
+| `--box`                        | draw a border around the info block                                                                                       |
+| `--style <style>`              | `panel` (default) or `classic`                                                                                            |
+| `--no-footer`                  | leave out the status bar under the panel                                                                                  |
+| `--config <path>`              | use this config instead of the default                                                                                    |
+| `--dump-logo <name>`           | print a logo in `logo.txt` form, taken from fastfetch                                                                     |
+| `--fetch-logo <name>`          | the same, downloaded — for machines without fastfetch                                                                     |
+| `-V, --version` · `-h, --help` | version / help                                                                                                            |
 
 Sub-cell modes need a terminal that renders the Symbols for Legacy Computing
 block — kitty, Ghostty, foot and NewTerm all do.
@@ -168,29 +162,42 @@ block — kitty, Ghostty, foot and NewTerm all do.
 `$XDG_CONFIG_HOME/nyi/config`, defaulting to `~/.config/nyi/config`.
 
 List the field names you want, one per line, **in display order**. Delete or
-comment out a line to hide that field. Settings go in the same file as
-`key=value` and are order-independent.
+comment out a line to hide that field; list none at all to keep the style's
+default set. Settings go in the same file as `key=value` and are
+order-independent.
+
+Under `style=panel` (the default), `os`, `kernel`, `packages` and `wm` make up
+the summary line under the header instead of getting rows of their own, the
+terminal shares the `shell` row, and the window manager leads the `display`
+row.
 
 ```ini
 # fields, in the order they're drawn
 os
 kernel
-uptime
 packages
-shell
 wm
-terminal
+host
 cpu
 gpu
 memory
 disk
-colors
+battery
+display
+ip
+audio
+shell
+terminal
+uptime
 
 # an extra mount point beyond / (repeatable, up to 8)
 disk=/home
 
 # settings
-label_color=magenta        # red green yellow blue magenta cyan white, or "38;5;213"
+style=panel                # panel or classic
+footer=1                   # status bar with a live clock; on for panel by default
+label_color=magenta        # red green yellow blue magenta cyan white, or "38;5;213";
+                           # under panel it colors the bars, which otherwise follow the logo
 separator=-                # repeated under the user@host title; "" leaves it blank
 box=0
 shading_mode=sextants
@@ -209,9 +216,20 @@ height=20
 
 `os` `host` `kernel` `uptime` `packages` `shell` `display` `wm` `theme`
 `icons` `font` `cursor` `terminal` `cpu` `gpu` `memory` `swap` `disk` `ip`
-`battery` `locale` `colors`
+`battery` `locale` `audio` `colors`
 
 </details>
+
+### cache
+
+Answers that cost a subprocess but almost never change — `<bin> --version`,
+nix package counts, `lspci` names, and the OpenGL / Vulkan / VA-API versions
+the panel's `graphics` row reads from `glxinfo`, `vulkaninfo` and `vainfo` —
+are kept in
+`$XDG_CACHE_HOME/nyi/cache` (`~/.cache/nyi/cache`). Every key carries what
+would make it stale (a binary's resolved path, size and mtime; the store paths
+your profiles point at), so an upgrade or a rebuild is simply a miss. Delete the
+file whenever you like, or set `NYI_NO_CACHE=1` to skip it.
 
 ### borrowing a logo without fastfetch
 
@@ -270,7 +288,8 @@ Then, in a NixOS or home-manager configuration:
 
   programs.nyi = {
     enable = true;
-    info = [ "os" "kernel" "uptime" "cpu" "memory" "colors" ];
+    style = "panel";                                  # or "classic"
+    info = [ "os" "kernel" "uptime" "cpu" "memory" ];  # leave unset for the style's default
     labelColor = "38;5;213";
     shadingMode = "sextants";
     light = "top-left";

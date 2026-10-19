@@ -25,6 +25,7 @@ let
     "ip"
     "battery"
     "locale"
+    "audio"
     "colors"
   ];
 
@@ -38,8 +39,8 @@ rec {
 
   options = {
     info = mkOption {
-      type = types.listOf (types.enum infoFields);
-      default = infoFields;
+      type = types.nullOr (types.listOf (types.enum infoFields));
+      default = null;
       example = [
         "os"
         "kernel"
@@ -49,15 +50,45 @@ rec {
       ];
       description = ''
         info fields to display, in the order given. Only the fields listed
-        here are shown.
+        here are shown. `null` keeps the default set and order of the chosen
+        {option}`style`. Under the `panel` style `os`, `kernel`, `packages`
+        and `wm` form the summary line instead of rows of their own.
+      '';
+    };
+
+    style = mkOption {
+      type = types.nullOr (
+        types.enum [
+          "panel"
+          "classic"
+        ]
+      );
+      default = null;
+      description = ''
+        `panel` (the default) draws a header, a `·`-joined summary line and
+        dim labels with usage bars. `classic` is `user@host` over
+        `Label: value` lines.
+      '';
+    };
+
+    footer = mkOption {
+      type = types.nullOr types.bool;
+      default = null;
+      description = ''
+        live status bar (date, clock, user, load) under the info. Left unset
+        it is on for the `panel` style and off for `classic`.
       '';
     };
 
     labelColor = mkOption {
-      type = types.str;
-      default = "magenta";
+      type = types.nullOr types.str;
+      default = null;
       example = "38;5;213";
-      description = "color used for info labels. " + colorDoc;
+      description = ''
+        color used for info labels under the `classic` style, and for the
+        bars and accents under `panel` (which otherwise follow the logo).
+      ''
+      + colorDoc;
     };
 
     separator = mkOption {
@@ -231,6 +262,14 @@ rec {
       settings = lib.filterAttrs (_: v: v != null) {
         label_color = cfg.labelColor;
         separator = cfg.separator;
+        style = cfg.style;
+        footer =
+          if cfg.footer == null then
+            null
+          else if cfg.footer then
+            "1"
+          else
+            "0";
         box = if cfg.box then "1" else "0";
         shading = cfg.shading;
         shading_mode = cfg.shadingMode;
@@ -245,7 +284,9 @@ rec {
       };
     in
     lib.concatStringsSep "\n" (
-      cfg.info ++ map (d: "disk=${d}") cfg.disks ++ lib.mapAttrsToList (k: v: "${k}=${v}") settings
+      lib.optionals (cfg.info != null) cfg.info
+      ++ map (d: "disk=${d}") cfg.disks
+      ++ lib.mapAttrsToList (k: v: "${k}=${v}") settings
     )
     + "\n"
     + cfg.extraConfig;
